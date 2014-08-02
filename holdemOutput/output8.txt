@@ -1,0 +1,3812 @@
+**Adding 100 to pot for Player_3
+**Adding 100 to pot for Player_1
+**Adding 100 to pot for Player_2
+**Adding 1 to pot for Player_1
+**Adding 2 to pot for Player_2
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 0
+Time to start first round of betting.
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 900
+Amount chips put in pot: 100
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 899
+Amount chips put in pot: 101
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 303
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_3: What do you do?
+**Adding 12 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 899
+Amount chips put in pot: 101
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 315
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_1: What do you do?
+**Adding 11 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 326
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 10 to pot for Player_2
+Time to start second round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+Time to start third round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_1: What do you do?
+**Adding 10 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 346
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_2: What do you do?
+**Adding 10 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 356
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_3: What do you do?
+**Adding 10 to pot for Player_3
+Time to start fourth round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D QD 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 366
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D QD 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 366
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 122
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D QD 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 366
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+Player_3:
+QH 5H
+Player_1:
+3C KH
+Player_2:
+7S 2H
+Community cards:
+KC KD JC 3D QD 
+Smallest bet: 122
+Taking 122 from Player_3
+**Taking 122 from amount bet from Player_3
+Taking 122 from Player_1
+**Taking 122 from amount bet from Player_1
+Taking 122 from Player_2
+**Taking 122 from amount bet from Player_2
+Showdown for pot of 366!
+Player_1 won the round!
+Giving 366 to Player_1
+Smallest bet: 0
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_3:
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 0
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 1244
+Amount chips put in pot: 0
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D QD 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_1:
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 0
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 1244
+Amount chips put in pot: 0
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D QD 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_2:
+Round info for player: 
+Player_3:
+QH 5H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 0
+Player_1:
+3C KH
+Still in to win: true
+Amount chips in pocket: 1244
+Amount chips put in pot: 0
+Player_2:
+7S 2H
+Still in to win: true
+Amount chips in pocket: 878
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+KC KD JC 3D QD 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+End round for Player_3
+878 for Player_3
+End round for Player_1
+1244 for Player_1
+End round for Player_2
+878 for Player_2
+End of Round #1!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+**Adding 100 to pot for Player_3
+**Adding 100 to pot for Player_1
+**Adding 100 to pot for Player_2
+**Adding 1 to pot for Player_2
+**Adding 2 to pot for Player_3
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 1
+Time to start first round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 776
+Amount chips put in pot: 102
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1144
+Amount chips put in pot: 100
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 777
+Amount chips put in pot: 101
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 303
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_1: What do you do?
+**Adding 12 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 776
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 777
+Amount chips put in pot: 101
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 315
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 11 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 776
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 326
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_3: What do you do?
+**Adding 10 to pot for Player_3
+Time to start second round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+Time to start third round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+Time to start fourth round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 7D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_2: What do you do?
+**Adding 10 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 766
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 122
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 7D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 346
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_3: What do you do?
+**Adding 10 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 122
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1132
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 122
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 7D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 356
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_1: What do you do?
+**Adding 10 to pot for Player_1
+Player_3:
+TC 8H
+Player_1:
+7H KD
+Player_2:
+9S 8C
+Community cards:
+3S 4C 3D 2H 7D 
+Smallest bet: 122
+Taking 122 from Player_3
+**Taking 122 from amount bet from Player_3
+Taking 122 from Player_1
+**Taking 122 from amount bet from Player_1
+Taking 122 from Player_2
+**Taking 122 from amount bet from Player_2
+Showdown for pot of 366!
+Player_1 won the round!
+Giving 366 to Player_1
+Smallest bet: 0
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_3:
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 0
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1488
+Amount chips put in pot: 0
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 7D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_1:
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 0
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1488
+Amount chips put in pot: 0
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 7D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_2:
+Round info for player: 
+Player_3:
+TC 8H
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 0
+Player_1:
+7H KD
+Still in to win: true
+Amount chips in pocket: 1488
+Amount chips put in pot: 0
+Player_2:
+9S 8C
+Still in to win: true
+Amount chips in pocket: 756
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+3S 4C 3D 2H 7D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+End round for Player_3
+756 for Player_3
+End round for Player_1
+1488 for Player_1
+End round for Player_2
+756 for Player_2
+End of Round #2!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+**Adding 100 to pot for Player_3
+**Adding 100 to pot for Player_1
+**Adding 100 to pot for Player_2
+**Adding 1 to pot for Player_3
+**Adding 2 to pot for Player_1
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 2
+Time to start first round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 655
+Amount chips put in pot: 101
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1386
+Amount chips put in pot: 102
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 656
+Amount chips put in pot: 100
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 303
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 2 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 655
+Amount chips put in pot: 101
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1386
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 654
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 305
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_3: What do you do?
+**Adding 11 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1386
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 654
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 316
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_1: What do you do?
+**Adding 10 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 654
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 326
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 10 to pot for Player_2
+Time to start second round of betting.
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+Time to start third round of betting.
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+Time to start fourth round of betting.
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C KH 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C KH 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1376
+Amount chips put in pot: 112
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 112
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C KH 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+Player_3:
+7D 5H
+Player_1:
+2D JD
+Player_2:
+TH 2S
+Community cards:
+QC QD 4D 3C KH 
+Smallest bet: 112
+Taking 112 from Player_3
+**Taking 112 from amount bet from Player_3
+Taking 112 from Player_1
+**Taking 112 from amount bet from Player_1
+Taking 112 from Player_2
+**Taking 112 from amount bet from Player_2
+Showdown for pot of 336!
+Player_1 won the round!
+Giving 336 to Player_1
+Smallest bet: 0
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_3:
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 0
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1712
+Amount chips put in pot: 0
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C KH 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_1:
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 0
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1712
+Amount chips put in pot: 0
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C KH 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_2:
+Round info for player: 
+Player_3:
+7D 5H
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 0
+Player_1:
+2D JD
+Still in to win: true
+Amount chips in pocket: 1712
+Amount chips put in pot: 0
+Player_2:
+TH 2S
+Still in to win: true
+Amount chips in pocket: 644
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QC QD 4D 3C KH 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+End round for Player_3
+644 for Player_3
+End round for Player_1
+1712 for Player_1
+End round for Player_2
+644 for Player_2
+End of Round #3!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+**Adding 100 to pot for Player_3
+**Adding 100 to pot for Player_1
+**Adding 100 to pot for Player_2
+**Adding 1 to pot for Player_1
+**Adding 2 to pot for Player_2
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 0
+Time to start first round of betting.
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 544
+Amount chips put in pot: 100
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1611
+Amount chips put in pot: 101
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 303
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_3: What do you do?
+**Adding 2 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1611
+Amount chips put in pot: 101
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 305
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_1: What do you do?
+**Adding 1 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1610
+Amount chips put in pot: 102
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+Time to start second round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1610
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_1: What do you do?
+**Adding 15 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1595
+Amount chips put in pot: 117
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 321
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_2: What do you do?
+**Adding 15 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 542
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1595
+Amount chips put in pot: 117
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 336
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_3: What do you do?
+**Adding 15 to pot for Player_3
+Time to start third round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1595
+Amount chips put in pot: 117
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 351
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1595
+Amount chips put in pot: 117
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 351
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1595
+Amount chips put in pot: 117
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 351
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+Time to start fourth round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1595
+Amount chips put in pot: 117
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 7H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 351
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_1: What do you do?
+**Adding 56 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1539
+Amount chips put in pot: 173
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 7H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 407
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_2: What do you do?
+**Adding 56 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 527
+Amount chips put in pot: 117
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1539
+Amount chips put in pot: 173
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 471
+Amount chips put in pot: 173
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 7H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 463
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_3: What do you do?
+**Adding 56 to pot for Player_3
+Player_3:
+8D AS
+Player_1:
+KC 7S
+Player_2:
+JH 9H
+Community cards:
+QD QH TS 8H 7H 
+Smallest bet: 173
+Taking 173 from Player_3
+**Taking 173 from amount bet from Player_3
+Taking 173 from Player_1
+**Taking 173 from amount bet from Player_1
+Taking 173 from Player_2
+**Taking 173 from amount bet from Player_2
+Showdown for pot of 519!
+Player_2 won the round!
+Giving 519 to Player_2
+Smallest bet: 0
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_3:
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 471
+Amount chips put in pot: 0
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1539
+Amount chips put in pot: 0
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 990
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 7H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 0
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_1:
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 471
+Amount chips put in pot: 0
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1539
+Amount chips put in pot: 0
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 990
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 7H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 1
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_2:
+Round info for player: 
+Player_3:
+8D AS
+Still in to win: true
+Amount chips in pocket: 471
+Amount chips put in pot: 0
+Player_1:
+KC 7S
+Still in to win: true
+Amount chips in pocket: 1539
+Amount chips put in pot: 0
+Player_2:
+JH 9H
+Still in to win: true
+Amount chips in pocket: 990
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+QD QH TS 8H 7H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 0
+Index of Small blind: 1
+Index of big blind: 2
+Index Of Current Pos: 2
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+End round for Player_3
+471 for Player_3
+End round for Player_1
+1539 for Player_1
+End round for Player_2
+990 for Player_2
+End of Round #4!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+**Adding 100 to pot for Player_3
+**Adding 100 to pot for Player_1
+**Adding 100 to pot for Player_2
+**Adding 1 to pot for Player_2
+**Adding 2 to pot for Player_3
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 1
+Time to start first round of betting.
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1439
+Amount chips put in pot: 100
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 889
+Amount chips put in pot: 101
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 303
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_1: What do you do?
+**Adding 2 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 889
+Amount chips put in pot: 101
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 305
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 1 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+Time to start second round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+Time to start third round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_2: What do you do?
+**Adding 0 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_3: What do you do?
+**Adding 0 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 2
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 2
+Player_1: What do you do?
+**Adding 0 to pot for Player_1
+Time to start fourth round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 888
+Amount chips put in pot: 102
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 306
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_2: What do you do?
+**Adding 100 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 369
+Amount chips put in pot: 102
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 788
+Amount chips put in pot: 202
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 406
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_3: What do you do?
+**Adding 200 to pot for Player_3
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 169
+Amount chips put in pot: 302
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1437
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 788
+Amount chips put in pot: 202
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 606
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_1: What do you do?
+**Adding 300 to pot for Player_1
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 169
+Amount chips put in pot: 302
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1137
+Amount chips put in pot: 402
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 788
+Amount chips put in pot: 202
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 906
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_2: What do you do?
+**Adding 200 to pot for Player_2
+*******************************************
+Query for Player_3!
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 169
+Amount chips put in pot: 302
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1137
+Amount chips put in pot: 402
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 588
+Amount chips put in pot: 402
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 1106
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 3
+Player_3: What do you do?
+**Adding 100 to pot for Player_3
+Player_3:
+7C 6D
+Player_1:
+QH 7D
+Player_2:
+3S 8H
+Community cards:
+8S JC TS 5S 2H 
+Smallest bet: 402
+Taking 402 from Player_3
+**Taking 402 from amount bet from Player_3
+Taking 402 from Player_1
+**Taking 402 from amount bet from Player_1
+Taking 402 from Player_2
+**Taking 402 from amount bet from Player_2
+Showdown for pot of 1206!
+Player_2 won the round!
+Giving 1206 to Player_2
+Smallest bet: 0
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_3:
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 69
+Amount chips put in pot: 0
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1137
+Amount chips put in pot: 0
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 1794
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 0
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_1:
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 69
+Amount chips put in pot: 0
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1137
+Amount chips put in pot: 0
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 1794
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 1
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_2:
+Round info for player: 
+Player_3:
+7C 6D
+Still in to win: true
+Amount chips in pocket: 69
+Amount chips put in pot: 0
+Player_1:
+QH 7D
+Still in to win: true
+Amount chips in pocket: 1137
+Amount chips put in pot: 0
+Player_2:
+3S 8H
+Still in to win: true
+Amount chips in pocket: 1794
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8S JC TS 5S 2H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 1
+Index of Small blind: 2
+Index of big blind: 0
+Index Of Current Pos: 2
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+End round for Player_3
+69 for Player_3
+End round for Player_1
+1137 for Player_1
+End round for Player_2
+1794 for Player_2
+End of Round #5!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+**Adding 69 to pot for Player_3
+**Adding 100 to pot for Player_1
+**Adding 100 to pot for Player_2
+**Adding 0 to pot for Player_3
+**Adding 2 to pot for Player_1
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 2
+Time to start first round of betting.
+*******************************************
+Query for Player_2!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 69
+Player_1:
+XX XX
+Still in to win: true
+Amount chips in pocket: 1035
+Amount chips put in pot: 102
+Player_2:
+JC 3D
+Still in to win: true
+Amount chips in pocket: 1694
+Amount chips put in pot: 100
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 271
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_2: What do you do?
+**Adding 1694 to pot for Player_2
+*******************************************
+Query for Player_1!
+Round info for player: 
+Player_3:
+XX XX
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 69
+Player_1:
+QD 2D
+Still in to win: true
+Amount chips in pocket: 1035
+Amount chips put in pot: 102
+Player_2:
+XX XX
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 1794
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 1965
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Player_1: What do you do?
+**Adding 1035 to pot for Player_1
+Time to start second round of betting.
+Time to start third round of betting.
+Time to start fourth round of betting.
+Player_3:
+9S TD
+Player_1:
+QD 2D
+Player_2:
+JC 3D
+Community cards:
+8H 8D 2C QH 3H 
+Smallest bet: 69
+Taking 69 from Player_3
+**Taking 69 from amount bet from Player_3
+Taking 69 from Player_1
+**Taking 69 from amount bet from Player_1
+Taking 69 from Player_2
+**Taking 69 from amount bet from Player_2
+Showdown for pot of 207!
+Player_1 won the round!
+Giving 207 to Player_1
+Smallest bet: 1068
+Taking 1068 from Player_1
+**Taking 1068 from amount bet from Player_1
+Taking 1068 from Player_2
+**Taking 1068 from amount bet from Player_2
+Showdown for pot of 2136!
+Player_1 won the round!
+Giving 2136 to Player_1
+Smallest bet: 657
+Taking 657 from Player_2
+**Taking 657 from amount bet from Player_2
+Showdown for pot of 657!
+Player_1 won the round!
+Giving 657 to Player_1
+Smallest bet: 0
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_3:
+Round info for player: 
+Player_3:
+9S TD
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 0
+Player_1:
+QD 2D
+Still in to win: true
+Amount chips in pocket: 3000
+Amount chips put in pot: 0
+Player_2:
+JC 3D
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8H 8D 2C QH 3H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_1:
+Round info for player: 
+Player_3:
+9S TD
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 0
+Player_1:
+QD 2D
+Still in to win: true
+Amount chips in pocket: 3000
+Amount chips put in pot: 0
+Player_2:
+JC 3D
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8H 8D 2C QH 3H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+End of round info for Player_2:
+Round info for player: 
+Player_3:
+9S TD
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 0
+Player_1:
+QD 2D
+Still in to win: true
+Amount chips in pocket: 3000
+Amount chips put in pot: 0
+Player_2:
+JC 3D
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 0
+Betting Round: 3
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+8H 8D 2C QH 3H 
+Num players contesting Pot: 3
+Index of Dealer Pos: 2
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 2
+currentpot: 0
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+End round for Player_3
+0 for Player_3
+End round for Player_1
+3000 for Player_1
+End round for Player_2
+0 for Player_2
+End of Round #6!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+End of game. Goodbye!

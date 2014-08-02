@@ -1,0 +1,372 @@
+**Adding 100 to pot for Dick
+**Adding 100 to pot for Michael
+**Adding 1 to pot for Dick
+**Adding 2 to pot for Michael
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 0
+Time to start first round of betting.
+Dick: *******************************************
+Dick: Query for Dick!
+Dick: Round info for players: 
+Dick: Dick:
+Dick: 3C 5C
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 899
+Dick: Amount chips put in pot: 101
+Dick: Michael:
+Dick: XX XX
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 898
+Dick: Amount chips put in pot: 102
+Dick: Betting Round: 0
+Dick: Actions pre flop: 
+Dick: No actions yet.
+Dick: Actions after flop: 
+Dick: No actions yet.
+Dick: Actions after turn: 
+Dick: No actions yet.
+Dick: Actions after river: 
+Dick: No actions yet.
+Dick: Community cards:
+Dick: 
+Dick: Num players contesting Pot: 2
+Dick: Index of Dealer Pos: 0
+Dick: Index of Small blind: 0
+Dick: Index of big blind: 1
+Dick: Index Of Current Pos: 0
+Dick: currentpot: 203
+Dick: minraise: 0
+Dick: Total Calling Amount Still Needed: 0
+Dick: Big Blind: 2
+Dick: Small Blind: 1
+Dick: Ante: 100
+Dick: Round of betting: 0
+Dick: Dick: What do you do?
+**Adding 1 to pot for Dick
+Michael: *******************************************
+Michael: Query for Michael!
+Michael: Round info for players: 
+Michael: Dick:
+Michael: XX XX
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 898
+Michael: Amount chips put in pot: 102
+Michael: Michael:
+Michael: 4S TD
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 898
+Michael: Amount chips put in pot: 102
+Michael: Betting Round: 0
+Michael: Actions pre flop: 
+Michael: No actions yet.
+Michael: Actions after flop: 
+Michael: No actions yet.
+Michael: Actions after turn: 
+Michael: No actions yet.
+Michael: Actions after river: 
+Michael: No actions yet.
+Michael: Community cards:
+Michael: 
+Michael: Num players contesting Pot: 2
+Michael: Index of Dealer Pos: 0
+Michael: Index of Small blind: 0
+Michael: Index of big blind: 1
+Michael: Index Of Current Pos: 1
+Michael: currentpot: 204
+Michael: minraise: 0
+Michael: Total Calling Amount Still Needed: 0
+Michael: Big Blind: 2
+Michael: Small Blind: 1
+Michael: Ante: 100
+Michael: Round of betting: 0
+Michael: Michael: What do you do?
+**Adding 0 to pot for Michael
+Time to start second round of betting.
+Michael: *******************************************
+Michael: Query for Michael!
+Michael: Round info for players: 
+Michael: Dick:
+Michael: XX XX
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 898
+Michael: Amount chips put in pot: 102
+Michael: Michael:
+Michael: 4S TD
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 898
+Michael: Amount chips put in pot: 102
+Michael: Betting Round: 1
+Michael: Actions pre flop: 
+Michael: No actions yet.
+Michael: Actions after flop: 
+Michael: No actions yet.
+Michael: Actions after turn: 
+Michael: No actions yet.
+Michael: Actions after river: 
+Michael: No actions yet.
+Michael: Community cards:
+Michael: TC 5S 7D
+Michael: Num players contesting Pot: 2
+Michael: Index of Dealer Pos: 0
+Michael: Index of Small blind: 0
+Michael: Index of big blind: 1
+Michael: Index Of Current Pos: 1
+Michael: currentpot: 204
+Michael: minraise: 0
+Michael: Total Calling Amount Still Needed: 0
+Michael: Big Blind: 2
+Michael: Small Blind: 1
+Michael: Ante: 100
+Michael: Round of betting: 1
+Michael: Michael: What do you do?
+**Adding 10 to pot for Michael
+Dick: *******************************************
+Dick: Query for Dick!
+Dick: Round info for players: 
+Dick: Dick:
+Dick: 3C 5C
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 898
+Dick: Amount chips put in pot: 102
+Dick: Michael:
+Dick: XX XX
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 888
+Dick: Amount chips put in pot: 112
+Dick: Betting Round: 1
+Dick: Actions pre flop: 
+Dick: No actions yet.
+Dick: Actions after flop: 
+Dick: No actions yet.
+Dick: Actions after turn: 
+Dick: No actions yet.
+Dick: Actions after river: 
+Dick: No actions yet.
+Dick: Community cards:
+Dick: TC 5S 7D
+Dick: Num players contesting Pot: 2
+Dick: Index of Dealer Pos: 0
+Dick: Index of Small blind: 0
+Dick: Index of big blind: 1
+Dick: Index Of Current Pos: 0
+Dick: currentpot: 214
+Dick: minraise: 0
+Dick: Total Calling Amount Still Needed: 0
+Dick: Big Blind: 2
+Dick: Small Blind: 1
+Dick: Ante: 100
+Dick: Round of betting: 1
+Dick: Dick: What do you do?
+**Adding 10 to pot for Dick
+Time to start third round of betting.
+Michael: *******************************************
+Michael: Query for Michael!
+Michael: Round info for players: 
+Michael: Dick:
+Michael: XX XX
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 888
+Michael: Amount chips put in pot: 112
+Michael: Michael:
+Michael: 4S TD
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 888
+Michael: Amount chips put in pot: 112
+Michael: Betting Round: 2
+Michael: Actions pre flop: 
+Michael: No actions yet.
+Michael: Actions after flop: 
+Michael: No actions yet.
+Michael: Actions after turn: 
+Michael: No actions yet.
+Michael: Actions after river: 
+Michael: No actions yet.
+Michael: Community cards:
+Michael: TC 5S 7D KD
+Michael: Num players contesting Pot: 2
+Michael: Index of Dealer Pos: 0
+Michael: Index of Small blind: 0
+Michael: Index of big blind: 1
+Michael: Index Of Current Pos: 1
+Michael: currentpot: 224
+Michael: minraise: 0
+Michael: Total Calling Amount Still Needed: 0
+Michael: Big Blind: 2
+Michael: Small Blind: 1
+Michael: Ante: 100
+Michael: Round of betting: 2
+Michael: Michael: What do you do?
+**Adding 100 to pot for Michael
+Dick: *******************************************
+Dick: Query for Dick!
+Dick: Round info for players: 
+Dick: Dick:
+Dick: 3C 5C
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 888
+Dick: Amount chips put in pot: 112
+Dick: Michael:
+Dick: XX XX
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 788
+Dick: Amount chips put in pot: 212
+Dick: Betting Round: 2
+Dick: Actions pre flop: 
+Dick: No actions yet.
+Dick: Actions after flop: 
+Dick: No actions yet.
+Dick: Actions after turn: 
+Dick: No actions yet.
+Dick: Actions after river: 
+Dick: No actions yet.
+Dick: Community cards:
+Dick: TC 5S 7D KD
+Dick: Num players contesting Pot: 2
+Dick: Index of Dealer Pos: 0
+Dick: Index of Small blind: 0
+Dick: Index of big blind: 1
+Dick: Index Of Current Pos: 0
+Dick: currentpot: 324
+Dick: minraise: 0
+Dick: Total Calling Amount Still Needed: 0
+Dick: Big Blind: 2
+Dick: Small Blind: 1
+Dick: Ante: 100
+Dick: Round of betting: 2
+Dick: Dick: What do you do?
+**Adding 888 to pot for Dick
+Michael: *******************************************
+Michael: Query for Michael!
+Michael: Round info for players: 
+Michael: Dick:
+Michael: XX XX
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 0
+Michael: Amount chips put in pot: 1000
+Michael: Michael:
+Michael: 4S TD
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 788
+Michael: Amount chips put in pot: 212
+Michael: Betting Round: 2
+Michael: Actions pre flop: 
+Michael: No actions yet.
+Michael: Actions after flop: 
+Michael: No actions yet.
+Michael: Actions after turn: 
+Michael: No actions yet.
+Michael: Actions after river: 
+Michael: No actions yet.
+Michael: Community cards:
+Michael: TC 5S 7D KD
+Michael: Num players contesting Pot: 2
+Michael: Index of Dealer Pos: 0
+Michael: Index of Small blind: 0
+Michael: Index of big blind: 1
+Michael: Index Of Current Pos: 1
+Michael: currentpot: 1212
+Michael: minraise: 0
+Michael: Total Calling Amount Still Needed: 0
+Michael: Big Blind: 2
+Michael: Small Blind: 1
+Michael: Ante: 100
+Michael: Round of betting: 2
+Michael: Michael: What do you do?
+**Adding 788 to pot for Michael
+Time to start fourth round of betting.
+Dick:
+3C 5C
+Michael:
+4S TD
+Community cards:
+TC 5S 7D KD 9D 
+Taking 1000 from Dick
+**Taking 1000 from amount bet from Dick
+Taking 1000 from Michael
+**Taking 1000 from amount bet from Michael
+Showdown for pot of 2000!
+Michael won the round!
+Giving 2000 to Michael
+Dick: *|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+Dick: End of round info for Dick:
+Dick: Round info for players: 
+Dick: Dick:
+Dick: 3C 5C
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 0
+Dick: Amount chips put in pot: 0
+Dick: Michael:
+Dick: 4S TD
+Dick: Still in to win: true
+Dick: Amount chips in pocket: 2000
+Dick: Amount chips put in pot: 0
+Dick: Betting Round: 3
+Dick: Actions pre flop: 
+Dick: No actions yet.
+Dick: Actions after flop: 
+Dick: No actions yet.
+Dick: Actions after turn: 
+Dick: No actions yet.
+Dick: Actions after river: 
+Dick: No actions yet.
+Dick: Community cards:
+Dick: TC 5S 7D KD 9D
+Dick: Num players contesting Pot: 2
+Dick: Index of Dealer Pos: 0
+Dick: Index of Small blind: 0
+Dick: Index of big blind: 1
+Dick: Index Of Current Pos: 0
+Dick: currentpot: 0
+Dick: minraise: 0
+Dick: Total Calling Amount Still Needed: 0
+Dick: Big Blind: 2
+Dick: Small Blind: 1
+Dick: Ante: 100
+Dick: Do I know what I'm supposed to know?
+Michael: *|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*|*
+Michael: End of round info for Michael:
+Michael: Round info for players: 
+Michael: Dick:
+Michael: 3C 5C
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 0
+Michael: Amount chips put in pot: 0
+Michael: Michael:
+Michael: 4S TD
+Michael: Still in to win: true
+Michael: Amount chips in pocket: 2000
+Michael: Amount chips put in pot: 0
+Michael: Betting Round: 3
+Michael: Actions pre flop: 
+Michael: No actions yet.
+Michael: Actions after flop: 
+Michael: No actions yet.
+Michael: Actions after turn: 
+Michael: No actions yet.
+Michael: Actions after river: 
+Michael: No actions yet.
+Michael: Community cards:
+Michael: TC 5S 7D KD 9D
+Michael: Num players contesting Pot: 2
+Michael: Index of Dealer Pos: 0
+Michael: Index of Small blind: 0
+Michael: Index of big blind: 1
+Michael: Index Of Current Pos: 1
+Michael: currentpot: 0
+Michael: minraise: 0
+Michael: Total Calling Amount Still Needed: 0
+Michael: Big Blind: 2
+Michael: Small Blind: 1
+Michael: Ante: 100
+Michael: Do I know what I'm supposed to know?
+Reached end of round!
+Im supossed to update BB and SB here...
+0 for Dick
+2000 for Michael
+End of Round #1!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+End of game. Goodbye!

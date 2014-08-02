@@ -1,0 +1,168 @@
+**Adding 100 to pot for Player_2
+**Adding 100 to pot for Player_1
+**Adding 1 to pot for Player_2
+**Adding 2 to pot for Player_1
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 0
+Time to start first round of betting.
+Player_2: Round info for players: 
+Player_2: Player_2:
+Player_2: TD 3H
+Player_2: Still in to win: true
+Player_2: Amount chips in pocket: 899
+Player_2: Amount chips put in pot: 101
+Player_2: Player_1:
+Player_2: XX XX
+Player_2: Still in to win: true
+Player_2: Amount chips in pocket: 898
+Player_2: Amount chips put in pot: 102
+Player_2: Betting Round: 0
+Player_2: Actions pre flop: 
+Player_2: No actions yet.
+Player_2: Actions after flop: 
+Player_2: No actions yet.
+Player_2: Actions after turn: 
+Player_2: No actions yet.
+Player_2: Actions after river: 
+Player_2: No actions yet.
+Community cards:
+Player_2: 
+Player_2: Num players contesting Pot: 2
+Player_2: Index of Dealer Pos: 0
+Player_2: Index of Small blind: 0
+Player_2: Index of big blind: 1
+Player_2: Index Of Current Pos: 0
+Player_2: currentpot: 203
+Player_2: minraise: 0
+Player_2: Total Calling Amount Still Needed: 0
+Player_2: Big Blind: 2
+Player_2: Small Blind: 1
+Player_2: Ante: 100
+**Adding 899 to pot for Player_2
+Player_1: Round info for players: 
+Player_1: Player_2:
+Player_1: XX XX
+Player_1: Still in to win: true
+Player_1: Amount chips in pocket: 0
+Player_1: Amount chips put in pot: 1000
+Player_1: Player_1:
+Player_1: TC JS
+Player_1: Still in to win: true
+Player_1: Amount chips in pocket: 898
+Player_1: Amount chips put in pot: 102
+Player_1: Betting Round: 0
+Player_1: Actions pre flop: 
+Player_1: No actions yet.
+Player_1: Actions after flop: 
+Player_1: No actions yet.
+Player_1: Actions after turn: 
+Player_1: No actions yet.
+Player_1: Actions after river: 
+Player_1: No actions yet.
+Community cards:
+Player_1: 
+Player_1: Num players contesting Pot: 2
+Player_1: Index of Dealer Pos: 0
+Player_1: Index of Small blind: 0
+Player_1: Index of big blind: 1
+Player_1: Index Of Current Pos: 1
+Player_1: currentpot: 1102
+Player_1: minraise: 0
+Player_1: Total Calling Amount Still Needed: 0
+Player_1: Big Blind: 2
+Player_1: Small Blind: 1
+Player_1: Ante: 100
+**Adding 898 to pot for Player_1
+Time to start second round of betting.
+Time to start third round of betting.
+Time to start fourth round of betting.
+Player_2:
+TD 3H
+Player_1:
+TC JS
+Community cards:
+6C JD KH 4H JC 
+Taking 1000 from Player_2
+**Taking 1000 from amount bet from Player_2
+Taking 1000 from Player_1
+**Taking 1000 from amount bet from Player_1
+Showdown for pot of 2000!
+Player_1 won the round!
+Giving 2000 to Player_1
+Player_2: Round info for players: 
+Player_2: Player_2:
+Player_2: TD 3H
+Player_2: Still in to win: true
+Player_2: Amount chips in pocket: 0
+Player_2: Amount chips put in pot: 0
+Player_2: Player_1:
+Player_2: TC JS
+Player_2: Still in to win: true
+Player_2: Amount chips in pocket: 2000
+Player_2: Amount chips put in pot: 0
+Player_2: Betting Round: 3
+Player_2: Actions pre flop: 
+Player_2: No actions yet.
+Player_2: Actions after flop: 
+Player_2: No actions yet.
+Player_2: Actions after turn: 
+Player_2: No actions yet.
+Player_2: Actions after river: 
+Player_2: No actions yet.
+Community cards:
+Player_2: 6C JD KH 4H JC
+Player_2: Num players contesting Pot: 2
+Player_2: Index of Dealer Pos: 0
+Player_2: Index of Small blind: 0
+Player_2: Index of big blind: 1
+Player_2: Index Of Current Pos: 0
+Player_2: currentpot: 0
+Player_2: minraise: 0
+Player_2: Total Calling Amount Still Needed: 0
+Player_2: Big Blind: 2
+Player_2: Small Blind: 1
+Player_2: Ante: 100
+Player_1: Round info for players: 
+Player_1: Player_2:
+Player_1: TD 3H
+Player_1: Still in to win: true
+Player_1: Amount chips in pocket: 0
+Player_1: Amount chips put in pot: 0
+Player_1: Player_1:
+Player_1: TC JS
+Player_1: Still in to win: true
+Player_1: Amount chips in pocket: 2000
+Player_1: Amount chips put in pot: 0
+Player_1: Betting Round: 3
+Player_1: Actions pre flop: 
+Player_1: No actions yet.
+Player_1: Actions after flop: 
+Player_1: No actions yet.
+Player_1: Actions after turn: 
+Player_1: No actions yet.
+Player_1: Actions after river: 
+Player_1: No actions yet.
+Community cards:
+Player_1: 6C JD KH 4H JC
+Player_1: Num players contesting Pot: 2
+Player_1: Index of Dealer Pos: 0
+Player_1: Index of Small blind: 0
+Player_1: Index of big blind: 1
+Player_1: Index Of Current Pos: 1
+Player_1: currentpot: 0
+Player_1: minraise: 0
+Player_1: Total Calling Amount Still Needed: 0
+Player_1: Big Blind: 2
+Player_1: Small Blind: 1
+Player_1: Ante: 100
+Reached end of round!
+Im supossed to update BB and SB here...
+0 for Player_2
+2000 for Player_1
+End of Round #1!
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+End of game. Goodbye!

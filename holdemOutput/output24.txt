@@ -1,0 +1,163 @@
+**Adding 100 to pot for Michael
+**Adding 100 to pot for Dick
+**Adding 1 to pot for Michael
+**Adding 2 to pot for Dick
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 0
+Time to start first round of betting.
+Michael: *******************************************
+Query for Michael!
+Round info for players: 
+Michael:
+JD AH
+Still in to win: true
+Amount chips in pocket: 899
+Amount chips put in pot: 101
+Dick:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 203
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Michael: What do you do? (do something)
+
+Dick: *******************************************
+Query for Dick!
+Round info for players: 
+Michael:
+JD AH
+Still in to win: true
+Amount chips in pocket: 899
+Amount chips put in pot: 101
+Dick:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 203
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Dick: What do you do? (not me!)
+
+**Adding 1 to pot for Michael
+Michael: *******************************************
+Query for Michael!
+Round info for players: 
+Michael:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+4C QS
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 204
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Michael: What do you do? (not me!)
+
+Dick: *******************************************
+Query for Dick!
+Round info for players: 
+Michael:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+4C QS
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 204
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Dick: What do you do? (do something)
+

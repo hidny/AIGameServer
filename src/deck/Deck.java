@@ -1,0 +1,8 @@
+package deck;
+
+public interface Deck {
+	public void shuffle();
+	public void shuffleUnUsedDeck();
+	public int getNextCard();
+	public void putCardsBackInDeck();
+}
