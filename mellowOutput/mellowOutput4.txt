@@ -1,0 +1,47 @@
+Starting Mellow! Mom & Dad vs Michael & Dick
+First dealer is Dick
+Mom's turn to bid:
+Mom: 3
+Michael's turn to bid:
+Michael: 3
+Dad's turn to bid:
+Dad: 3
+Dick's turn to bid:
+Dick: 3
+Bids:
+  6
+  6
+Dealer Index: 3
+Dealer: Dick
+Initial Action index: 0
+Mom's turn:
+Mom playing: 6C
+Michael's turn:
+Michael playing: 3C
+Dad's turn:
+Dad playing: 7C
+Dick's turn:
+Dick playing: JC
+Fight Winner: Dick
+Initial Action index: 3
+Dick's turn:
+Dick playing: 5S
+Mom's turn:
+Mom playing: 6S
+Michael's turn:
+Michael playing: AS
+Dad's turn:
+Dad playing: 4S
+Fight Winner: Michael
+Initial Action index: 1
+Michael's turn:
+Michael playing: KS
+Dad's turn:
+Dad playing: 3D
+Dick's turn:
+Dick playing: 2S
+Mom's turn:
+Mom playing: 4H
+Fight Winner: Michael
+Initial Action index: 1
+Michael's turn:

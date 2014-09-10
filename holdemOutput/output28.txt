@@ -1,0 +1,311 @@
+**Adding 100 to pot for Michael
+**Adding 100 to pot for Dick
+**Adding 1 to pot for Michael
+**Adding 2 to pot for Dick
+Start of Round!
+BB: 2
+SB: 1
+Ante: 100
+dealer position: 0
+Time to start first round of betting.
+Dick: *******************************************
+Round info for players: 
+Michael:
+XX XX
+Still in to win: true
+Amount chips in pocket: 899
+Amount chips put in pot: 101
+Dick:
+JD 6H
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 203
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+
+Michael: *******************************************
+Query for Michael!
+Round info for players: 
+Michael:
+JH AC
+Still in to win: true
+Amount chips in pocket: 899
+Amount chips put in pot: 101
+Dick:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 203
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Michael: What do you do? (do something)
+
+Dick: doh
+**Adding 1 to pot for Michael
+Michael: *******************************************
+Round info for players: 
+Michael:
+JH AC
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 204
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+
+Dick: *******************************************
+Query for Dick!
+Round info for players: 
+Michael:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+JD 6H
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 0
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 204
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 0
+Dick: What do you do? (do something)
+
+**Adding 0 to pot for Dick
+Time to start second round of betting.
+Michael: *******************************************
+Round info for players: 
+Michael:
+JH AC
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+JC 4C 6C
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 204
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+
+Dick: *******************************************
+Query for Dick!
+Round info for players: 
+Michael:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+JD 6H
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+JC 4C 6C
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 204
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Dick: What do you do? (do something)
+
+**Adding 898 to pot for Dick
+Dick: *******************************************
+Round info for players: 
+Michael:
+XX XX
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+JD 6H
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 1000
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+JC 4C 6C
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 1
+currentpot: 1102
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+
+Michael: *******************************************
+Query for Michael!
+Round info for players: 
+Michael:
+JH AC
+Still in to win: true
+Amount chips in pocket: 898
+Amount chips put in pot: 102
+Dick:
+XX XX
+Still in to win: true
+Amount chips in pocket: 0
+Amount chips put in pot: 1000
+Betting Round: 1
+Actions pre flop: 
+No actions yet.
+Actions after flop: 
+No actions yet.
+Actions after turn: 
+No actions yet.
+Actions after river: 
+No actions yet.
+Community cards:
+JC 4C 6C
+Num players contesting Pot: 2
+Index of Dealer Pos: 0
+Index of Small blind: 0
+Index of big blind: 1
+Index Of Current Pos: 0
+currentpot: 1102
+minraise: 0
+Total Calling Amount Still Needed: 0
+Big Blind: 2
+Small Blind: 1
+Ante: 100
+Round of betting: 1
+Michael: What do you do? (do something)
+
