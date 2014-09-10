@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 **Adding 100 to pot for Michael
 **Adding 100 to pot for Dick
 **Adding 1 to pot for Michael
@@ -82,3 +83,6 @@ Ante: 100
 Round of betting: 0
 Michael: What do you do? (do something)
 
+=======
+End of game. Goodbye!
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6

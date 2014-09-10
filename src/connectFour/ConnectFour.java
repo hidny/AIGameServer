@@ -22,7 +22,11 @@ public class ConnectFour implements severalClientProject.Game {
 	//TODO: figure it out:
 	//private Thread connect4Waiter = null;
 	
+<<<<<<< HEAD
 	public void startGameForClients(MiniServer player[]) {
+=======
+	public void startGame(MiniServer player[]) {
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		this.playersWatchingOrPlaying = player;
 		
 		this.getPlayerNamesOfCompetitors(player);

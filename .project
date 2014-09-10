@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>AIGameServer</name>
+=======
+	<name>InternetProject</name>
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 	<comment></comment>
 	<projects>
 	</projects>

@@ -22,7 +22,11 @@ public class RockPaperScissors  implements severalClientProject.Game {
 	
 	private gameUtils.GameReplayPrinter recorder;
 	
+<<<<<<< HEAD
 	public void startGameForClients(MiniServer player[]) {
+=======
+	public void startGame(MiniServer player[]) {
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		this.playersWatchingOrPlaying = player;
 		this.getPlayerNamesOfCompetitors(player);
 		this.playGame();

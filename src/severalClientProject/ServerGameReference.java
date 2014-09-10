@@ -9,8 +9,11 @@ public class ServerGameReference {
 	public static String CONNECT_FOUR = "connect_four";
 	public static String RPS = "rock_paper_scissors";
 	public static String CHESS = "chess";
+<<<<<<< HEAD
 	public static String MELLOW = "mellow";
 	public static String REVERSI = "reversi";
+=======
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 	
 	public static severalClientProject.Game createGame(String gameName) {
 		return createGame(gameName, null);
@@ -26,6 +29,7 @@ public class ServerGameReference {
 		} else if(gameName.toLowerCase().equals(CHESS)) {
 			//TODO: host shouldn't always have to be white...
 			return new chess.ChessServerMiddleMan();
+<<<<<<< HEAD
 		} else if(gameName.toLowerCase().equals(MELLOW)) {
 			//TODO: host shouldn't always have to be white...
 			//Or make extra slots to play with the ordering.
@@ -33,6 +37,8 @@ public class ServerGameReference {
 		} else if(gameName.toLowerCase().equals(REVERSI)) {
 			//TODO: host shouldn't always have to be dark...
 			return new reversi.ReversiMiddleMan();
+=======
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		} else {
 			return new connectFour.ConnectFour();
 		}

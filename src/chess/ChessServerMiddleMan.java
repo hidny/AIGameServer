@@ -18,7 +18,11 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 	
 	
 	//TODO
+<<<<<<< HEAD
 	public void startGameForClients(MiniServer player[]) {
+=======
+	public void startGame(MiniServer player[]) {
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		this.playersWatchingOrPlaying = player;
 		
 		this.getPlayerNamesOfCompetitors(player);

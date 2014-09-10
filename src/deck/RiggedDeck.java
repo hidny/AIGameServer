@@ -35,6 +35,7 @@ public class RiggedDeck implements deck.Deck {
 	
 	
 	private void shuffle(int startPos) {
+<<<<<<< HEAD
 		String deckFromFile[] = new String[0];
 		
 		//get line that has a list of cards length the number of cards expected:
@@ -43,6 +44,10 @@ public class RiggedDeck implements deck.Deck {
 		}
 		
 		for(int i=startPos; i<deckFromFile.length; i++) {
+=======
+		String deckFromFile[] = inTestRun.nextLine().split(" ");
+		for(int i=0; i<deckFromFile.length; i++) {
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 			deck[i] = DeckFunctions.getCard(deckFromFile[i]);
 		}
 		//reset top of deck:
@@ -72,6 +77,7 @@ public class RiggedDeck implements deck.Deck {
 	public void putCardsBackInDeck() {
 		currentCardIndex  = 0;
 	}
+<<<<<<< HEAD
 	
 	public boolean hasCards() {
 		if( currentCardIndex == deck.length) {
@@ -80,5 +86,7 @@ public class RiggedDeck implements deck.Deck {
 			return true;
 		}
 	}
+=======
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 
 }

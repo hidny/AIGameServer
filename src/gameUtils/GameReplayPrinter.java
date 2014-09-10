@@ -14,7 +14,11 @@ public class GameReplayPrinter {
 	public GameReplayPrinter(String gameName) {
 		int num = getTestCaseNumber(gameName);
 		
+<<<<<<< HEAD
 		commandFile = getNewCommandWriter(gameName, num);
+=======
+		commandFile = getNewPrintWriter(gameName, num);
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		
 		commandOutput = getNewOuput(gameName, num);
 		
@@ -56,7 +60,11 @@ public class GameReplayPrinter {
 		
 	}
 	
+<<<<<<< HEAD
 	public static PrintWriter getNewCommandWriter(String gameName, int num) {
+=======
+	public static PrintWriter getNewPrintWriter(String gameName, int num) {
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		PrintWriter ret = null;
 		try {
 			
@@ -81,6 +89,7 @@ public class GameReplayPrinter {
 		
 	}
 	
+<<<<<<< HEAD
 	//TODO: use this.
 	public static PrintWriter getNewReplayOuput(String gameName, int num) {
 		PrintWriter ret = null;
@@ -93,4 +102,6 @@ public class GameReplayPrinter {
 		return ret;
 		
 	}
+=======
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 }

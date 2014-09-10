@@ -440,12 +440,21 @@ public class HoldEmRoundLogic {
 	public HoldEmRoundInfoForPlayerDeciders getRoundInfoForPlayer(int indexOfPlayer) {
 		HoldEmRoundInfoForPlayerDeciders ret = new HoldEmRoundInfoForPlayerDeciders();
 		
+<<<<<<< HEAD
 		//ret.setMiddleMan(middleMan);
 		//if(middleMan.getClientPlayers() != null) {
 		//	ret.setClient(middleMan.getClientPlayers()[indexOfPlayer]);
 		//}
 		
 		//ret.setName(this.currentPlayerLog[indexOfPlayer].getName());
+=======
+		ret.setMiddleMan(middleMan);
+		if(middleMan.getClientPlayers() != null) {
+			ret.setClient(middleMan.getClientPlayers()[indexOfPlayer]);
+		}
+		
+		ret.setName(this.currentPlayerLog[indexOfPlayer].getName());
+>>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		
 		ret.setIndexOfBigBlind(indexOfBigBlind);
 		ret.setIndexOfDealerPos(indexOfDealerPos);
