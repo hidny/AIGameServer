@@ -43,12 +43,9 @@ public class DeckFunctions {
 
 	public static int getCard(String card) {
 		int ret=0;
-<<<<<<< HEAD
 		if(card.length() < 2) {
 			return -1;
 		}
-=======
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		
 		if(card.charAt(0) == 'A') {
 			ret = 1;

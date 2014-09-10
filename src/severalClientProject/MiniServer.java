@@ -570,7 +570,6 @@ public class MiniServer extends Thread{
 				}
 				//***END TODO
 				//********************************************************************************************************************
-<<<<<<< HEAD
     		
     		}  else if(args[1].startsWith(ServerGameReference.MELLOW)) {
 				//TODO: put below in it's own function!
@@ -622,8 +621,6 @@ public class MiniServer extends Thread{
 				}
 				//***END TODO
 				//********************************************************************************************************************
-=======
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
     		} else {
 				immediateResponse = "ERROR: can\'t identify game name.";
 			}

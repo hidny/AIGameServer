@@ -94,7 +94,6 @@ public class DeckRandom implements Deck {
 			currentCardIndex  = 0;
 			shuffle();
 		}
-<<<<<<< HEAD
 		
 		public boolean hasCards() {
 			if( currentCardIndex == deck.length) {
@@ -103,9 +102,6 @@ public class DeckRandom implements Deck {
 				return true;
 			}
 		}
-=======
-
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		
 		//TESTING:
 		//***************************
@@ -176,11 +172,8 @@ public class DeckRandom implements Deck {
 			
 			
 		}
-<<<<<<< HEAD
 		
 		
-=======
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		//END TESTING:
 		//***************************
 		//***************************

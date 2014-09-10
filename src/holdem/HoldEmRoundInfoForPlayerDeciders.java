@@ -29,19 +29,11 @@ public class HoldEmRoundInfoForPlayerDeciders {
 	
 
 	//TODO: rem
-<<<<<<< HEAD
 	/*private HoldemServerMiddleMan middleMan = null;
 	
 	private MiniServer client;
 	
 	private String name = "";*/
-=======
-	private HoldemServerMiddleMan middleMan = null;
-	
-	private MiniServer client;
-	
-	private String name = "";
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 	
 	//Gets the amount of money each player has:
 	private HoldEmPlayerLog playersInfoForPlayer[];
@@ -81,11 +73,7 @@ public class HoldEmRoundInfoForPlayerDeciders {
 	private int smallBlind;
 	private int ante;
 	
-<<<<<<< HEAD
 	/*public void setMiddleMan(HoldemServerMiddleMan middleMan) {
-=======
-	public void setMiddleMan(HoldemServerMiddleMan middleMan) {
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		this.middleMan = middleMan;
 	}
 	
@@ -95,11 +83,7 @@ public class HoldEmRoundInfoForPlayerDeciders {
 	
 	public void setName(String name) {
 		this.name = name;
-<<<<<<< HEAD
 	}*/
-=======
-	}
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 	
 	public HoldEmPlayerLog[] getPlayersInfoForPlayer() {
 		return playersInfoForPlayer;

@@ -33,11 +33,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 		return commandFile;
 	}
 	
-<<<<<<< HEAD
 	public void startGameForClients(MiniServer player[]) {
-=======
-	public void startGame(MiniServer player[]) {
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		this.clientPlayersPlaying = player;
 		
 	

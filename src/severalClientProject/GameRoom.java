@@ -32,11 +32,8 @@ public class GameRoom extends Thread implements Runnable {
 	private int numPlayers;
 	
 	severalClientProject.Game game = null;
-<<<<<<< HEAD
 
 	public static int NUM_SECONDS_COUNTDOWN = 5;
-=======
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 	
 	public severalClientProject.Game getGame() {
 		return game;
@@ -123,7 +120,6 @@ public class GameRoom extends Thread implements Runnable {
 			
 			setupBasicRoomVars(host);
 			
-<<<<<<< HEAD
 		} else if (gameName.equals(ServerGameReference.MELLOW)) {
 			minPlayers = 4;
 			maxPlayers = 4;
@@ -134,8 +130,6 @@ public class GameRoom extends Thread implements Runnable {
 			maxPlayers = 2;
 			
 			setupBasicRoomVars(host);
-=======
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 		} else {
 			System.err.println("ERROR: Unknown game \"" + gameName + "\"");
 		}
@@ -379,10 +373,6 @@ public class GameRoom extends Thread implements Runnable {
 		System.out.println("End sending game room players message:");
 	}
 		
-<<<<<<< HEAD
-=======
-	public static int NUM_SECONDS_COUNTDOWN = 10;
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 	
 	//WARNING: this function cannot be synchronized (I think)
 	// start: checks if conditions allow for game to start then does a 5 second countdown then actually starts\]
@@ -409,11 +399,7 @@ public class GameRoom extends Thread implements Runnable {
 			System.out.println("Starting " + gameName + "!");
 			
 			this.game = ServerGameReference.createGame(gameName);
-<<<<<<< HEAD
 			this.game.startGameForClients(players);
-=======
-			this.game.startGame(players);
->>>>>>> 5d2572ce9e421e991da951240033a84d5e2a9fb6
 			
 			//At this point, we've reached the end of the game:
 			this.endGameRoom();
