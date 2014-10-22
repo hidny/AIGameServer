@@ -55,7 +55,7 @@ class Client {
     	while(listener.isConnected()) {
 			
 			if(nameGiven == false) {
-				System.out.println("What is your name?");
+				System.out.println("What is your name? GIT HUB TEST!");
 				System.out.print("> ");
 			}
 			clientQuery = inFromUser.readLine();
