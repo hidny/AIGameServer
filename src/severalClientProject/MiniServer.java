@@ -53,13 +53,13 @@ public class MiniServer extends Thread{
     		//Read input and process here
 	    	inFromClient = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			outToClient = new DataOutputStream( socket.getOutputStream());
-			
+			String clientSentence = "";
 			
 			while(isConnectionStillOpen() == true) {
 				
 				System.out.println("trying to get something from client.");
 				
-				String clientSentence = inFromClient.readLine();
+				clientSentence = inFromClient.readLine();
 				
 				System.out.println("got something from client.");
 				
@@ -71,6 +71,11 @@ public class MiniServer extends Thread{
 			outToClient.close();
 			inFromClient.close();
 			socket.close();
+    	
+    	} catch(java.net.SocketException e) {
+    		System.out.println("Client is a quitter!");
+			return;
+    	
     	} catch (IOException e) {
     		e.printStackTrace();
     	}
@@ -81,7 +86,11 @@ public class MiniServer extends Thread{
     	return isConnected;
     }
     
-    private synchronized void submitClientQuery(String query) {
+    //NOTE: if I synchronize this function, it will cause a deadlock with the send msg function.
+    // TODO: Maybe I should just use a lock because this function has NOTHING to do with the 
+    // send message function.
+    // For now, I'm lazy. ;)
+    private void submitClientQuery(String query) {
     	if(clientName == "") {
     		clientName = beAJerkToFriends(query);
     		sendImmediateResponseToClient("Hello, " + clientName + ". Type /help or /h for help.");
@@ -93,6 +102,7 @@ public class MiniServer extends Thread{
     		}
 	    	
     		System.out.println("Query from " + this.clientName + ": " + query);
+    		
     		
 	    	if(isInGame() == false) {
 	    		submitClientQueryFromChannels(query);
@@ -261,7 +271,7 @@ public class MiniServer extends Thread{
 	    			
 	    		} else if(query.startsWith("/start")) {
 	    			if(currentGameRoom.getHost() == this) {
-	    				String retMessage = currentGameRoom.startCountdown();
+		    			String retMessage = currentGameRoom.startCountdown();
 	    				if(retMessage.equals("") == false) {
 	    					sendImmediateResponseToClient(retMessage);
 	    				} else {
@@ -419,7 +429,8 @@ public class MiniServer extends Thread{
     	sendMessageToClient(sender + " whispers: " + message);
     }
     
-    public synchronized void sendMessageToClient(String message)  throws IOException {
+    //TODO: put a lock on sendMessageToClient.
+    public void sendMessageToClient(String message)  throws IOException {
     	System.out.println("Trying to send: " + message + '\n' + EOT);
     	
     	//sanitize output just in case:

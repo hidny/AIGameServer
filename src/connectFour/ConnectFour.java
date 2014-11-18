@@ -88,16 +88,14 @@ public class ConnectFour implements severalClientProject.Game {
 		
 		do {
 			try {
-				player1CurrentMove = UNENTERED_MOVE;
-				player2CurrentMove = UNENTERED_MOVE;
 				while(moveNum == UNENTERED_MOVE) {
+
 					//TODO: sleep
-					if(player == player1 && player1CurrentMove == UNENTERED_MOVE) {
+					if(player == player1) {
 						//connect4Waiter = Thread.currentThread();
 						//connect4Waiter.wait();
 
 						Thread.sleep(1000);
-						
 						moveNum = player1CurrentMove;
 						player1CurrentMove = UNENTERED_MOVE;
 					} else {
@@ -109,6 +107,7 @@ public class ConnectFour implements severalClientProject.Game {
 						player2CurrentMove = UNENTERED_MOVE;
 					}
 				}
+			
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -116,18 +115,19 @@ public class ConnectFour implements severalClientProject.Game {
 			if(pos.couldPlayColumn(moveNum) == false) {
 				ConnectFourPosition.sendMessageToPlayer(player, "Play properly!");
 				moveNum = UNENTERED_MOVE;
-			} else {
-				ConnectFourPosition.sendMessageToGroup(playersWatchingOrPlaying, player.getClientName() + " has entered: " + moveNum);
 			}
 			
 		} while(pos.couldPlayColumn(moveNum) == false);
 		
+		//NOTE: always play the move BEFORE sending the message!
 		pos = pos.playLegalTurn(moveNum);
+		ConnectFourPosition.sendMessageToGroup(playersWatchingOrPlaying, player.getClientName() + " has entered: " + moveNum);
 		
 		return pos;
 	}
 	
 	
+	//TODO: create a lock for this method.
 	public synchronized void submitClientQuery(MiniServer player, String query) {
 		int move = UNENTERED_MOVE;
 		if(query.toLowerCase().startsWith("/move")) {

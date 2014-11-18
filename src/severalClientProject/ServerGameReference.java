@@ -4,6 +4,7 @@ package severalClientProject;
 
 //TODO: put more game specific logic here.
 public class ServerGameReference {
+	
 
 	public static String HOLD_EM = "holdem";
 	public static String CONNECT_FOUR = "connect_four";

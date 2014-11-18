@@ -65,8 +65,6 @@ public class ReversiMiddleMan implements severalClientProject.Game {
 				this.clientPlayer[i] = new ClientPlayerDecider( player[i].getClientName() );
 			}
 			
-			//TODO: create output files here!
-			//TODO: create cmd output file here!
 			
 			this.playGame(this.clientPlayer);
 			
