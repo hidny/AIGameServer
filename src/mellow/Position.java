@@ -2,6 +2,7 @@ package mellow;
 
 import deck.DeckFunctions;
 
+
 public class Position {
 	//bid goes from 0 to 13.
 	//0 = Mellow

@@ -51,7 +51,6 @@ public class GameReplayPrinter {
 			e.printStackTrace();
 		}
 		
-		System.out.println("WTF");
 		return num;
 		
 	}

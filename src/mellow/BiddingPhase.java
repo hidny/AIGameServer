@@ -1,5 +1,6 @@
 package mellow;
 
+
 public class BiddingPhase {
 	
 	public static void getBids(PlayerModel playerModel[], PlayerDecider player[], int dealerIndex, int redScore, int blueScore, MellowServerMiddleMan middleMan) {

@@ -2,44 +2,24 @@ package mellow;
 
 import gameUtils.GameReplayPrinter;
 
-import java.io.PrintWriter;
-
 import severalClientProject.MiniServer;
+import gameUtils.ServerGameMiddleMan;
 
-public class MellowServerMiddleMan implements severalClientProject.Game {
-
-	private MiniServer clientPlayersPlaying[];
+public class MellowServerMiddleMan extends ServerGameMiddleMan {
+	
 	private ClientPlayerDecider clientPlayer[];
 	
 	int NUM_PLAYERS_IN_MELLOW = 4;
 	
 	public static String UNENTERED_MOVE = "";
 	
-	private PrintWriter commandFile = null;
-	private PrintWriter outputFile = null;
 	
 	private int numberOfPlayers = 0;
 	
 	
-	public void setCommandFileWriter(PrintWriter commandFile) {
-		//if this is null, then don't record the commands.
-		//This should be null when playing a replay.
-		// and create a record command function.
-		this.commandFile = commandFile;
-	}
-	
-	public void setOutputFileWriter(PrintWriter outputFile) {
-		this.outputFile = outputFile;
-	}
-	
-	//getter for deck class.
-	public PrintWriter getCommandFile() {
-		return commandFile;
-	}
-	
 	public void startGameForClients(MiniServer player[]) {
 		this.clientPlayersPlaying = player;
-	
+		
 		//Disallow the player array from having nulls in between players:
 		//TODO: test this loop
 		this.numberOfPlayers = 0;
@@ -80,9 +60,8 @@ public class MellowServerMiddleMan implements severalClientProject.Game {
 			sendMessageToGroup("ERROR: not enough players to player mellow. You need 4 players!");
 		}
 	}
-	
 	public void playGame(PlayerDecider player[]) {
-		
+
 		PlayerDecider red[] = new PlayerDecider[2];
 		PlayerDecider blue[] = new PlayerDecider[2];
 		red[0] = player[0];
@@ -98,35 +77,10 @@ public class MellowServerMiddleMan implements severalClientProject.Game {
 		this.setOutputFileWriter( GameReplayPrinter.getNewOuput(Position.GAME_NAME, num) );
 		
 		Position.startMellow(this, red, blue);
-		
-	}
-	
-	public boolean isReadingReplay() {
-		if(this.commandFile == null) {
-			return true;
-		} else {
-			return false;
-		}
 	}
 	
 	
-	public boolean isInList(MiniServer player) {
-		if(clientPlayersPlaying != null) {
-			for(int i=0; i<clientPlayersPlaying.length; i++) {
-				if(clientPlayersPlaying[i].getClientName().equals(player.getClientName())) {
-					return true;
-				}
-			}
-		}
-		
-		return false;
-	}
-	
-	public MiniServer[] getClientPlayers() {
-		return clientPlayersPlaying;
-	}
-	
-	
+	//pre: it's a move and the client is recognizable.
 	public void submitClientQuery(MiniServer player, String query) {
 		String move = UNENTERED_MOVE;
 		boolean clientRecognized = false;
@@ -154,71 +108,6 @@ public class MellowServerMiddleMan implements severalClientProject.Game {
 			if(clientRecognized == false) {
 				sendMessageToGroup("Error: unknown player trying to make a move.");
 			}
-		}
-	}
-	
-	public void recordCommand(String command) {
-		if(commandFile != null) {
-			commandFile.print(command);
-			commandFile.flush();
-		}
-	}
-	
-	public void sendMessageToGroup(String message) {
-		sendMessageToGroup(message, true);
-		
-	}
-	public void sendMessageToGroup(String message, boolean record) {
-		
-		try {
-			if(clientPlayersPlaying != null) {
-				for(int i=0; i<clientPlayersPlaying.length; i++) {
-					if(clientPlayersPlaying[i] != null) {
-						clientPlayersPlaying[i].sendMessageToClient("From Mellow(public): " + message);
-						
-					}
-				}
-			}
-			
-			if(outputFile != null && record) {
-				outputFile.println(message);
-				outputFile.flush();
-			}
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
-	//pre: MiniServer player is NOT NULL
-	public void sendMessageToPlayer(MiniServer player, String message) {
-		sendMessageToPlayer(player, player.getClientName(), message);
-		
-	}
-	
-	public void sendMessageToPlayer(String name, String message) {
-		//Check if the player is a client:
-		MiniServer playerToSendTo = null;
-		if(clientPlayersPlaying != null) {
-			for(int i=0; i<clientPlayersPlaying.length; i++) {
-				if(name.equals(clientPlayersPlaying[i].getClientName())) {
-					playerToSendTo = clientPlayersPlaying[i];
-					break;
-				}
-			}
-		}
-		//END check.
-		sendMessageToPlayer(playerToSendTo, name, message);
-		
-	}
-	
-	public void sendMessageToPlayer(MiniServer player, String name, String message) {
-		try {
-			if(player != null) {
-				player.sendMessageToClient("From Mellow(private): " + message);
-			}
-			
-		} catch(Exception e) {
-			e.printStackTrace();
 		}
 	}
 	
