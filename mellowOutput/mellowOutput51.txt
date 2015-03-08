@@ -1,0 +1,449 @@
+Starting Mellow! Michael & Dick vs Dad & Mom
+First dealer is Dick
+Mom's turn to bid:
+Mom: 1
+Michael's turn to bid:
+Michael: 1
+Dad's turn to bid:
+Dad: 1
+Dick's turn to bid:
+Dick: 1
+Bids:
+  2
+  2
+Dealer Index: 2
+Dealer: Dick
+Initial Action index: 3
+Mom's turn:
+Mom playing: 7H
+Michael's turn:
+Michael playing: AH
+Dad's turn:
+Dad playing: 4H
+Dick's turn:
+Dick playing: QH
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 7C
+Dad's turn:
+Dad playing: KC
+Dick's turn:
+Dick playing: 5C
+Mom's turn:
+Mom playing: JC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: AD
+Dick's turn:
+Dick playing: 6D
+Mom's turn:
+Mom playing: 4D
+Michael's turn:
+Michael playing: JD
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 7S
+Dick's turn:
+Dick playing: 6S
+Mom's turn:
+Mom playing: QS
+Michael's turn:
+Michael playing: 4S
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: TH
+Michael's turn:
+Michael playing: KD
+Dad's turn:
+Dad playing: 3H
+Dick's turn:
+Dick playing: 6H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 9D
+Michael's turn:
+Michael playing: 8D
+Dad's turn:
+Dad playing: TS
+Dick's turn:
+Dick playing: QD
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: JS
+Dick's turn:
+Dick playing: 2S
+Mom's turn:
+Mom playing: AS
+Michael's turn:
+Michael playing: 8S
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 5D
+Michael's turn:
+Michael playing: 2D
+Dad's turn:
+Dad playing: KH
+Dick's turn:
+Dick playing: 3D
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 9H
+Michael's turn:
+Michael playing: 3C
+Dad's turn:
+Dad playing: 8H
+Dick's turn:
+Dick playing: 2C
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: KS
+Michael's turn:
+Michael playing: 5S
+Dad's turn:
+Dad playing: 9S
+Dick's turn:
+Dick playing: 6C
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 7D
+Michael's turn:
+Michael playing: TD
+Dad's turn:
+Dad playing: 5H
+Dick's turn:
+Dick playing: QC
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 8C
+Dad's turn:
+Dad playing: AC
+Dick's turn:
+Dick playing: 4C
+Mom's turn:
+Mom playing: 2H
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: TC
+Dick's turn:
+Dick playing: 9C
+Mom's turn:
+Mom playing: JH
+Michael's turn:
+Michael playing: 3S
+Fight Winner: Michael
+ALL: END ROUND!
+ALL: Michael got 3 trick(s).
+ALL: Dad got 4 trick(s).
+ALL: Dick got 0 trick(s).
+ALL: Mom got 6 trick(s).
+0    0
+21    28
+21    28
+END PRINT SCORE!
+Current dealer is Mom
+Michael's turn to bid:
+Michael: 1
+Dad's turn to bid:
+Dad: 1
+Dick's turn to bid:
+Dick: 1
+Mom's turn to bid:
+Mom: 1
+Bids:
+  2
+  2
+Dealer Index: 3
+Dealer: Mom
+Initial Action index: 0
+Michael's turn:
+Michael playing: 3S
+Dad's turn:
+Dad playing: 8S
+Dick's turn:
+Dick playing: 5S
+Mom's turn:
+Mom playing: 6S
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 3H
+Dick's turn:
+Dick playing: 7H
+Mom's turn:
+Mom playing: AH
+Michael's turn:
+Michael playing: 9H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: TS
+Michael's turn:
+Michael playing: KS
+Dad's turn:
+Dad playing: JS
+Dick's turn:
+Dick playing: 3C
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 5C
+Dad's turn:
+Dad playing: AC
+Dick's turn:
+Dick playing: TC
+Mom's turn:
+Mom playing: 9C
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: TD
+Dick's turn:
+Dick playing: 9D
+Mom's turn:
+Mom playing: 2D
+Michael's turn:
+Michael playing: 4D
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: AS
+Dick's turn:
+Dick playing: 7D
+Mom's turn:
+Mom playing: 4S
+Michael's turn:
+Michael playing: 9S
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 2S
+Dick's turn:
+Dick playing: QH
+Mom's turn:
+Mom playing: QS
+Michael's turn:
+Michael playing: 7S
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QD
+Michael's turn:
+Michael playing: JD
+Dad's turn:
+Dad playing: 8D
+Dick's turn:
+Dick playing: 5D
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: JH
+Michael's turn:
+Michael playing: TH
+Dad's turn:
+Dad playing: 6H
+Dick's turn:
+Dick playing: 4H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: KC
+Michael's turn:
+Michael playing: 8C
+Dad's turn:
+Dad playing: 2C
+Dick's turn:
+Dick playing: 4C
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QC
+Michael's turn:
+Michael playing: JC
+Dad's turn:
+Dad playing: 6C
+Dick's turn:
+Dick playing: 8H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 2H
+Michael's turn:
+Michael playing: KD
+Dad's turn:
+Dad playing: 6D
+Dick's turn:
+Dick playing: 5H
+Fight Winner: Dick
+Initial Action index: 2
+Dick's turn:
+Dick playing: 3D
+Mom's turn:
+Mom playing: KH
+Michael's turn:
+Michael playing: AD
+Dad's turn:
+Dad playing: 7C
+Fight Winner: Michael
+ALL: END ROUND!
+ALL: Michael got 2 trick(s).
+ALL: Dad got 4 trick(s).
+ALL: Dick got 1 trick(s).
+ALL: Mom got 6 trick(s).
+21    28
+21    28
+42    56
+END PRINT SCORE!
+Current dealer is Michael
+Dad's turn to bid:
+Dad: 1
+Dick's turn to bid:
+Dick: 1
+Mom's turn to bid:
+Mom: 1
+Michael's turn to bid:
+Michael: 1
+Bids:
+  2
+  2
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 1
+Dad's turn:
+Dad playing: 7S
+Dick's turn:
+Dick playing: 4S
+Mom's turn:
+Mom playing: 5S
+Michael's turn:
+Michael playing: 9S
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: JD
+Dad's turn:
+Dad playing: 8D
+Dick's turn:
+Dick playing: 2D
+Mom's turn:
+Mom playing: 6D
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: TH
+Dad's turn:
+Dad playing: KH
+Dick's turn:
+Dick playing: 2H
+Mom's turn:
+Mom playing: 5H
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 8S
+Dick's turn:
+Dick playing: 3H
+Mom's turn:
+Mom playing: QS
+Michael's turn:
+Michael playing: TS
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: AH
+Michael's turn:
+Michael playing: 4H
+Dad's turn:
+Dad playing: QH
+Dick's turn:
+Dick playing: 7H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 4D
+Michael's turn:
+Michael playing: AD
+Dad's turn:
+Dad playing: TD
+Dick's turn:
+Dick playing: KD
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: AC
+Dad's turn:
+Dad playing: 5C
+Dick's turn:
+Dick playing: 9C
+Mom's turn:
+Mom playing: 6C
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: QC
+Dad's turn:
+Dad playing: KC
+Dick's turn:
+Dick playing: 7C
+Mom's turn:
+Mom playing: JC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: KS
+Dick's turn:
+Dick playing: TC
+Mom's turn:
+Mom playing: 2S
+Michael's turn:
+Michael playing: JS
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 6S
+Dick's turn:
+Dick playing: 3C
+Mom's turn:
+Mom playing: JH
+Michael's turn:
+Michael playing: 9D
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 3S
+Dick's turn:
+Dick playing: 4C
+Mom's turn:
+Mom playing: QD
+Michael's turn:
+Michael playing: 6H
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: AS
+Dick's turn:
+Dick playing: 8C
+Mom's turn:
+Mom playing: 3D
+Michael's turn:
+Michael playing: 7D
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 2C
+Dick's turn:
+Dick playing: 8H
+Mom's turn:
+Mom playing: 5D
+Michael's turn:

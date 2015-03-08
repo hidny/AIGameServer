@@ -30,7 +30,7 @@ public class MiniServer extends Thread{
     
     
     private BufferedReader inFromClient;
-    private DataOutputStream outToClient;
+    private DataOutputStreamWrapper outToClient;
     
     //private String immediateResponse;
     private String clientName = "";
@@ -52,18 +52,26 @@ public class MiniServer extends Thread{
 	    	
     		//Read input and process here
 	    	inFromClient = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-			outToClient = new DataOutputStream( socket.getOutputStream());
+			outToClient = new DataOutputStreamWrapper(new DataOutputStream( socket.getOutputStream()));
 			String clientSentence = "";
 			
 			while(isConnectionStillOpen() == true) {
 				
+				if(clientName.toLowerCase().equals("michael")) {
+					System.out.println("Waiting on HOST!");
+				}
 				System.out.println("trying to get something from client.");
 				
 				clientSentence = inFromClient.readLine();
 				
-				System.out.println("got something from client.");
+				if(clientName.toLowerCase().equals("michael")) {
+					System.out.println("got " + clientSentence + " from HOST!");
+				}
+				//System.out.println("got something from client.");
 				
-				submitClientQuery(clientSentence);
+				if(clientSentence != null) {
+					submitClientQuery(clientSentence);
+				}
 				
 			}
 			
@@ -214,8 +222,15 @@ public class MiniServer extends Thread{
     
   //pre: query is lowercase and trimmed
     private  void submitClientQueryToGame(String query) {
-    	currentGameRoom.getGame().submitClientQuery(this, query);
-		
+    	if (currentGameRoom == null) {
+    		System.out.println("Current game room is null WTF");
+    	}
+    	if (currentGameRoom.getGame() == null) {
+    		//this is here because of a race condition. (currentGameRoom.getGame() is not set yet)
+    		//When this happens, I think we should just do nothing.
+    	} else {
+    		currentGameRoom.getGame().submitClientQuery(this, query);
+    	}
     }
     
   //pre: query is lowercase and trimmed
@@ -429,20 +444,8 @@ public class MiniServer extends Thread{
     	sendMessageToClient(sender + " whispers: " + message);
     }
     
-    //TODO: put a lock on sendMessageToClient.
     public void sendMessageToClient(String message)  throws IOException {
-    	System.out.println("Trying to send: " + message + '\n' + EOT);
-    	
-    	//sanitize output just in case:
-    	while(message.endsWith("\n")) {
-    		message = message.substring(0, message.length() - 1);
-    	}
-    	
-    	
-    	//outToClient.writeBytes(message /*+ '\n'*/ + EOT /*+ '\n'*/ + typeOfRequest);
-    	outToClient.writeBytes(message + '\n');
-    	outToClient.writeBytes(EOT + '\n');
-    	System.out.println("End of write bytes!");
+    	outToClient.sendMessageToClient(message);
     }
     
     //TODO: make sure the name isn't already taken somehow... 

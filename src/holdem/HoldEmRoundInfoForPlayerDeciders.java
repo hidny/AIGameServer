@@ -22,7 +22,6 @@ package holdem;
 
 import java.util.ArrayList;
 
-import severalClientProject.MiniServer;
 import deck.*;
 
 public class HoldEmRoundInfoForPlayerDeciders {

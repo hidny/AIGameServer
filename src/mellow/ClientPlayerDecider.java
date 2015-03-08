@@ -12,7 +12,7 @@ public class ClientPlayerDecider implements PlayerDecider {
 	
 	private String currentMove = UNENTERED_MOVE;
 	
-	public synchronized void setMove(String move) {
+	public void setMove(String move) {
 		currentMove = move;
 	}
 	
@@ -40,7 +40,7 @@ public class ClientPlayerDecider implements PlayerDecider {
 		try {
 			while(currentMove.equals(UNENTERED_MOVE) ) {
 				//TODO: sleep
-				Thread.sleep(1000);
+				Thread.sleep(100);
 			}
 			
 		} catch (Exception e) {
@@ -65,7 +65,7 @@ public class ClientPlayerDecider implements PlayerDecider {
 		try {
 			while(currentMove.equals(UNENTERED_MOVE)) {
 				//TODO: sleep
-				Thread.sleep(1000);
+				Thread.sleep(100);
 			}
 			
 			move = Integer.parseInt(currentMove);

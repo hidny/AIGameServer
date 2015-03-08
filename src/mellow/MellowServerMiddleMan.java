@@ -93,7 +93,10 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 				move = UNENTERED_MOVE;
 			}
 		} else {
-			
+			if(isInList(player) == false) {
+				System.out.println(player.getClientName() + " is not in list");
+			}
+			//System.out.println("Query from " + player.getClientName() + ": " + query);
 			sendMessageToGroup(player.getClientName() + ": " + query, false);
 		}
 		

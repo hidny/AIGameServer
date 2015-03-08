@@ -19,6 +19,7 @@ public class GameRoom extends Thread implements Runnable {
 	
 	private boolean openSlot[];
 	
+	private boolean countDownStarted = false;
 	private boolean gameStarted = false;
 	
 	//TODO: add a condition where the game gets cancelled... like everyone leaving the room... but that's no fun!
@@ -58,6 +59,9 @@ public class GameRoom extends Thread implements Runnable {
 	
 	public boolean isGameStarted() {
 		return gameStarted;
+	}
+	public boolean isCountDownStarted() {
+		return countDownStarted;
 	}
 	
 	public boolean isCancelled() {
@@ -308,7 +312,8 @@ public class GameRoom extends Thread implements Runnable {
 		
 	}
 	
-	public synchronized void sendChatMessageToRoom(MiniServer client, String message) {
+	//Changed march 6th, 2015
+	public void sendChatMessageToRoom(MiniServer client, String message) {
     	//OPTIONAL: create send message(listofclients) functions. (Make the order of what's displayed on the screen consistant between clients...)
     	sendGameRoomPlayersMessage(client.getClientName(), message);
     }
@@ -325,7 +330,7 @@ public class GameRoom extends Thread implements Runnable {
 	
     
 	//pre: The below methods are private and are only called within synchronized function:
-	public synchronized void sendGameRoomPlayersMessage(String from, String msg) {
+	public void sendGameRoomPlayersMessage(String from, String msg) {
 			System.out.println("DEBUG: trying to send msg: " + msg);
 			if(from.equals("") == false) {
 				msg = from + ": " + msg;
@@ -379,15 +384,18 @@ public class GameRoom extends Thread implements Runnable {
 	//(if conditions are still ok) (Count-downs are cool! :P)
 	public synchronized String startCountdown() {
 		//if( game allows player array to word)
-		if(gameAllowsPlayersToGo()) {
+		if(gameAllowsPlayersToGo() && isCountDownStarted() == false) {
+			this.countDownStarted = true;
 			System.out.println("Start count down:");
 			GameStarter gameStarter = new GameStarter(this);
 			Thread t = new Thread(gameStarter);
 	        t.start();
 			
 			return "";
-		} else {
+		} else if(gameAllowsPlayersToGo() == false) {
 			return "ERROR: game conditions haven\'t been meet.";
+		} else {
+			return "WARNING: countdown already started.";
 		}
 	}
 	
@@ -413,6 +421,7 @@ public class GameRoom extends Thread implements Runnable {
 		game = null;
 		this.gameStarted = false;
 		this.gameOver = true;
+		this.countDownStarted = false;
 		
 		for(int i=0; i<players.length; i++) {
 			if(players[i] != null) {

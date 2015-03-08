@@ -56,7 +56,7 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 	public boolean isInList(MiniServer player) {
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
-				if(clientPlayersPlaying[i].getClientName().equals(player.getClientName())) {
+				if(clientPlayersPlaying[i].getClientName().toLowerCase().equals(player.getClientName().toLowerCase())) {
 					return true;
 				}
 			}

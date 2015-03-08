@@ -1,0 +1,129 @@
+Starting Mellow! Michael & Dick vs Dad & Mom
+First dealer is Dad
+Dick's turn to bid:
+Dick: 1
+Mom's turn to bid:
+Mom: 1
+Michael's turn to bid:
+Michael: 1
+Dad's turn to bid:
+Dad: 1
+Bids:
+  2
+  2
+Dealer Index: 1
+Dealer: Dad
+Initial Action index: 2
+Dick's turn:
+Dick playing: 2D
+Mom's turn:
+Mom playing: 3D
+Michael's turn:
+Michael playing: 8D
+Dad's turn:
+Dad playing: 5D
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 4S
+Dad's turn:
+Dad playing: 8S
+Dick's turn:
+Dick playing: 9S
+Mom's turn:
+Mom playing: 7S
+Fight Winner: Dick
+Initial Action index: 2
+Dick's turn:
+Dick playing: 6C
+Mom's turn:
+Mom playing: 2C
+Michael's turn:
+Michael playing: AC
+Dad's turn:
+Dad playing: 4C
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 9C
+Dad's turn:
+Dad playing: 6D
+Dick's turn:
+Dick playing: 7C
+Mom's turn:
+Mom playing: 5C
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 4H
+Dad's turn:
+Dad playing: 3H
+Dick's turn:
+Dick playing: 7H
+Mom's turn:
+Mom playing: 8H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: KH
+Michael's turn:
+Michael playing: 9H
+Dad's turn:
+Dad playing: TH
+Dick's turn:
+Dick playing: QH
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: KS
+Michael's turn:
+Michael playing: 3S
+Dad's turn:
+Dad playing: JS
+Dick's turn:
+Dick playing: QC
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 2H
+Michael's turn:
+Michael playing: 5H
+Dad's turn:
+Dad playing: AH
+Dick's turn:
+Dick playing: JH
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 4D
+Dick's turn:
+Dick playing: JD
+Mom's turn:
+Mom playing: 9D
+Michael's turn:
+Michael playing: 7D
+Fight Winner: Dick
+Initial Action index: 2
+Dick's turn:
+Dick playing: 6H
+Mom's turn:
+Mom playing: 6S
+Michael's turn:
+Michael playing: KC
+Dad's turn:
+Dad playing: KD
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QS
+Michael's turn:
+Michael playing: 8C
+Dad's turn:
+Dad playing: AS
+Dick's turn:
+Dick playing: TC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 5S
+Dick's turn:
