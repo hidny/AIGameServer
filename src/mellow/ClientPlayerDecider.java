@@ -1,9 +1,11 @@
 package mellow;
 
 //so far this class only has stubs.
-//TODO: make this interact with the console
+
 //nad print all relevant variables.
 //My plan is to make the client-side do the remembering.
+
+import java.util.concurrent.Semaphore;
 
 public class ClientPlayerDecider implements PlayerDecider {
 	
@@ -11,9 +13,19 @@ public class ClientPlayerDecider implements PlayerDecider {
 	private static int NOT_A_BID = -1;
 	
 	private String currentMove = UNENTERED_MOVE;
+	private Semaphore semMoveAvailable = new Semaphore(0);
 	
 	public void setMove(String move) {
-		currentMove = move;
+		//this stops ais from spamming moves... that's ok though. :)
+		if(currentMove.equals(UNENTERED_MOVE)) {
+			currentMove = move;
+	
+			try {
+				semMoveAvailable.release();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	private String name;
@@ -23,26 +35,25 @@ public class ClientPlayerDecider implements PlayerDecider {
 	}
 	
 	public void start(String names[], int dealerIndex) {
-		
+
+		//Not needed: the console will inform the player:
 	}
 	
 	public void updateFinalBid(boolean mellowRed, int bidRed, boolean mellowBlue, int bidBlue) {
-		
+
+		//Not needed: the console will inform the player:
 	}
 	
 	public void updateCurrentScore(boolean mellowRed, int bidRed, boolean mellowBlue, int bidBlue) {
-		
+
+		//Not needed: the console will inform the player:
 	}
 	
 	//asks the current player to play a card.
 	//if the player renages, he/she will get a warning!
 	public int getCard(int playerCards[], int currentCardsInFight[], int indexCurrentPlayer) {
 		try {
-			while(currentMove.equals(UNENTERED_MOVE) ) {
-				//TODO: sleep
-				Thread.sleep(100);
-			}
-			
+			semMoveAvailable.acquire();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -63,13 +74,8 @@ public class ClientPlayerDecider implements PlayerDecider {
 	public int getBid(int playerCards[], int prevBids[], int dealerIndex) {
 		int move;
 		try {
-			while(currentMove.equals(UNENTERED_MOVE)) {
-				//TODO: sleep
-				Thread.sleep(100);
-			}
-			
-			move = Integer.parseInt(currentMove);
-			
+			semMoveAvailable.acquire();
+			move = Integer.parseInt(currentMove);	
 		} catch (Exception e) {
 			move = NOT_A_BID;
 		}

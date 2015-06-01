@@ -261,12 +261,13 @@ public class GameRoom extends Thread implements Runnable {
 		return "ERROR: couldn't find player to ban!";
 	}
 	
+	//pre: newPos starts at 1 (i.e. 1st slot is slot 1)
 	public synchronized String moveSlot(MiniServer player, int newPos) {
 		int posIndex = newPos - 1;
 		
 		for(int i=0; i<players.length; i++) {
 			if(players[i] == player) {
-				if(posIndex < maxPlayers && posIndex > 0) {
+				if(posIndex < maxPlayers && posIndex >= 0) {
 					if(players[posIndex] == null) {
 						if(openSlot[posIndex]) {
 							players[posIndex] = players[i];
@@ -280,7 +281,7 @@ public class GameRoom extends Thread implements Runnable {
 						return "WARNING: another player is in that position";
 					}
 				} else {
-					return "WARNING: index of new position is out of bounds.";
+					return "WARNING: index of new position is out of bounds. (" + player.getClientName() + " " + newPos + ")";
 				}
 			}
 		}
@@ -312,7 +313,6 @@ public class GameRoom extends Thread implements Runnable {
 		
 	}
 	
-	//Changed march 6th, 2015
 	public void sendChatMessageToRoom(MiniServer client, String message) {
     	//OPTIONAL: create send message(listofclients) functions. (Make the order of what's displayed on the screen consistant between clients...)
     	sendGameRoomPlayersMessage(client.getClientName(), message);
@@ -329,8 +329,9 @@ public class GameRoom extends Thread implements Runnable {
 	}
 	
     
+	//TODO: i just set synchronized on this.
 	//pre: The below methods are private and are only called within synchronized function:
-	public void sendGameRoomPlayersMessage(String from, String msg) {
+	public synchronized void sendGameRoomPlayersMessage(String from, String msg) {
 			System.out.println("DEBUG: trying to send msg: " + msg);
 			if(from.equals("") == false) {
 				msg = from + ": " + msg;
@@ -350,8 +351,6 @@ public class GameRoom extends Thread implements Runnable {
 				}
 			}
 			
-			
-		
 	}
 	
 	private synchronized void renewRefreshMessage() {
@@ -417,7 +416,7 @@ public class GameRoom extends Thread implements Runnable {
 		}
 	}
 	
-	private synchronized void endGameRoom() {
+	public synchronized void endGameRoom() {
 		game = null;
 		this.gameStarted = false;
 		this.gameOver = true;

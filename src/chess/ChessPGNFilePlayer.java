@@ -15,7 +15,7 @@ Positions are not [considered to be] the same if a pawn that could have been cap
 */
 
 
-//TODO: make sure I don't come up with too many moves... somehow.
+//TODO: make sure I don't allow for illegal moves... somehow.
 
 public class ChessPGNFilePlayer {
 	public static boolean PRINTING_MOVE_LIST = false;

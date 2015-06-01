@@ -72,7 +72,7 @@ public class ClientPlayer implements Player {
 				while(ret.equals(ChessServerMiddleMan.UNENTERED_MOVE)) {
 					ret = middleMan.getNextMove(player);
 					Thread.sleep(1000);
-					//TODO: thread.wait.
+					//TODO:
 				}
 				
 				middleMan.setMoveTaken(player);

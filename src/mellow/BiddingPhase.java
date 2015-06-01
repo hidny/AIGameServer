@@ -42,7 +42,6 @@ public class BiddingPhase {
 						middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "Bid something between 0 and 13 inclusively!");
 						
 					}
-					//TODO
 					
 				} else if(numChances >= 3) {
 					middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "to player: You default bid to 1. (idiot)");

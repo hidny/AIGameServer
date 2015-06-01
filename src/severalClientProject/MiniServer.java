@@ -57,17 +57,9 @@ public class MiniServer extends Thread{
 			
 			while(isConnectionStillOpen() == true) {
 				
-				if(clientName.toLowerCase().equals("michael")) {
-					System.out.println("Waiting on HOST!");
-				}
-				System.out.println("trying to get something from client.");
+				//System.out.println("trying to get something from client.");
 				
 				clientSentence = inFromClient.readLine();
-				
-				if(clientName.toLowerCase().equals("michael")) {
-					System.out.println("got " + clientSentence + " from HOST!");
-				}
-				//System.out.println("got something from client.");
 				
 				if(clientSentence != null) {
 					submitClientQuery(clientSentence);
@@ -81,6 +73,9 @@ public class MiniServer extends Thread{
 			socket.close();
     	
     	} catch(java.net.SocketException e) {
+    		//TODO: cmd to leave game.
+    		//TODO: cmd to leave jjjjjjjjjj
+    		submitClientQuery("/leave");
     		System.out.println("Client is a quitter!");
 			return;
     	
@@ -290,7 +285,9 @@ public class MiniServer extends Thread{
 	    				if(retMessage.equals("") == false) {
 	    					sendImmediateResponseToClient(retMessage);
 	    				} else {
-	    					sendImmediateResponseToClient("Count down started.");
+	    					sendImmediateResponseToClient("Countdown started.");
+	    					//TODO: Added My 18th 2015: does this work?
+	    					Server.removeOldGames();
 	    				}
 	    				
     				} else {
@@ -324,7 +321,7 @@ public class MiniServer extends Thread{
     			
     		} else {
     			//TODO send request to game:
-    			sendImmediateResponseToClient("Game is started. TODO: make the game figure it out!");
+    			sendImmediateResponseToClient("Game is started. TODO: make the game figure it out! (I think you have to resend the request so the game could figure it out)");
     		}
     	} else {
     		currentGameRoom.sendChatMessageToRoom(this, query);
@@ -680,12 +677,18 @@ public class MiniServer extends Thread{
      private void leaveGame() {
     	if(isInGame()) {
     		
-    		String msg = currentGameRoom.leave(this);
-    		currentGameRoom = null;
-    		if(msg.equals("") == false) {
-    			sendImmediateResponseToClient(msg);
+    		if(currentGameRoom.getHost() == this) {
+    			//When the host leaves, the game should stop.
+    			currentGameRoom.endGameRoom();
     		} else {
-    			sendImmediateResponseToClient(Server.getRefreshMessageFromChannel());
+    		
+	    		String msg = currentGameRoom.leave(this);
+	    		currentGameRoom = null;
+	    		if(msg.equals("") == false) {
+	    			sendImmediateResponseToClient(msg);
+	    		} else {
+	    			sendImmediateResponseToClient(Server.getRefreshMessageFromChannel());
+	    		}
     		}
     		
     	} else {

@@ -106,7 +106,7 @@ public class Server {
     }
     
     //TODO: run this at intelligent times.
-    private static synchronized void removeOldGames() {
+    public static synchronized void removeOldGames() {
 	    for(int i=0; i<gameRoom.size(); i++) {
 			if(gameRoom.get(i).isGameStarted() || gameRoom.get(i).isCancelled() || gameRoom.get(i).isGameOver() == true) {
 				gameRoom.remove(i);
@@ -243,4 +243,5 @@ public class Server {
     	reply += Server.getPlayersOuside();
     	return reply;
     }
+   
 }

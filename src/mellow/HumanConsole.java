@@ -1,7 +1,7 @@
 package mellow;
 
 //so far this class only has stubs.
-//TODO: make this interact with the console
+
 //nad print all relevant variables.
 //My plan is to make the client-side do the remembering.
 
@@ -26,7 +26,7 @@ public class HumanConsole implements PlayerDecider {
 	}
 	
 	//asks the current player to play a card.
-	//if the player renages, he/she will get a warning!
+	//if the player reneges, he/she will get a warning!
 	public int getCard(int playerCards[], int currentCardsInFight[], int indexCurrentPlayer) {
 		return playerCards[0];
 	}
