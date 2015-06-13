@@ -1,6 +1,6 @@
 package holdem;
 
-import deck.*;
+import random.*;
 
 
 public class HoldEmRoundLogic {

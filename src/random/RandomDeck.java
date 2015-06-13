@@ -1,11 +1,11 @@
-package deck;
+package random;
 
 
 import java.io.PrintWriter;
 
 
 
-public class DeckRandom implements Deck {
+public class RandomDeck implements Deck {
 
 	//This is a first draft. It will get improved later!
 		 private int deck[];
@@ -22,7 +22,7 @@ public class DeckRandom implements Deck {
 		//cards are labelled from 1 to 52:
 		
 		//pre: numDecks > 1
-		public DeckRandom(int numStandardDecks, PrintWriter record) {
+		public RandomDeck(int numStandardDecks, PrintWriter record) {
 			deck = new int[STANDARD_DECK_SIZE * numStandardDecks];
 			for(int i=0; i<numStandardDecks; i++) {
 				for(int j=0; j<STANDARD_DECK_SIZE; j++) {
@@ -32,15 +32,15 @@ public class DeckRandom implements Deck {
 			this.record = record;
 			
 		}
-		public DeckRandom(PrintWriter record) {
+		public RandomDeck(PrintWriter record) {
 			this(1, record);
 		}
 
-		public DeckRandom(int numStandardDecks) {
+		public RandomDeck(int numStandardDecks) {
 			this(numStandardDecks, null);
 		}
 		
-		public DeckRandom() {
+		public RandomDeck() {
 			this(1, null);
 		}
 		
@@ -110,7 +110,7 @@ public class DeckRandom implements Deck {
 		
 		public static void main(String args[]) {
 			
-			DeckRandom first = new DeckRandom();
+			RandomDeck first = new RandomDeck();
 			
 			System.out.println("Printing deck contents:");
 			for(int i=0; i<52; i++) {
@@ -169,15 +169,7 @@ public class DeckRandom implements Deck {
 				System.out.println();
 			}
 			
-			
-			
 		}
-		
-		
-		//END TESTING:
-		//***************************
-		//***************************
-		//***************************
 		
 		
 }

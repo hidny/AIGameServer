@@ -1,6 +1,6 @@
 package mellow;
 
-import deck.DeckFunctions;
+import random.DeckFunctions;
 
 
 public class Position {
@@ -12,7 +12,7 @@ public class Position {
 	
 	private int redScore;
 	private int blueScore;
-	private deck.Deck currentDeck;
+	private random.Deck currentDeck;
 	
 	public static int GOAL_SCORE = 1000;
 	public static int OLD_YELLAR_SCORE = -500;
@@ -44,7 +44,7 @@ public class Position {
 	}
 	//TODO: actually use the String args... options. (like if it's a replay)
 	//When you need it.
-	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int dealerIndex, deck.Deck givenDeck) {
+	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int dealerIndex, random.Deck givenDeck) {
 		
 		Position pos = new Position();
 		
@@ -69,7 +69,7 @@ public class Position {
 	}
 	
 	//returns false otherwise.
-	public int playGame(PlayerDecider redDecider[], PlayerDecider blueDecider[],  MellowServerMiddleMan middleMan, int dealerIndex, deck.Deck givenDeck) {
+	public int playGame(PlayerDecider redDecider[], PlayerDecider blueDecider[],  MellowServerMiddleMan middleMan, int dealerIndex, random.Deck givenDeck) {
 		PlayerDecider playerDeciders[] = new PlayerDecider[4];
 		playerDeciders[0] = redDecider[0];
 		playerDeciders[1] = blueDecider[0];
@@ -93,7 +93,7 @@ public class Position {
 		
 		//If no deck is given, create a new one:
 		if(givenDeck == null) {
-			currentDeck = new deck.DeckRandom(middleMan.getCommandFile());
+			currentDeck = new random.RandomDeck(middleMan.getCommandFile());
 		} else {
 			currentDeck = givenDeck;
 		}
@@ -115,7 +115,7 @@ public class Position {
 			
 			for(int i=0; i<4; i++) {
 				for(int j=0; j<13; j++) {
-					hand += deck.DeckFunctions.getCardString(playerModel[i].getHand()[j]) + " ";
+					hand += random.DeckFunctions.getCardString(playerModel[i].getHand()[j]) + " ";
 				}
 				middleMan.sendMessageToPlayer(playerModel[i].getPlayerName(),  hand);
 				hand = "";
@@ -232,7 +232,7 @@ public class Position {
 	
 	
 	public void playRound(int dealerIndex, PlayerModel playerModel[], PlayerDecider playerDecider[], MellowServerMiddleMan middleMan) {
-		int CARDS_PER_HAND = deck.DeckRandom.STANDARD_DECK_SIZE / 4;
+		int CARDS_PER_HAND = random.RandomDeck.STANDARD_DECK_SIZE / 4;
 		
 		int prevPlay[] = new int[4];
 		
@@ -256,7 +256,7 @@ public class Position {
 				//System.out.print(playerModel[j].getPlayerName() + ": ");
 				for(int k=0; k<currentHandToPrint.length; k++) {
 					//System.out.print(deck.DeckFunctions.getCardString(currentHandToPrint[k]) + " ");
-					hand += deck.DeckFunctions.getCardString(currentHandToPrint[k]) + " ";
+					hand += random.DeckFunctions.getCardString(currentHandToPrint[k]) + " ";
 				}
 
 				middleMan.sendMessageToPlayer(playerModel[j].getPlayerName(), hand);
@@ -299,9 +299,9 @@ public class Position {
 					
 				}
 				
-				middleMan.recordCommand(deck.DeckFunctions.getCardString(prevPlay[actionIndex]));
+				middleMan.recordCommand(random.DeckFunctions.getCardString(prevPlay[actionIndex]));
 				
-				middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " playing: " + deck.DeckFunctions.getCardString(prevPlay[actionIndex]));
+				middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " playing: " + random.DeckFunctions.getCardString(prevPlay[actionIndex]));
 				
 				if(j+1 < 4) { 
 					middleMan.recordCommand(" - ");
@@ -331,7 +331,7 @@ public class Position {
 	//TODO: brute force test every damn combo,
 	public static int fight(int initialActionIndex, int cardsOnTable[]) {
 		int currentWinnerIndex = initialActionIndex;
-		String currentBestSuit = "" + deck.DeckFunctions.getSuit(cardsOnTable[initialActionIndex]);
+		String currentBestSuit = "" + random.DeckFunctions.getSuit(cardsOnTable[initialActionIndex]);
 		int currentBestPower = getPowerOfCardNum(DeckFunctions.getBaseNumber(cardsOnTable[initialActionIndex]));
 		
 		String nextSuit;
@@ -340,7 +340,7 @@ public class Position {
 		for(int i=0; i<3; i++) {
 			currentIndex = (initialActionIndex + 1 + i)%4;
 			
-			nextSuit = "" + deck.DeckFunctions.getSuit(cardsOnTable[currentIndex]);
+			nextSuit = "" + random.DeckFunctions.getSuit(cardsOnTable[currentIndex]);
 			if(nextSuit.equals(TRUMP) && currentBestSuit.equals(TRUMP) == false) {
 				//TRUMP!
 				currentBestSuit = TRUMP;
@@ -439,13 +439,13 @@ public class Position {
 		if(initialActionIndex == actionIndex) {
 			return false;
 		//If the suits are equal, no renaging:
-		} else if(deck.DeckFunctions.getSuit(currentPlay[initialActionIndex]) == deck.DeckFunctions.getSuit(currentPlay[actionIndex])) {
+		} else if(random.DeckFunctions.getSuit(currentPlay[initialActionIndex]) == random.DeckFunctions.getSuit(currentPlay[actionIndex])) {
 			return false;
 		} else {
 			boolean hasSuit = false;
-			int leadSuit = deck.DeckFunctions.getSuit(currentPlay[initialActionIndex]);
+			int leadSuit = random.DeckFunctions.getSuit(currentPlay[initialActionIndex]);
 			for(int i=0; i<cardsInHand.length; i++) {
-				if(deck.DeckFunctions.getSuit(cardsInHand[i]) == leadSuit) {
+				if(random.DeckFunctions.getSuit(cardsInHand[i]) == leadSuit) {
 					hasSuit = true;
 				}
 			}

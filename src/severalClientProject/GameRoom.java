@@ -134,6 +134,11 @@ public class GameRoom extends Thread implements Runnable {
 			maxPlayers = 2;
 			
 			setupBasicRoomVars(host);
+		} else if (gameName.equals(ServerGameReference.FRUSTRATION)) {
+			minPlayers = 2;
+			maxPlayers = 4;
+			
+			setupBasicRoomVars(host);
 		} else {
 			System.err.println("ERROR: Unknown game \"" + gameName + "\"");
 		}

@@ -48,7 +48,7 @@ public class PlayerModel {
 	}
 	
 	public void play(String card) {
-		this.play(deck.DeckFunctions.getCard(card));
+		this.play(random.DeckFunctions.getCard(card));
 	}
 	public void play(int card) {
 		for(int i=0; i<this.currentNumCards; i++) {
@@ -67,7 +67,7 @@ public class PlayerModel {
 	public boolean hasSuit(String suit) {
 		suit = suit.toUpperCase();
 		for(int i=0; i<this.currentNumCards; i++) {
-			if(deck.DeckFunctions.getCardString(this.card[i]).substring(1).equals(suit) ) {
+			if(random.DeckFunctions.getCardString(this.card[i]).substring(1).equals(suit) ) {
 				return true;
 			}
 		}
@@ -76,7 +76,7 @@ public class PlayerModel {
 	}
 	
 	public boolean hasCard(String card) {
-		return this.hasCard(deck.DeckFunctions.getCard(card));
+		return this.hasCard(random.DeckFunctions.getCard(card));
 	}
 	public boolean hasCard(int card) {
 		for(int i=0; i<this.currentNumCards; i++) {
@@ -93,7 +93,7 @@ public class PlayerModel {
 		suit = suit.toUpperCase();
 		if(hasCard(card)) {
 			if(hasSuit(suit)) {
-				if(deck.DeckFunctions.getCardString(card).substring(1) == suit.toUpperCase()) {
+				if(random.DeckFunctions.getCardString(card).substring(1) == suit.toUpperCase()) {
 					return true;
 				} else {
 					System.out.println("ERROR: player is reneging.");
@@ -171,9 +171,10 @@ public class PlayerModel {
 			//TODO
 			System.out.println("AHHH");
 			for(int i=0; i<this.currentNumCards; i++) {
-				System.out.println(deck.DeckFunctions.getCardString(this.card[i]));
+				System.out.println(random.DeckFunctions.getCardString(this.card[i]));
 			}
 			System.out.println("DONE AHHH");
+			System.exit(1);
 			//this.middleMan.setOutputFileWriter(null);
 			
 		} else {

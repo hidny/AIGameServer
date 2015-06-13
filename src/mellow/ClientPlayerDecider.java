@@ -21,7 +21,10 @@ public class ClientPlayerDecider implements PlayerDecider {
 			currentMove = move;
 	
 			try {
-				semMoveAvailable.release();
+				//June 7th: TODO: did I break it?
+				if (semMoveAvailable.availablePermits() < 1) {
+					semMoveAvailable.release();
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -60,7 +63,7 @@ public class ClientPlayerDecider implements PlayerDecider {
 		
 		currentMove = currentMove.toUpperCase().trim();
 		for(int i=0; i<playerCards.length; i++) {
-			if(currentMove.equals(deck.DeckFunctions.getCardString(playerCards[i]) ) ) {
+			if(currentMove.equals(random.DeckFunctions.getCardString(playerCards[i]) ) ) {
 				currentMove = UNENTERED_MOVE;
 				return playerCards[i];
 			}

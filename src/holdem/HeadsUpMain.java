@@ -5,8 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+import random.*;
 import severalClientProject.MiniServer;
-import deck.*;
 
 public class HeadsUpMain {
 
@@ -131,7 +131,7 @@ public class HeadsUpMain {
 	
 	public static void runNormal(HoldemPlayerDecider player[], int initialStackPerPlayer, int initBB, HoldemServerMiddleMan middleMan) {
 		initRandSeating(player, middleMan);
-		Deck deck = new DeckRandom(middleMan.getCommandFile());
+		Deck deck = new RandomDeck(middleMan.getCommandFile());
 		run(deck, player, initialStackPerPlayer, initBB, middleMan);
 	}
 	

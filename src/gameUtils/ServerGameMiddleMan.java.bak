@@ -118,7 +118,7 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 		MiniServer playerToSendTo = null;
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
-				if(clientPlayersPlaying[i] != null && name.equals(clientPlayersPlaying[i].getClientName())) {
+				if(name.equals(clientPlayersPlaying[i].getClientName())) {
 					playerToSendTo = clientPlayersPlaying[i];
 					break;
 				}

@@ -1,4 +1,4 @@
-package deck;
+package random;
 
 public class DeckFunctions {
 

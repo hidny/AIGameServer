@@ -1,9 +1,9 @@
-package deck;
+package random;
 
 import java.util.Scanner;
 
 
-public class RiggedDeck implements deck.Deck {
+public class RiggedDeck implements random.Deck {
 
 	
 	

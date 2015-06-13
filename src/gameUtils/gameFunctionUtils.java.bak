@@ -10,6 +10,7 @@ public class gameFunctionUtils {
 		int num = 0;
 		
 		for(int i=child.getName().length() - 5, pow = 0; true; i--, pow++) {
+		
 			if(child.getName().charAt(i) >= '0' && child.getName().charAt(i) <= '9') {
 				num += (child.getName().charAt(i) - '0')*((int)Math.pow(10, pow));
 			} else {

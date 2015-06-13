@@ -12,6 +12,7 @@ public class ServerGameReference {
 	public static String CHESS = "chess";
 	public static String MELLOW = "mellow";
 	public static String REVERSI = "reversi";
+	public static String FRUSTRATION = "frustration";
 	
 	public static severalClientProject.Game createGame(String gameName) {
 		return createGame(gameName, null);
@@ -34,6 +35,9 @@ public class ServerGameReference {
 		} else if(gameName.toLowerCase().equals(REVERSI)) {
 			//TODO: host shouldn't always have to be dark...
 			return new reversi.ReversiMiddleMan();
+		} else if(gameName.toLowerCase().equals(FRUSTRATION) || gameName.toLowerCase().startsWith(FRUSTRATION)) {
+			//TODO: host shouldn't always have to be dark...
+			return new frustrationIrwin.FrustrationServerMiddleMan();
 		} else {
 			return new connectFour.ConnectFour();
 		}

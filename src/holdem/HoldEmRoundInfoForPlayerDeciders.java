@@ -22,7 +22,7 @@ package holdem;
 
 import java.util.ArrayList;
 
-import deck.*;
+import random.*;
 
 public class HoldEmRoundInfoForPlayerDeciders {
 	
