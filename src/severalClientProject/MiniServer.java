@@ -450,11 +450,11 @@ public class MiniServer extends Thread{
     private static String beAJerkToFriends(String name) {
     	name = name.trim();
     	
-    	if(name.toLowerCase().startsWith("rich")) {
-    		name = "Dick";
+    	if(name.toLowerCase().startsWith("dick")) {
+    		name = "Richard";
     	} else if(name.toLowerCase().startsWith("mar")) {
     		name = "Daisy";
-    	} else if(name.toLowerCase().startsWith("des ")) {
+    	} else if(name.toLowerCase().startsWith("des")) {
     		name = "Daisy";
     	} else if(name.toLowerCase().startsWith("doris")) {
     		name = "Mom";
@@ -470,6 +470,10 @@ public class MiniServer extends Thread{
     		name = "TEN_YEAR_OLD_BOY";
     	} else if(name.toLowerCase().contains("closed")) {
     		name = "SOME_NOBODY";
+    	} else if(name.toLowerCase().contains("game created")) {
+    		name = "gamer";
+    	} else if(name.toLowerCase().contains("chess")) {
+    		name = "teamawesome";
     	}
     	
     	return name;
