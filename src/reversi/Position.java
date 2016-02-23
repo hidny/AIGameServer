@@ -73,6 +73,7 @@ public class Position {
 		
 		middleMan.recordCommand("Reversi:" + "\n");
 		middleMan.recordCommand(dark.getName() + " vs " + white.getName() + "\n");
+		middleMan.sendMessageToGroup(dark.getName() + " vs " + white.getName() + "\n", true);
 		
 		
 		//System.out.println(pos.getPositionString());
@@ -211,7 +212,7 @@ public class Position {
 		} else {
 			//System.out.println("It's a tie!");
 			//System.out.println(numDark + " - " + numWhite);
-			middleMan.sendMessageToGroup("It's a tie!", true);
+			middleMan.sendMessageToGroup("It is a tie!", true);
 			middleMan.sendMessageToGroup(numDark + " - " + numWhite, true);
 		}
 		//print final score because why not?

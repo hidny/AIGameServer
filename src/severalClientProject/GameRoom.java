@@ -144,7 +144,7 @@ public class GameRoom extends Thread implements Runnable {
 		}
 		//***************************
 
-		renewRefreshMessage();
+		renewRefreshMessage(host.getClientName());
 	}
 	
 	public void setupBasicRoomVars(MiniServer host) {
@@ -182,7 +182,7 @@ public class GameRoom extends Thread implements Runnable {
 			if(errorMsg.equals("")) {
 				players[slot] = player;
 				this.numPlayers++;
-				renewRefreshMessage();
+				renewRefreshMessage(player.getClientName());
 				return "";
 			} else {
 				return errorMsg;
@@ -232,8 +232,20 @@ public class GameRoom extends Thread implements Runnable {
 	
 	//leave: If host leaves, this just makes the guy under the host the host.
 	public synchronized String kick(String player) {
-		player = player.toLowerCase();
+		player = player.toLowerCase().trim();
 		MiniServer bannedPlayer = null;
+		System.out.println("1. " + player);
+		System.out.println("2. " + host.getClientName().toLowerCase().trim());
+		
+		if(player.equals(host.getClientName().toLowerCase().trim())) {
+			try {
+				host.sendMessageToClient("Don\'t ban yourself.");
+			} catch (IOException e) {
+				System.err.println("Couldn\'t cancel ban of host properly...");
+				e.printStackTrace();
+			}
+			return "";
+		}
 		
 		for(int i=0; i<players.length; i++) {
 			if(players[i] != null && players[i].getClientName().toLowerCase().equals(player)) {
@@ -334,9 +346,12 @@ public class GameRoom extends Thread implements Runnable {
 	}
 	
     
+	public synchronized void sendGameRoomPlayersMessage(String from, String msg) {
+		sendGameRoomPlayersMessage(from, msg, "");
+	}
 	//TODO: i just set synchronized on this.
 	//pre: The below methods are private and are only called within synchronized function:
-	public synchronized void sendGameRoomPlayersMessage(String from, String msg) {
+	public synchronized void sendGameRoomPlayersMessage(String from, String msg, String playerToNotUpdate) {
 			System.out.println("DEBUG: trying to send msg: " + msg);
 			if(from.equals("") == false) {
 				msg = from + ": " + msg;
@@ -344,7 +359,7 @@ public class GameRoom extends Thread implements Runnable {
 			
 			for(int i=0; i<players.length; i++) {
 				try {
-					if(players[i] != null) {
+					if(players[i] != null && players[i].getClientName().equals(playerToNotUpdate) == false) {
 						System.out.println("player " + (i+1) + " is not null!");
 						System.out.println(players[i].getClientName());
 						players[i].sendMessageToClient(msg);
@@ -359,6 +374,10 @@ public class GameRoom extends Thread implements Runnable {
 	}
 	
 	private synchronized void renewRefreshMessage() {
+		renewRefreshMessage("");
+	}
+	private synchronized void renewRefreshMessage(String playerToNotUpdate) {
+		
 		String newMessage = "";
 		newMessage += getStateFromOutsideRoom() + ":" + "\n";
 		for(int i=0; i<players.length; i++) {
@@ -378,7 +397,7 @@ public class GameRoom extends Thread implements Runnable {
 		refreshMessage = newMessage;
 		
 		System.out.println("Sending game room players message:");
-		sendGameRoomPlayersMessage("", refreshMessage);
+		sendGameRoomPlayersMessage("", refreshMessage, playerToNotUpdate);
 		System.out.println("End sending game room players message:");
 	}
 		

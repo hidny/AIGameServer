@@ -55,8 +55,8 @@ public class Server {
     	boolean alreadyExists = false;
     	
     	for(int i=0; i<gameRoom.size(); i++) {
-    		if(gameRoom.get(i).equals(roomName)) {
-    			ret = "ERROR: a game called " + gameName + " already exists.";
+    		if(gameRoom.get(i).getRoomName().equals(roomName)) {
+    			ret = "ERROR: a game called " + roomName + " already exists.";
     			alreadyExists = true;
     			break;
     		}
@@ -136,10 +136,14 @@ public class Server {
     	ret += "number of game rooms: " + gameRoom.size() + "\n";
     	for(int i=0; i<gameRoom.size(); i++) {
 			if(gameRoom.get(i).isGameStarted() == false && gameRoom.get(i).isCancelled() == false || gameRoom.get(i).getNextEmptySlot() < 0) {
-				ret += gameRoom.get(i).getStateFromOutsideRoom() + "\n";
+				if(gameRoom.get(i).getPassword().equals("")) {
+					ret += gameRoom.get(i).getStateFromOutsideRoom() + "\n";
+					
+				} else {
+					ret += gameRoom.get(i).getStateFromOutsideRoom() + " (password locked)" + "\n";
+					
+				}
 				numRooms++;
-			} else if(gameRoom.get(i).isGameStarted() == true) {
-				ret += "DEBUG started: " + gameRoom.get(i).getStateFromOutsideRoom() + "\n";
 			}
 		}
     	if(numRooms == 0) {

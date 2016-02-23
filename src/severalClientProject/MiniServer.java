@@ -658,7 +658,7 @@ public class MiniServer extends Thread{
 				//***END TODO
 				//********************************************************************************************************************
     		} else {
-				immediateResponse = "ERROR: can\'t identify game name. " + "( " + args[1] + ")" + ServerGameReference.FRUSTRATION;
+				immediateResponse = "ERROR: can\'t identify game name. " + "( " + args[1] + ")";
 			}
 		} else {
 			immediateResponse = "ERROR: please create game in the form: \"/create gamename roomname\"";
