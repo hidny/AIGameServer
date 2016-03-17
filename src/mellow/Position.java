@@ -42,7 +42,7 @@ public class Position {
 	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[]) {
 		startMellow(middleMan, red, blue, UNKNOWN, null);
 	}
-	//TODO: actually use the String args... options. (like if it's a replay)
+	
 	//When you need it.
 	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int dealerIndex, random.Deck givenDeck) {
 		
@@ -53,7 +53,6 @@ public class Position {
 		
 		int result = pos.playGame(red, blue, middleMan, dealerIndex, givenDeck);
 		
-		//TODO: surround the results with stars **** because that's the way mom does it.
 		if ( result == RED_WINS) {
 			middleMan.sendMessageToGroup(red[0].getName() + " & " + red[1].getName() + " win!");
 		} else if(result == BLUE_WINS ){
@@ -132,7 +131,6 @@ public class Position {
 			blueScore+= scoresObtained[1];
 			
 			printUpdate(redScore, blueScore, scoresObtained, middleMan);
-			//TODO: send update message to players
 			
 			dealerIndex++;
 			dealerIndex = dealerIndex%4;
@@ -205,7 +203,6 @@ public class Position {
 	}
 	
 	
-	//TODO: test
 	public void printBids(int dealerIndex, PlayerModel playerModel[], MellowServerMiddleMan middleMan) {
 		
 		middleMan.sendMessageToGroup("Bids:");
@@ -219,7 +216,6 @@ public class Position {
 		boolean Mellow1 = player.isMellow();
 		boolean Mellow2 = partner.isMellow();
 		
-		//TODO: someone's bid is here:
 		if(Mellow1 && Mellow2) {
 			middleMan.sendMessageToGroup("2  ");
 		} else if(Mellow1 || Mellow2) {
@@ -328,7 +324,6 @@ public class Position {
 		
 	}
 	
-	//TODO: brute force test every damn combo,
 	public static int fight(int initialActionIndex, int cardsOnTable[]) {
 		int currentWinnerIndex = initialActionIndex;
 		String currentBestSuit = "" + random.DeckFunctions.getSuit(cardsOnTable[initialActionIndex]);
@@ -389,14 +384,12 @@ public class Position {
 	}
 	
 	public int[] updateScore(PlayerModel playerModel[]) {
-		//TODO: test
 		int redScore = getTeamPointsObtained(playerModel[0], playerModel[2]);
 		int blueScore = getTeamPointsObtained(playerModel[1], playerModel[3]);
 		
 		return new int[] {redScore,blueScore};
 	}
 	
-	//TODO: test
 	public int getTeamPointsObtained(PlayerModel player, PlayerModel partner) {
 		int combinedBid = player.getNumBid() + partner.getNumBid();
 		int combinedTricks = player.getNumTricks() + partner.getNumTricks();
@@ -461,7 +454,6 @@ public class Position {
 	}
 	
 	public void printUpdate(int redScore, int blueScore, int scoresObtained[], MellowServerMiddleMan middleMan) {
-		//TODO: make this look better.
 		middleMan.sendMessageToGroup((redScore-scoresObtained[0]) + "    " + (blueScore-scoresObtained[1]));
 		middleMan.sendMessageToGroup(scoresObtained[0] + "    " + scoresObtained[1]);
 		middleMan.sendMessageToGroup(redScore + "    " + blueScore);
