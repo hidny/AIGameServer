@@ -226,7 +226,6 @@ public class Server {
     	return "couldn\'t find user.";
     }
     
-	//TODO: put lock here!
     public synchronized static void sendChatMessageToChannel(MiniServer client, String message) {
     	//OPTIONAL: create send message(listofclients) functions. (Make the order of what's displayed on the screen consistant between clients...)
     	

@@ -1,6 +1,4 @@
 package gameUtils;
-//TODO
-import java.io.IOException;
 import java.io.PrintWriter;
 
 import severalClientProject.MiniServer;
@@ -29,20 +27,23 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 	}
 	
 
-	//TO BE overwritten.
+	//TO BE overridden.
 	public void startGameForClients(MiniServer player[]) {
+		startGameForClients(player, "");
+	}
+	
+	public void startGameForClients(MiniServer player[], String variation) {
 		for(int i=0; i<player.length; i++) {
 			if(player[i] != null) {
 				try {
 					player[i].sendMessageToClient("ERROR: No game specified!");
-				} catch (IOException e) {
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 			
 		}
 	}
-	
 	
 	public boolean isReadingReplay() {
 		if(this.commandFile == null) {

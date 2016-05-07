@@ -13,6 +13,7 @@ public class ServerGameReference {
 	public static String MELLOW = "mellow";
 	public static String REVERSI = "reversi";
 	public static String FRUSTRATION = "frustration";
+	public static String EUCHRE = "euchre";
 	
 	public static severalClientProject.Game createGame(String gameName) {
 		return createGame(gameName, null);
@@ -32,6 +33,11 @@ public class ServerGameReference {
 			//TODO: host shouldn't always have to be white...
 			//Or make extra slots to play with the ordering.
 			return new mellow.MellowServerMiddleMan();
+		} else if(gameName.toLowerCase().equals(EUCHRE)) {
+			//TODO: host shouldn't always have to be white...
+			//Or make extra slots to play with the ordering.
+			return new euchre.EuchreServerMiddleMan();
+			
 		} else if(gameName.toLowerCase().equals(REVERSI)) {
 			//TODO: host shouldn't always have to be dark...
 			return new reversi.ReversiMiddleMan();

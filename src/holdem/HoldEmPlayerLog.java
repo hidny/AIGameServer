@@ -1,6 +1,7 @@
 package holdem;
 
 import random.*;
+import random.card.DeckFunctions;
 import severalClientProject.MiniServer;
 
 //This class holds the official data about an AI in texas hold'em.

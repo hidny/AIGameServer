@@ -129,6 +129,11 @@ public class GameRoom extends Thread implements Runnable {
 			maxPlayers = 4;
 			
 			setupBasicRoomVars(host);
+		} else if (gameName.equals(ServerGameReference.EUCHRE)) {
+			minPlayers = 4;
+			maxPlayers = 4;
+			
+			setupBasicRoomVars(host);
 		} else if (gameName.equals(ServerGameReference.REVERSI)) {
 			minPlayers = 2;
 			maxPlayers = 2;

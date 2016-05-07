@@ -1,0 +1,641 @@
+Starting Euchre! Michael & Richard vs Dad & Mom
+Variation: ontarian
+First dealer is Mom
+Trump card is TD
+Starting 1st calling round:
+Michael's turn to call:
+Michael passes.
+Dad's turn to call:
+Dad passes.
+Richard's turn to call:
+Richard orders up the dealer and is going alone.
+Dealer Index: 3
+Dealer: Mom
+Initial Action index: 1
+Dad's turn:
+Dad playing: 9H
+Richard's turn:
+Richard playing: QH
+Mom's turn:
+Mom playing: 9C
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: TS
+Mom's turn:
+Mom playing: QS
+Dad's turn:
+Dad playing: JS
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: TC
+Dad's turn:
+Dad playing: KC
+Richard's turn:
+Richard playing: JC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: TH
+Richard's turn:
+Richard playing: KH
+Mom's turn:
+Mom playing: KS
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: AD
+Mom's turn:
+Mom playing: JH
+Dad's turn:
+Dad playing: 9S
+Fight Winner: Mom
+ALL: END ROUND!
+ALL: Michael got 0 trick(s).
+ALL: Dad got 1 trick(s).
+ALL: Richard got 2 trick(s).
+ALL: Mom got 2 trick(s).
+0    2
+END PRINT SCORE!
+Current dealer is Michael
+Trump card is KH
+Starting 1st calling round:
+Dad's turn to call:
+Dad passes.
+Richard's turn to call:
+Richard passes.
+Mom's turn to call:
+Mom orders up the dealer and is going alone.
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9H
+Mom's turn:
+Mom playing: AH
+Michael's turn:
+Michael playing: AC
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: JH
+Michael's turn:
+Michael playing: 9D
+Richard's turn:
+Richard playing: KC
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QH
+Michael's turn:
+Michael playing: QD
+Richard's turn:
+Richard playing: 9S
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: JS
+Michael's turn:
+Michael playing: AS
+Richard's turn:
+Richard playing: TS
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 9C
+Richard's turn:
+Richard playing: KS
+Mom's turn:
+Mom playing: QC
+Fight Winner: Mom
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Dad got 0 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Mom got 4 trick(s).
+0    3
+END PRINT SCORE!
+Current dealer is Dad
+Trump card is AH
+Starting 1st calling round:
+Richard's turn to call:
+Richard passes.
+Mom's turn to call:
+Mom passes.
+Michael's turn to call:
+Michael orders up the dealer and is going alone.
+Dealer Index: 1
+Dealer: Dad
+Initial Action index: 3
+Mom's turn:
+Mom playing: AD
+Michael's turn:
+Michael playing: 9C
+Dad's turn:
+Dad playing: TD
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: TS
+Michael's turn:
+Michael playing: KS
+Dad's turn:
+Dad playing: KD
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: KH
+Dad's turn:
+Dad playing: TC
+Mom's turn:
+Mom playing: KC
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 9S
+Dad's turn:
+Dad playing: QC
+Mom's turn:
+Mom playing: AS
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QD
+Michael's turn:
+Michael playing: 9H
+Dad's turn:
+Dad playing: AC
+Fight Winner: Michael
+ALL: END ROUND!
+ALL: Michael got 3 trick(s).
+ALL: Dad got 0 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Mom got 2 trick(s).
+1    3
+END PRINT SCORE!
+Current dealer is Richard
+Trump card is AH
+Starting 1st calling round:
+Mom's turn to call:
+Mom passes.
+Michael's turn to call:
+Michael passes.
+Dad's turn to call:
+Dad orders up the dealer and is going alone.
+Dealer Index: 2
+Dealer: Richard
+Initial Action index: 0
+Michael's turn:
+Michael playing: QH
+Dad's turn:
+Dad playing: JH
+Richard's turn:
+Richard playing: JD
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: 9C
+Richard's turn:
+Richard playing: KC
+Michael's turn:
+Michael playing: QC
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9S
+Michael's turn:
+Michael playing: AS
+Dad's turn:
+Dad playing: JS
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 9D
+Dad's turn:
+Dad playing: QD
+Richard's turn:
+Richard playing: TH
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: TC
+Michael's turn:
+Michael playing: TD
+Dad's turn:
+Dad playing: KS
+Fight Winner: Richard
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Dad got 1 trick(s).
+ALL: Richard got 3 trick(s).
+ALL: Mom got 0 trick(s).
+3    3
+END PRINT SCORE!
+Current dealer is Mom
+Trump card is QS
+Starting 1st calling round:
+Michael's turn to call:
+Michael passes.
+Dad's turn to call:
+Dad passes.
+Richard's turn to call:
+Richard orders up the dealer and is going alone.
+Dealer Index: 3
+Dealer: Mom
+Initial Action index: 1
+Dad's turn:
+Dad playing: 9S
+Richard's turn:
+Richard playing: TS
+Mom's turn:
+Mom playing: KS
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: JH
+Dad's turn:
+Dad playing: QC
+Richard's turn:
+Richard playing: 9C
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QH
+Dad's turn:
+Dad playing: JD
+Richard's turn:
+Richard playing: TD
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: AH
+Dad's turn:
+Dad playing: KD
+Richard's turn:
+Richard playing: KC
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: JS
+Dad's turn:
+Dad playing: QD
+Richard's turn:
+Richard playing: AC
+Fight Winner: Mom
+ALL: END ROUND!
+ALL: Michael got 0 trick(s).
+ALL: Dad got 0 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Mom got 5 trick(s).
+3    5
+END PRINT SCORE!
+Current dealer is Michael
+Trump card is AD
+Starting 1st calling round:
+Dad's turn to call:
+Dad passes.
+Richard's turn to call:
+Richard passes.
+Mom's turn to call:
+Mom orders up the dealer and is going alone.
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 2
+Richard's turn:
+Richard playing: TH
+Mom's turn:
+Mom playing: AH
+Michael's turn:
+Michael playing: TS
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 9D
+Michael's turn:
+Michael playing: 9C
+Richard's turn:
+Richard playing: JD
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: QC
+Mom's turn:
+Mom playing: KH
+Michael's turn:
+Michael playing: KC
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: KS
+Richard's turn:
+Richard playing: KD
+Mom's turn:
+Mom playing: QS
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: JH
+Mom's turn:
+Mom playing: QH
+Michael's turn:
+Michael playing: AS
+Fight Winner: Richard
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Dad got 0 trick(s).
+ALL: Richard got 3 trick(s).
+ALL: Mom got 1 trick(s).
+5    5
+END PRINT SCORE!
+Current dealer is Dad
+Trump card is QS
+Starting 1st calling round:
+Richard's turn to call:
+Richard passes.
+Mom's turn to call:
+Mom passes.
+Michael's turn to call:
+Michael orders up the dealer and is going alone.
+Dealer Index: 1
+Dealer: Dad
+Initial Action index: 3
+Mom's turn:
+Mom playing: 9C
+Michael's turn:
+Michael playing: AH
+Dad's turn:
+Dad playing: KC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: TS
+Mom's turn:
+Mom playing: JD
+Michael's turn:
+Michael playing: 9S
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: AS
+Mom's turn:
+Mom playing: TC
+Michael's turn:
+Michael playing: 9D
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: KS
+Mom's turn:
+Mom playing: TD
+Michael's turn:
+Michael playing: 9H
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: AD
+Mom's turn:
+Mom playing: TH
+Michael's turn:
+Michael playing: JH
+Fight Winner: Dad
+ALL: END ROUND!
+ALL: Michael got 0 trick(s).
+ALL: Dad got 5 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Mom got 0 trick(s).
+5    7
+END PRINT SCORE!
+Current dealer is Richard
+Trump card is JC
+Starting 1st calling round:
+Mom's turn to call:
+Mom passes.
+Michael's turn to call:
+Michael passes.
+Dad's turn to call:
+Dad orders up the dealer and is going alone.
+Dealer Index: 2
+Dealer: Richard
+Initial Action index: 0
+Michael's turn:
+Michael playing: TC
+Dad's turn:
+Dad playing: 9S
+Richard's turn:
+Richard playing: QC
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9D
+Michael's turn:
+Michael playing: JH
+Dad's turn:
+Dad playing: JD
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: KD
+Richard's turn:
+Richard playing: QD
+Michael's turn:
+Michael playing: JS
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: TH
+Dad's turn:
+Dad playing: TD
+Richard's turn:
+Richard playing: KH
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: AS
+Michael's turn:
+Michael playing: QH
+Dad's turn:
+Dad playing: TS
+Fight Winner: Richard
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Dad got 1 trick(s).
+ALL: Richard got 3 trick(s).
+ALL: Mom got 0 trick(s).
+7    7
+END PRINT SCORE!
+Current dealer is Mom
+Trump card is QC
+Starting 1st calling round:
+Michael's turn to call:
+Michael passes.
+Dad's turn to call:
+Dad passes.
+Richard's turn to call:
+Richard orders up the dealer and is going alone.
+Dealer Index: 3
+Dealer: Mom
+Initial Action index: 1
+Dad's turn:
+Dad playing: 9H
+Richard's turn:
+Richard playing: QH
+Mom's turn:
+Mom playing: AH
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: 9C
+Dad's turn:
+Dad playing: JC
+Richard's turn:
+Richard playing: KC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: JH
+Richard's turn:
+Richard playing: 9S
+Mom's turn:
+Mom playing: QD
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: KH
+Richard's turn:
+Richard playing: AS
+Mom's turn:
+Mom playing: JD
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: JS
+Richard's turn:
+Richard playing: AD
+Mom's turn:
+Mom playing: AC
+Fight Winner: Dad
+ALL: END ROUND!
+ALL: Michael got 0 trick(s).
+ALL: Dad got 4 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Mom got 1 trick(s).
+7    9
+END PRINT SCORE!
+Current dealer is Michael
+Trump card is KC
+Starting 1st calling round:
+Dad's turn to call:
+Dad passes.
+Richard's turn to call:
+Richard passes.
+Mom's turn to call:
+Mom orders up the dealer and is going alone.
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 2
+Richard's turn:
+Richard playing: AD
+Mom's turn:
+Mom playing: KD
+Michael's turn:
+Michael playing: JD
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9D
+Mom's turn:
+Mom playing: JS
+Michael's turn:
+Michael playing: 9H
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: AH
+Michael's turn:
+Michael playing: JC
+Richard's turn:
+Richard playing: 9S
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: QS
+Richard's turn:
+Richard playing: TS
+Mom's turn:
+Mom playing: KS
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: QH
+Michael's turn:
+Michael playing: AS
+Richard's turn:
+Richard playing: 9C
+Fight Winner: Richard
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Dad got 0 trick(s).
+ALL: Richard got 2 trick(s).
+ALL: Mom got 2 trick(s).
+9    9
+END PRINT SCORE!
+Current dealer is Dad
+Trump card is AC
+Starting 1st calling round:
+Richard's turn to call:
+Richard passes.
+Mom's turn to call:
+Mom passes.
+Michael's turn to call:
+Michael orders up the dealer and is going alone.
+Dealer Index: 1
+Dealer: Dad
+Initial Action index: 3
+Mom's turn:
+Mom playing: AH
+Michael's turn:
+Michael playing: TS
+Dad's turn:
+Dad playing: AD
+Fight Winner: Mom
+Initial Action index: 3
+Mom's turn:
+Mom playing: TC
+Michael's turn:
+Michael playing: QC
+Dad's turn:
+Dad playing: JC
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: TD
+Mom's turn:
+Mom playing: JH
+Michael's turn:
+Michael playing: KS
+Fight Winner: Dad
+Initial Action index: 1
+Dad's turn:
+Dad playing: QD
+Mom's turn:
+Mom playing: TH
+Michael's turn:
+Michael playing: JS
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: AS
+Dad's turn:
+Dad playing: QS
+Mom's turn:
+Mom playing: KC
+Fight Winner: Mom
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Dad got 2 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Mom got 2 trick(s).
+9    11
+END PRINT SCORE!
+Dad & Mom win!

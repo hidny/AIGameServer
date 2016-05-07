@@ -1,6 +1,8 @@
 package holdem;
 
 import random.*;
+import random.card.Deck;
+import random.card.DeckFunctions;
 
 
 public class HoldEmRoundLogic {

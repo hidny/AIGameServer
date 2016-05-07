@@ -1,0 +1,22 @@
+Starting Euchre! Michael & Richard vs Mom & Dad
+Variation: ontarian
+First dealer is Mom
+Trump card is AH
+Starting 1st calling round:
+Richard's turn to call:
+Richard passes.
+Dad's turn to call:
+Dad passes.
+Michael's turn to call:
+Michael passes.
+Mom's turn to call:
+Mom passes.
+Starting 2nd calling round:
+Richard's turn to call:
+Richard passes.
+Dad's turn to call:
+Dad declares diamonds and is going alone.
+Dealer Index: 1
+Dealer: Mom
+Initial Action index: 2
+Richard's turn:

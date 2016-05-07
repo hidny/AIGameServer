@@ -1,0 +1,643 @@
+Starting Euchre! Michael & Richard vs Phil & Doris
+Variation: ontarian
+First dealer is Doris
+Trump card is JD
+Starting 1st calling round:
+Michael's turn to call:
+Michael orders up the dealer.
+Dealer Index: 3
+Dealer: Doris
+Initial Action index: 0
+Michael's turn:
+Michael playing: JC
+Phil's turn:
+Phil playing: 9C
+Richard's turn:
+Richard playing: TS
+Doris's turn:
+Doris playing: QC
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: 9H
+Michael's turn:
+Michael playing: JH
+Phil's turn:
+Phil playing: AH
+Richard's turn:
+Richard playing: TH
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 9S
+Phil's turn:
+Phil playing: KS
+Richard's turn:
+Richard playing: AD
+Doris's turn:
+Doris playing: KC
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: QH
+Doris's turn:
+Doris playing: TD
+Michael's turn:
+Michael playing: TC
+Phil's turn:
+Phil playing: KD
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: QS
+Richard's turn:
+Richard playing: 9D
+Doris's turn:
+Doris playing: AC
+Michael's turn:
+Michael playing: AS
+Fight Winner: Richard
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Phil got 1 trick(s).
+ALL: Richard got 2 trick(s).
+ALL: Doris got 1 trick(s).
+1    0
+END PRINT SCORE!
+Current dealer is Michael
+Trump card is KC
+Starting 1st calling round:
+Phil's turn to call:
+Phil orders up the dealer.
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 1
+Phil's turn:
+Phil playing: KS
+Richard's turn:
+Richard playing: AS
+Doris's turn:
+Doris playing: TS
+Michael's turn:
+Michael playing: 9S
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: KH
+Doris's turn:
+Doris playing: JH
+Michael's turn:
+Michael playing: 9H
+Phil's turn:
+Phil playing: 9C
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: TD
+Richard's turn:
+Richard playing: QS
+Doris's turn:
+Doris playing: QD
+Michael's turn:
+Michael playing: AD
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: JC
+Phil's turn:
+Phil playing: TC
+Richard's turn:
+Richard playing: QC
+Doris's turn:
+Doris playing: JS
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: 9D
+Phil's turn:
+Phil playing: JD
+Richard's turn:
+Richard playing: AH
+Doris's turn:
+Doris playing: AC
+Fight Winner: Doris
+ALL: END ROUND!
+ALL: Michael got 2 trick(s).
+ALL: Phil got 1 trick(s).
+ALL: Richard got 1 trick(s).
+ALL: Doris got 1 trick(s).
+3    0
+END PRINT SCORE!
+Current dealer is Phil
+Trump card is JH
+Starting 1st calling round:
+Richard's turn to call:
+Richard orders up the dealer.
+Dealer Index: 1
+Dealer: Phil
+Initial Action index: 2
+Richard's turn:
+Richard playing: TH
+Doris's turn:
+Doris playing: AH
+Michael's turn:
+Michael playing: 9H
+Phil's turn:
+Phil playing: QC
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: JD
+Michael's turn:
+Michael playing: TS
+Phil's turn:
+Phil playing: TD
+Richard's turn:
+Richard playing: AD
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: KH
+Michael's turn:
+Michael playing: JS
+Phil's turn:
+Phil playing: 9C
+Richard's turn:
+Richard playing: QS
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: JC
+Michael's turn:
+Michael playing: AC
+Phil's turn:
+Phil playing: 9S
+Richard's turn:
+Richard playing: 9D
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: AS
+Phil's turn:
+Phil playing: KS
+Richard's turn:
+Richard playing: KD
+Doris's turn:
+Doris playing: QH
+Fight Winner: Doris
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Phil got 0 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Doris got 4 trick(s).
+3    2
+END PRINT SCORE!
+Current dealer is Richard
+Trump card is KC
+Starting 1st calling round:
+Doris's turn to call:
+Doris orders up the dealer.
+Dealer Index: 2
+Dealer: Richard
+Initial Action index: 3
+Doris's turn:
+Doris playing: JC
+Michael's turn:
+Michael playing: TC
+Phil's turn:
+Phil playing: JS
+Richard's turn:
+Richard playing: 9D
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: QS
+Michael's turn:
+Michael playing: JD
+Phil's turn:
+Phil playing: 9S
+Richard's turn:
+Richard playing: KD
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: AH
+Michael's turn:
+Michael playing: 9H
+Phil's turn:
+Phil playing: JH
+Richard's turn:
+Richard playing: TH
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: KS
+Michael's turn:
+Michael playing: AC
+Phil's turn:
+Phil playing: 9C
+Richard's turn:
+Richard playing: KH
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: TD
+Phil's turn:
+Phil playing: QD
+Richard's turn:
+Richard playing: AD
+Doris's turn:
+Doris playing: TS
+Fight Winner: Richard
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Phil got 0 trick(s).
+ALL: Richard got 1 trick(s).
+ALL: Doris got 3 trick(s).
+3    3
+END PRINT SCORE!
+Current dealer is Doris
+Trump card is QS
+Starting 1st calling round:
+Michael's turn to call:
+Michael orders up the dealer.
+Dealer Index: 3
+Dealer: Doris
+Initial Action index: 0
+Michael's turn:
+Michael playing: TC
+Phil's turn:
+Phil playing: QC
+Richard's turn:
+Richard playing: JH
+Doris's turn:
+Doris playing: 9S
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: AS
+Michael's turn:
+Michael playing: QH
+Phil's turn:
+Phil playing: KD
+Richard's turn:
+Richard playing: KS
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: JD
+Michael's turn:
+Michael playing: 9D
+Phil's turn:
+Phil playing: AD
+Richard's turn:
+Richard playing: QD
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: 9C
+Richard's turn:
+Richard playing: AH
+Doris's turn:
+Doris playing: JS
+Michael's turn:
+Michael playing: AC
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: KH
+Michael's turn:
+Michael playing: KC
+Phil's turn:
+Phil playing: TD
+Richard's turn:
+Richard playing: TH
+Fight Winner: Doris
+ALL: END ROUND!
+ALL: Michael got 0 trick(s).
+ALL: Phil got 1 trick(s).
+ALL: Richard got 0 trick(s).
+ALL: Doris got 4 trick(s).
+3    5
+END PRINT SCORE!
+Current dealer is Michael
+Trump card is 9D
+Starting 1st calling round:
+Phil's turn to call:
+Phil orders up the dealer.
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 1
+Phil's turn:
+Phil playing: 9H
+Richard's turn:
+Richard playing: AH
+Doris's turn:
+Doris playing: QH
+Michael's turn:
+Michael playing: TH
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: KC
+Doris's turn:
+Doris playing: JC
+Michael's turn:
+Michael playing: QC
+Phil's turn:
+Phil playing: KS
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9C
+Doris's turn:
+Doris playing: TC
+Michael's turn:
+Michael playing: QS
+Phil's turn:
+Phil playing: QD
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: KD
+Richard's turn:
+Richard playing: KH
+Doris's turn:
+Doris playing: JD
+Michael's turn:
+Michael playing: JH
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: AS
+Michael's turn:
+Michael playing: TD
+Phil's turn:
+Phil playing: 9S
+Richard's turn:
+Richard playing: TS
+Fight Winner: Michael
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Phil got 1 trick(s).
+ALL: Richard got 2 trick(s).
+ALL: Doris got 1 trick(s).
+5    5
+END PRINT SCORE!
+Current dealer is Phil
+Trump card is AD
+Starting 1st calling round:
+Richard's turn to call:
+Richard orders up the dealer.
+Dealer Index: 1
+Dealer: Phil
+Initial Action index: 2
+Richard's turn:
+Richard playing: TH
+Doris's turn:
+Doris playing: AH
+Michael's turn:
+Michael playing: QH
+Phil's turn:
+Phil playing: AS
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: 9S
+Michael's turn:
+Michael playing: QS
+Phil's turn:
+Phil playing: QC
+Richard's turn:
+Richard playing: JS
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: QD
+Phil's turn:
+Phil playing: KD
+Richard's turn:
+Richard playing: 9D
+Doris's turn:
+Doris playing: JD
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: 9H
+Michael's turn:
+Michael playing: AC
+Phil's turn:
+Phil playing: TC
+Richard's turn:
+Richard playing: JH
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: JC
+Doris's turn:
+Doris playing: KH
+Michael's turn:
+Michael playing: KC
+Phil's turn:
+Phil playing: 9C
+Fight Winner: Michael
+ALL: END ROUND!
+ALL: Michael got 2 trick(s).
+ALL: Phil got 0 trick(s).
+ALL: Richard got 1 trick(s).
+ALL: Doris got 2 trick(s).
+6    5
+END PRINT SCORE!
+Current dealer is Richard
+Trump card is KS
+Starting 1st calling round:
+Doris's turn to call:
+Doris orders up the dealer.
+Dealer Index: 2
+Dealer: Richard
+Initial Action index: 3
+Doris's turn:
+Doris playing: QC
+Michael's turn:
+Michael playing: JC
+Phil's turn:
+Phil playing: TC
+Richard's turn:
+Richard playing: KC
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: KD
+Phil's turn:
+Phil playing: QD
+Richard's turn:
+Richard playing: AD
+Doris's turn:
+Doris playing: 9H
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: JD
+Doris's turn:
+Doris playing: QS
+Michael's turn:
+Michael playing: TH
+Phil's turn:
+Phil playing: TS
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: KH
+Michael's turn:
+Michael playing: QH
+Phil's turn:
+Phil playing: AC
+Richard's turn:
+Richard playing: AH
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9D
+Doris's turn:
+Doris playing: JS
+Michael's turn:
+Michael playing: 9S
+Phil's turn:
+Phil playing: AS
+Fight Winner: Doris
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Phil got 0 trick(s).
+ALL: Richard got 2 trick(s).
+ALL: Doris got 2 trick(s).
+8    5
+END PRINT SCORE!
+Current dealer is Doris
+Trump card is AH
+Starting 1st calling round:
+Michael's turn to call:
+Michael orders up the dealer.
+Dealer Index: 3
+Dealer: Doris
+Initial Action index: 0
+Michael's turn:
+Michael playing: QC
+Phil's turn:
+Phil playing: AC
+Richard's turn:
+Richard playing: 9C
+Doris's turn:
+Doris playing: JC
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: JD
+Richard's turn:
+Richard playing: QH
+Doris's turn:
+Doris playing: KH
+Michael's turn:
+Michael playing: QS
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: 9H
+Richard's turn:
+Richard playing: JH
+Doris's turn:
+Doris playing: TH
+Michael's turn:
+Michael playing: KS
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: QD
+Doris's turn:
+Doris playing: AD
+Michael's turn:
+Michael playing: 9D
+Phil's turn:
+Phil playing: KD
+Fight Winner: Doris
+Initial Action index: 3
+Doris's turn:
+Doris playing: AS
+Michael's turn:
+Michael playing: JS
+Phil's turn:
+Phil playing: 9S
+Richard's turn:
+Richard playing: TC
+Fight Winner: Doris
+ALL: END ROUND!
+ALL: Michael got 0 trick(s).
+ALL: Phil got 2 trick(s).
+ALL: Richard got 1 trick(s).
+ALL: Doris got 2 trick(s).
+8    7
+END PRINT SCORE!
+Current dealer is Michael
+Trump card is 9S
+Starting 1st calling round:
+Phil's turn to call:
+Phil orders up the dealer.
+Dealer Index: 0
+Dealer: Michael
+Initial Action index: 1
+Phil's turn:
+Phil playing: AD
+Richard's turn:
+Richard playing: TS
+Doris's turn:
+Doris playing: KD
+Michael's turn:
+Michael playing: JD
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: 9C
+Doris's turn:
+Doris playing: AC
+Michael's turn:
+Michael playing: JC
+Phil's turn:
+Phil playing: TC
+Fight Winner: Michael
+Initial Action index: 0
+Michael's turn:
+Michael playing: TH
+Phil's turn:
+Phil playing: AH
+Richard's turn:
+Richard playing: QC
+Doris's turn:
+Doris playing: KH
+Fight Winner: Phil
+Initial Action index: 1
+Phil's turn:
+Phil playing: QS
+Richard's turn:
+Richard playing: JS
+Doris's turn:
+Doris playing: 9H
+Michael's turn:
+Michael playing: 9D
+Fight Winner: Richard
+Initial Action index: 2
+Richard's turn:
+Richard playing: KC
+Doris's turn:
+Doris playing: QD
+Michael's turn:
+Michael playing: JH
+Phil's turn:
+Phil playing: KS
+Fight Winner: Phil
+ALL: END ROUND!
+ALL: Michael got 1 trick(s).
+ALL: Phil got 2 trick(s).
+ALL: Richard got 2 trick(s).
+ALL: Doris got 0 trick(s).
+10    7
+END PRINT SCORE!
+Michael & Richard win!

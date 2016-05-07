@@ -63,7 +63,7 @@ public class ClientPlayerDecider implements PlayerDecider {
 		
 		currentMove = currentMove.toUpperCase().trim();
 		for(int i=0; i<playerCards.length; i++) {
-			if(currentMove.equals(random.DeckFunctions.getCardString(playerCards[i]) ) ) {
+			if(currentMove.equals(random.card.DeckFunctions.getCardString(playerCards[i]) ) ) {
 				currentMove = UNENTERED_MOVE;
 				return playerCards[i];
 			}

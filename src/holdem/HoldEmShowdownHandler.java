@@ -1,6 +1,6 @@
 package holdem;
 
-import random.DeckFunctions;
+import random.card.DeckFunctions;
 
 public class HoldEmShowdownHandler {
 	

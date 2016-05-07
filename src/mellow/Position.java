@@ -1,6 +1,6 @@
 package mellow;
 
-import random.DeckFunctions;
+import random.card.DeckFunctions;
 
 
 public class Position {
@@ -12,7 +12,7 @@ public class Position {
 	
 	private int redScore;
 	private int blueScore;
-	private random.Deck currentDeck;
+	private random.card.Deck currentDeck;
 	
 	public static int GOAL_SCORE = 1000;
 	public static int OLD_YELLAR_SCORE = -500;
@@ -44,7 +44,7 @@ public class Position {
 	}
 	
 	//When you need it.
-	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int dealerIndex, random.Deck givenDeck) {
+	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int dealerIndex, random.card.Deck givenDeck) {
 		
 		Position pos = new Position();
 		
@@ -68,7 +68,7 @@ public class Position {
 	}
 	
 	//returns false otherwise.
-	public int playGame(PlayerDecider redDecider[], PlayerDecider blueDecider[],  MellowServerMiddleMan middleMan, int dealerIndex, random.Deck givenDeck) {
+	public int playGame(PlayerDecider redDecider[], PlayerDecider blueDecider[],  MellowServerMiddleMan middleMan, int dealerIndex, random.card.Deck givenDeck) {
 		PlayerDecider playerDeciders[] = new PlayerDecider[4];
 		playerDeciders[0] = redDecider[0];
 		playerDeciders[1] = blueDecider[0];
@@ -92,7 +92,7 @@ public class Position {
 		
 		//If no deck is given, create a new one:
 		if(givenDeck == null) {
-			currentDeck = new random.RandomDeck(middleMan.getCommandFile());
+			currentDeck = new random.card.RandomDeck(middleMan.getCommandFile());
 		} else {
 			currentDeck = givenDeck;
 		}
@@ -114,7 +114,7 @@ public class Position {
 			
 			for(int i=0; i<4; i++) {
 				for(int j=0; j<13; j++) {
-					hand += random.DeckFunctions.getCardString(playerModel[i].getHand()[j]) + " ";
+					hand += random.card.DeckFunctions.getCardString(playerModel[i].getHand()[j]) + " ";
 				}
 				middleMan.sendMessageToPlayer(playerModel[i].getPlayerName(),  hand);
 				hand = "";
@@ -228,7 +228,7 @@ public class Position {
 	
 	
 	public void playRound(int dealerIndex, PlayerModel playerModel[], PlayerDecider playerDecider[], MellowServerMiddleMan middleMan) {
-		int CARDS_PER_HAND = random.RandomDeck.STANDARD_DECK_SIZE / 4;
+		int CARDS_PER_HAND = random.card.RandomDeck.STANDARD_DECK_SIZE / 4;
 		
 		int prevPlay[] = new int[4];
 		
@@ -252,7 +252,7 @@ public class Position {
 				//System.out.print(playerModel[j].getPlayerName() + ": ");
 				for(int k=0; k<currentHandToPrint.length; k++) {
 					//System.out.print(deck.DeckFunctions.getCardString(currentHandToPrint[k]) + " ");
-					hand += random.DeckFunctions.getCardString(currentHandToPrint[k]) + " ";
+					hand += random.card.DeckFunctions.getCardString(currentHandToPrint[k]) + " ";
 				}
 
 				middleMan.sendMessageToPlayer(playerModel[j].getPlayerName(), hand);
@@ -277,8 +277,8 @@ public class Position {
 				
 				middleMan.sendMessageToPlayer(playerDecider[actionIndex].getName(), "Thank you!");
 				
-				if(isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()) ) {
-					
+				if( playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false ||
+						isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()) ) {
 					
 					//autoinsert card:
 					for(int k=0; k<playerModel[actionIndex].getHand().length && isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()); k++) {
@@ -290,14 +290,18 @@ public class Position {
 						System.out.println("ERROR: Couldn\'t find a valid card to play!!!");
 						System.exit(1);
 					}
-					middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
 					
+					if(playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false) {
+						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to play a card that\'s not in her hand.", false);
+					} else {
+						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
+					}
 					
 				}
 				
-				middleMan.recordCommand(random.DeckFunctions.getCardString(prevPlay[actionIndex]));
+				middleMan.recordCommand(random.card.DeckFunctions.getCardString(prevPlay[actionIndex]));
 				
-				middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " playing: " + random.DeckFunctions.getCardString(prevPlay[actionIndex]));
+				middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " playing: " + random.card.DeckFunctions.getCardString(prevPlay[actionIndex]));
 				
 				if(j+1 < 4) { 
 					middleMan.recordCommand(" - ");
@@ -326,7 +330,7 @@ public class Position {
 	
 	public static int fight(int initialActionIndex, int cardsOnTable[]) {
 		int currentWinnerIndex = initialActionIndex;
-		String currentBestSuit = "" + random.DeckFunctions.getSuit(cardsOnTable[initialActionIndex]);
+		String currentBestSuit = "" + random.card.DeckFunctions.getSuit(cardsOnTable[initialActionIndex]);
 		int currentBestPower = getPowerOfCardNum(DeckFunctions.getBaseNumber(cardsOnTable[initialActionIndex]));
 		
 		String nextSuit;
@@ -335,7 +339,7 @@ public class Position {
 		for(int i=0; i<3; i++) {
 			currentIndex = (initialActionIndex + 1 + i)%4;
 			
-			nextSuit = "" + random.DeckFunctions.getSuit(cardsOnTable[currentIndex]);
+			nextSuit = "" + random.card.DeckFunctions.getSuit(cardsOnTable[currentIndex]);
 			if(nextSuit.equals(TRUMP) && currentBestSuit.equals(TRUMP) == false) {
 				//TRUMP!
 				currentBestSuit = TRUMP;
@@ -432,13 +436,13 @@ public class Position {
 		if(initialActionIndex == actionIndex) {
 			return false;
 		//If the suits are equal, no renaging:
-		} else if(random.DeckFunctions.getSuit(currentPlay[initialActionIndex]) == random.DeckFunctions.getSuit(currentPlay[actionIndex])) {
+		} else if(random.card.DeckFunctions.getSuit(currentPlay[initialActionIndex]) == random.card.DeckFunctions.getSuit(currentPlay[actionIndex])) {
 			return false;
 		} else {
 			boolean hasSuit = false;
-			int leadSuit = random.DeckFunctions.getSuit(currentPlay[initialActionIndex]);
+			int leadSuit = random.card.DeckFunctions.getSuit(currentPlay[initialActionIndex]);
 			for(int i=0; i<cardsInHand.length; i++) {
-				if(random.DeckFunctions.getSuit(cardsInHand[i]) == leadSuit) {
+				if(random.card.DeckFunctions.getSuit(cardsInHand[i]) == leadSuit) {
 					hasSuit = true;
 				}
 			}

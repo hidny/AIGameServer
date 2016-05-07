@@ -609,9 +609,32 @@ public class MiniServer extends Thread{
 				} else {
 					immediateResponse = "ERROR: please add game name. Create game in the form: \"/create rock_paper_scissors roomname [password]\"";
 				}
-				//***END TODO
-				//********************************************************************************************************************
-    		}  else if(args[1].startsWith(ServerGameReference.REVERSI)) {
+			
+			}  else if(args[1].startsWith(ServerGameReference.EUCHRE)) {
+				//TODO: put below in it's own function!
+				if(args.length > 2 ) {
+					roomName = args[2];
+					if(args.length > 3 ) {
+    					password = args[3];
+    				}
+					
+					
+					temp = Server.createGame(ServerGameReference.EUCHRE, roomName, password, this, null);
+					
+					if(temp instanceof GameRoom) {
+						this.currentGameRoom  = (GameRoom)temp;
+						immediateResponse = "Game created:";
+    					immediateResponse += this.currentGameRoom.getStateFromInsideRoom();
+					} else {
+						immediateResponse = (String)temp;
+					}
+					
+					
+				} else {
+					immediateResponse = "ERROR: please add game name. Create game in the form: \"/create rock_paper_scissors roomname [password]\"";
+				}
+				
+			}  else if(args[1].startsWith(ServerGameReference.REVERSI)) {
 				//TODO: put below in it's own function!
 				if(args.length > 2 ) {
 					roomName = args[2];

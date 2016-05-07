@@ -52,7 +52,7 @@ public class ReplayRunner {
 			    	}
 			    	
 			    	String firstRoller = currentScan.split(" ")[2];
-			    	random.RiggedDie rigged = new random.RiggedDie(input);
+			    	random.dice.RiggedDie rigged = new random.dice.RiggedDie(input);
 			    	int startingIndex = -1;
 			    	for(int i=0; i<NUM_SLOTS; i++) {
 			    		if(playerReplayers[i] != null && playerReplayers[i].getName().equals(firstRoller)) {

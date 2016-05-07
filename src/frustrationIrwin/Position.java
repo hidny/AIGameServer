@@ -10,7 +10,7 @@ public class Position {
 	//irwin vs (matel/hasbro?)
 	public static String GAME_NAME = "frustrationIrwin";
 	
-	private random.Die currentDie;
+	private random.dice.Die currentDie;
 	
 	public static int NUM_POS_PER_QUARTER = 7;
 	public static int NUM_PEGS_PER_PLAYER = 4;
@@ -60,7 +60,7 @@ public class Position {
 	}
 	
 	//When you need it.
-	public static void startFrustration(FrustrationServerMiddleMan middleMan, PlayerDecider players[], random.Die givenDie, int startingIndex) {
+	public static void startFrustration(FrustrationServerMiddleMan middleMan, PlayerDecider players[], random.dice.Die givenDie, int startingIndex) {
 		
 		Position pos = new Position();
 		middleMan.sendMessageToGroup("Starting Frustation IRWIN!"+ "\n");
@@ -127,7 +127,7 @@ public class Position {
 	}
 	
 	//returns false otherwise.
-	public int playGame(PlayerDecider playerDeciders[],  FrustrationServerMiddleMan middleMan, random.Die givenDie, int startingIndex) {
+	public int playGame(PlayerDecider playerDeciders[],  FrustrationServerMiddleMan middleMan, random.dice.Die givenDie, int startingIndex) {
 		if(getNumPlayers(playerDeciders) <= 1) {
 			System.out.println("ERROR: this is a multiplayer game!");
 			System.exit(1);
@@ -142,7 +142,7 @@ public class Position {
 		
 		//If no deck is given, create a new one:
 		if(givenDie == null) {
-			currentDie = new random.RandomDie(middleMan.getCommandFile());
+			currentDie = new random.dice.RandomDie(middleMan.getCommandFile());
 		} else {
 			currentDie = givenDie;
 		}

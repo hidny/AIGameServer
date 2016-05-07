@@ -91,7 +91,7 @@ public class ReplayRunner {
 			    		indexDealer = -1;
 			    	}
 			    	
-		    		Position.startMellow(middleMan, red, blue, indexDealer, new random.RiggedDeck(input));
+		    		Position.startMellow(middleMan, red, blue, indexDealer, new random.card.RiggedDeck(input));
 		    		
 		    		System.out.println("Finished playing: " + inputfilename);
 		    		
