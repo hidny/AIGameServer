@@ -15,11 +15,28 @@ public class RiggedDeck implements random.card.Deck {
 	 public static final int  CARDS_PER_SUIT = 13;
 	 
 	 public static final int STANDARD_DECK_SIZE = 52;
+	 
+	 public static final int EUCHRE_TYPE = 1;
+	 public static final int STANDARD_EUCHRE_DECK_SIZE = 24;
 	
 	 public static Scanner inTestRun;
 	
 	//cards are labelled from 1 to 52:
 	
+	//pre: numDecks > 1
+	public RiggedDeck(Scanner input, int numStandardDecks, int typeOfDeck) {
+		inTestRun = input;
+		
+		if(typeOfDeck == EUCHRE_TYPE) {
+			deck = new int[STANDARD_EUCHRE_DECK_SIZE * numStandardDecks];
+		} else {
+			deck = new int[STANDARD_DECK_SIZE * numStandardDecks];
+		}
+		
+		
+		
+	}
+	 
 	//pre: numDecks > 1
 	public RiggedDeck(Scanner input, int numStandardDecks) {
 		deck = new int[STANDARD_DECK_SIZE * numStandardDecks];

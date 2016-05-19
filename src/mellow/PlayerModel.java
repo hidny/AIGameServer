@@ -47,23 +47,6 @@ public class PlayerModel {
 		this.currentNumCards++;
 	}
 	
-	public void play(String card) {
-		this.play(random.card.DeckFunctions.getCard(card));
-	}
-	public void play(int card) {
-		for(int i=0; i<this.currentNumCards; i++) {
-			if(card == this.card[i]) {
-				this.card[i] = this.card[this.currentNumCards];
-				this.card[this.currentNumCards] = NOT_A_CARD;
-				this.currentNumCards--;
-				return;
-			}
-		}
-		
-		System.out.println("ERROR: card not found in player play card!");
-	}
-	
-	
 	public boolean hasSuit(String suit) {
 		suit = suit.toUpperCase();
 		for(int i=0; i<this.currentNumCards; i++) {

@@ -1,5 +1,7 @@
 package euchre;
 
+import random.card.DeckFunctions;
+
 
 public class PlayerModel {
 	private String player;
@@ -41,23 +43,6 @@ public class PlayerModel {
 	public void give(int card) {
 		this.card[this.currentNumCards] = card;
 		this.currentNumCards++;
-	}
-	
-	public void play(String card) {
-		this.play(random.card.DeckFunctions.getCard(card));
-	}
-	public void play(int card) {
-		for(int i=0; i<this.currentNumCards; i++) {
-			if(card == this.card[i]) {
-				this.card[i] = this.card[this.currentNumCards];
-				this.card[this.currentNumCards] = NOT_A_CARD;
-				this.currentNumCards--;
-				return;
-			}
-		}
-		
-		System.out.println("ERROR: card not found in player play card!");
-		System.exit(1);
 	}
 	
 	
@@ -127,5 +112,14 @@ public class PlayerModel {
 			System.out.println("ERROR: (In PlayerModel) Couldn't find card to take away. (WTF).");
 			System.exit(1);
 		}
+	}
+	
+	public String getHandString() {
+		String hand = "";
+		for(int i=0; i<this.currentNumCards; i++) {
+			hand += DeckFunctions.getCardString(this.card[i]) + " ";
+		}
+		
+		return hand;
 	}
 }

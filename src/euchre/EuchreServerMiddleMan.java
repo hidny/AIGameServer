@@ -85,7 +85,11 @@ public class EuchreServerMiddleMan extends ServerGameMiddleMan {
 		
 		if(query.toLowerCase().startsWith("/move") && isInList(player) ) {
 			try {
-				move = query.split(" ")[1];
+				move = "";
+				for(int i=1; i<query.split(" ").length; i++) {
+					move += query.split(" ")[i] + " ";
+					
+				}
 				
 			} catch (Exception e) {
 				move = UNENTERED_MOVE;

@@ -18,12 +18,10 @@ public class ClientPlayerDecider implements PlayerDecider {
 		//this stops ais from spamming moves... that's ok though. :)
 		if(currentMove.equals(UNENTERED_MOVE)) {
 			
-			//TODO: make sure the move is legal!
 			
 			currentMove = move;
 	
 			try {
-				//June 7th: TODO: did I break it?
 				if (semMoveAvailable.availablePermits() < 1) {
 					semMoveAvailable.release();
 				}
@@ -55,8 +53,6 @@ public class ClientPlayerDecider implements PlayerDecider {
 	}
 	
 	
-	//TODO: copy mellow code for bids.
-	
 	//asks the current player to play a card.
 	//if the player renages, he/she will get a warning!
 	public int getCard(int playerCards[], int currentCardsInFight[], EuchreCall euchreCall, int dealerIndex, int currentPlayerIndex) {
@@ -81,7 +77,6 @@ public class ClientPlayerDecider implements PlayerDecider {
 	}
 	
 
-	//TODO: copy mellow code for bids.
 	//0=mellow
 	//1-13 is the number of tricks the players says he/she could make.
 	public String getCall(int playerCards[], int dealerIndex, String trumpCard, int callingRound, int currentPlayerIndex) {
@@ -95,7 +90,7 @@ public class ClientPlayerDecider implements PlayerDecider {
 		String ret = currentMove.toUpperCase().trim();
 		
 		currentMove = UNENTERED_MOVE;
-		
+
 		return ret;
 	}
 	

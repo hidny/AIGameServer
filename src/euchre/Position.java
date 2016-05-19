@@ -111,7 +111,6 @@ public class Position {
 		boolean firstHand  = true;
 		
 		EuchreCall euchreCall;
-		String hand;
 		
 		while(isGameOver() == false) {
 			//update dealer on all rounds except for the first one:
@@ -123,14 +122,10 @@ public class Position {
 			
 			this.dealEmUp(playerModel, dealerIndex);
 			
-			hand = "";
 			for(int i=0; i<NUM_PLAYERS; i++) {
-				for(int j=0; j<NUM_CARDS_PER_HAND; j++) {
-					hand += DeckFunctions.getCardString(playerModel[i].getHand()[j]) + " ";
-				}
-				middleMan.sendMessageToPlayer(playerModel[i].getPlayerName(),  hand);
-				hand = "";
+				middleMan.sendMessageToPlayer(playerModel[i].getPlayerName(),  playerModel[i].getHandString());
 			}
+			
 			this.trumpCard = DeckFunctions.getCardString(currentDeck.getNextCard());
 			
 			middleMan.sendMessageToGroup("Trump card is " + this.trumpCard);
@@ -344,7 +339,7 @@ public class Position {
 			initialActionIndex = indexWinner;
 			
 		}
-		middleMan.sendMessageToGroup("ALL: END ROUND!");
+		middleMan.sendMessageToGroup("ALL: END OF ROUND!");
 		for(int i=0; i<4; i++) {
 			middleMan.sendMessageToGroup("ALL: " + playerModel[i].getPlayerName() + " got " + playerModel[i].getNumTricks() + " trick(s).");
 		}

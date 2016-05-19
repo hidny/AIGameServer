@@ -22,6 +22,8 @@ public class CallingPhase {
 		
 		int indexPlayerAction;
 		int numChances = 0;
+		
+		boolean exchangeTrumpCard = false;
 	
 		//1st calling round:
 		for(int j=0; j<Position.NUM_PLAYERS && (euchreCall == null || euchreCall.isPassing()); j++) {
@@ -35,15 +37,40 @@ public class CallingPhase {
 			euchreCall = null;
 			
 			while ( euchreCall == null ) {
-								
-				middleMan.sendMessageToPlayer(playerModel[indexPlayerAction].getPlayerName(), "What's your call?");
 				
-				currentBid = player[indexPlayerAction].getCall(playerModel[indexPlayerAction].getHand(), dealerIndex, trumpCard, callingRound, indexPlayerAction);
+				currentBid = null;
+				
+				//Default eurchre call:
+				if(numChances >= 3) {
+					//set default call to some random trump if player is last to make a call:
+					//For testing: you could modify this to change the way game goes.
+					//AAAH: this is a bad place to put this code. There's no validation here!
+					//Warning: don't test illegal bids.
+					
+
+					currentBid = "p";
+					
+					if((dealerIndex+3)%4 == indexPlayerAction && callingRound == 1) {
+						
+						//Set trump to clubs and go alone.
+						currentBid = trumpCardTrump + "A";
+						
+					} else {
+					}
+				//End default call
+				} else {
+				
+					//Ask user for the call:
+					middleMan.sendMessageToPlayer(playerModel[indexPlayerAction].getPlayerName(), "What's your call?");
+				
+					currentBid = player[indexPlayerAction].getCall(playerModel[indexPlayerAction].getHand(), dealerIndex, trumpCard, callingRound, indexPlayerAction);
+
+				}
 				
 				if(currentBid != null && currentBid.length() > 0) {
 				
-					currentBid = currentBid.toLowerCase();
-				
+					currentBid = currentBid.toLowerCase().trim();
+					
 					if(currentBid.startsWith("p")) {
 						//player passes:
 						euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "", false, callOnFirstRound, true);
@@ -53,9 +80,14 @@ public class CallingPhase {
 						
 						if(callingRound == 1 && trumpCardTrump == calledTrump) {
 							
-							
 							if(currentBid.contains("a")) {
 								euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "" + calledTrump, true, callOnFirstRound, false);
+								if((indexPlayerAction + 2) % 4 == dealerIndex) {
+									exchangeTrumpCard = false;
+								} else {
+									exchangeTrumpCard = true;
+								}
+								
 							} else {
 								
 								// VARIATION
@@ -79,6 +111,7 @@ public class CallingPhase {
 									middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "DISALLOWED! The Ontarian version of Euchre forces you to go alone if you order up your partner.");
 								} else {
 									euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "" + calledTrump, false, callOnFirstRound, false);
+									exchangeTrumpCard = true;
 								}
 							}
 							
@@ -99,46 +132,33 @@ public class CallingPhase {
 				
 				numChances++;
 				
-				//Default eurchre call:
-				if(numChances >= 3 && euchreCall == null) {
-					//set default call to some random trump if player is last to make a call:
-					//For testing: you could modify this to change the way game goes.
-					//AAAH: this is a bad place to put this code. There's no validation here!
-					//Warning: don't test illegal bids.
-					
-					if((dealerIndex+3)%4 == indexPlayerAction && callingRound == 1) {
-						
-						//Set trump to clubs and don't go alone.
-						middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "You declared " + trumpCardTrump + " trump alone.");
-							
-						euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "" + trumpCardTrump, true, callOnFirstRound, false);
-						
-						
-					/*if((dealerIndex+0)%4 == indexPlayerAction && callingRound == 2) {
-					
-						if(trumpCard.endsWith("S")) {
-							//Set trump to clubs and don't go alone.
-							middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "You declared clubs trump alone.");
-							
-							euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "C", true, callOnFirstRound, false);
-						} else {
-							//Set trump to spades and don't go alone.
-							middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "You declared spades trump alone.");
-							
-							euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "S", true, callOnFirstRound, false);
-						}*/
-					} else {
-						middleMan.sendMessageToPlayer(player[indexPlayerAction].getName(), "You pass.");
-						euchreCall = new EuchreCall(dealerIndex, indexPlayerAction, "", false, callOnFirstRound, true);
-					}
-					
-				}
+				
 			}
 			
 			middleMan.sendMessageToPlayer(playerModel[indexPlayerAction].getPlayerName(), "Thank you.");
 			
 			middleMan.sendMessageToGroup(playerModel[indexPlayerAction].getPlayerName() +" " + euchreCall.toString());
 			middleMan.recordCommand(euchreCall.getCmdString() + "\n");
+			
+		}
+		
+		//Handle case when the dealer exchanges a card with the trump card:
+		if(exchangeTrumpCard == true) {
+
+			middleMan.sendMessageToGroup(playerModel[dealerIndex].getPlayerName() +" is exchanging a card with the trump card.");
+			
+			middleMan.sendMessageToPlayer(playerModel[dealerIndex].getPlayerName(), "Pick a card to exchange with the trump card");
+			
+			int card = player[dealerIndex].getCard(playerModel[dealerIndex].getHand(), null, euchreCall, dealerIndex, dealerIndex);
+			playerModel[dealerIndex].takeCard(card);
+			playerModel[dealerIndex].give(random.card.DeckFunctions.getCard(trumpCard));
+			middleMan.recordCommand(random.card.DeckFunctions.getCardString(card) + "\n");
+			
+
+			middleMan.sendMessageToPlayer(playerModel[dealerIndex].getPlayerName(), "Your new hand: " + playerModel[dealerIndex].getHandString());
+			middleMan.sendMessageToPlayer(playerModel[dealerIndex].getPlayerName(), "Thank you.");
+			
+			middleMan.sendMessageToGroup(playerModel[dealerIndex].getPlayerName() +" is finished exchanging a card with the trump card.");
 			
 		}
 		

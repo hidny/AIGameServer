@@ -94,6 +94,7 @@ public class ReplayRunner {
 			    	red[1] = new PlayerReplayer(input, playerNames[1]);
 			    	blue[0] = new PlayerReplayer(input, playerNames[2]);
 			    	blue[1] = new PlayerReplayer(input, playerNames[3]);
+
 			    	input.nextLine();
 			    	
 			    	if(red[0].getName().equals(firstDealer)) {
@@ -109,7 +110,7 @@ public class ReplayRunner {
 			    		indexDealer = -1;
 			    	}
 			    	
-		    		Position.startEuchre(middleMan, variation, red, blue, indexDealer, new random.card.RiggedDeck(input));
+		    		Position.startEuchre(middleMan, variation, red, blue, indexDealer, new random.card.RiggedDeck(input, 1, 1));
 		    		
 		    		System.out.println("Finished playing: " + inputfilename);
 		    		
@@ -127,7 +128,7 @@ public class ReplayRunner {
 			  System.out.println(" you did not find the folder... too bad.");
 		  }
 		  
-		  System.out.println("Done running mellow tests");
+		  System.out.println("Done running euchre tests");
 	}
 
 }

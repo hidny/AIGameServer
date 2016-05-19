@@ -74,7 +74,6 @@ public class MiniServer extends Thread{
     	
     	} catch(java.net.SocketException e) {
     		//TODO: cmd to leave game.
-    		//TODO: cmd to leave jjjjjjjjjj
     		submitClientQuery("/leave");
     		System.out.println("Client is a quitter!");
 			return;
