@@ -42,7 +42,7 @@ public class GameReplayPrinter {
 		try {
 			do {
 				num++;
-				f = new File(gameName + "Commands\\" + gameName + "Commands" + num + ".txt");
+				f = new File("C:\\Users\\Public\\Documents\\GameServerReplays\\" + gameName + "Commands\\" + gameName + "Commands" + num + ".txt");
 			} while(f.exists());
 			
 			
@@ -59,7 +59,7 @@ public class GameReplayPrinter {
 		PrintWriter ret = null;
 		try {
 			
-			ret = new PrintWriter(new File(gameName + "Commands\\" + gameName + "Commands" + num + ".txt"));
+			ret = new PrintWriter(new File("C:\\Users\\Public\\Documents\\GameServerReplays\\" + gameName + "Commands\\" + gameName + "Commands" + num + ".txt"));
 			
 		} catch( Exception e) {
 			e.printStackTrace();
@@ -71,7 +71,7 @@ public class GameReplayPrinter {
 	public static PrintWriter getNewOuput(String gameName, int num) {
 		PrintWriter ret = null;
 		try {
-			ret = new PrintWriter(new File(gameName + "Output\\" + gameName + "Output" + num + ".txt"));
+			ret = new PrintWriter(new File("C:\\Users\\Public\\Documents\\GameServerReplays\\" + gameName + "Output\\" + gameName + "Output" + num + ".txt"));
 			
 		} catch( Exception e) {
 			e.printStackTrace();
@@ -84,7 +84,7 @@ public class GameReplayPrinter {
 	public static PrintWriter getNewReplayOuput(String gameName, int num) {
 		PrintWriter ret = null;
 		try {
-			ret = new PrintWriter(new File(gameName + "ReplayOutput\\" + gameName + "Output" + num + ".txt"));
+			ret = new PrintWriter(new File("C:\\Users\\Public\\Documents\\GameServerReplays\\" + gameName + "ReplayOutput\\" + gameName + "Output" + num + ".txt"));
 			
 		} catch( Exception e) {
 			e.printStackTrace();

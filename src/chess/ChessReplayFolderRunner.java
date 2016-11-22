@@ -7,9 +7,9 @@ import java.util.List;
 public class ChessReplayFolderRunner {
 
 	public static void main(String[] args) {
-		File replayFolderName = new File("chessCommands");
+		File replayFolderName = new File("C:\\Users\\Public\\Documents\\GameServerReplays\\chessCommands");
 		
-		File chessOutput = new File("chessReplayOutput");
+		File chessOutput = new File("C:\\Users\\Public\\Documents\\GameServerReplays\\chessReplayOutput");
 		
 		List<String> textFiles;
 		

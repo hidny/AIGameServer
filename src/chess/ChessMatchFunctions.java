@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 
 public class ChessMatchFunctions {
-	public static File REPLAY_FOLDER_NAME = new File("chessCommands");
-	public static File CHESS_OUTPUT_FOLDER = new File("chessOutput");
+	public static File REPLAY_FOLDER_NAME = new File("C:\\Users\\Public\\Documents\\GameServerReplays\\chessCommands");
+	public static File CHESS_OUTPUT_FOLDER = new File("C:\\Users\\Public\\Documents\\GameServerReplays\\chessOutput");
 	
 	public static void startMatch(Player players[], ChessServerMiddleMan middleMan) {
 		startMatch(players, "", middleMan);
