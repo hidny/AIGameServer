@@ -1,15 +1,15 @@
 package holdem;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 //TODO: extend this class for a player that's just sitting out.
 public class HoldemClientPlayer implements HoldemPlayerDecider {
 	
-	private MiniServer player;
+	private ProfileInterface player;
 	
 	private HoldemServerMiddleMan middleMan;
 	
-	public HoldemClientPlayer(MiniServer player, HoldemServerMiddleMan middleMan) {
+	public HoldemClientPlayer(ProfileInterface player, HoldemServerMiddleMan middleMan) {
 		this.player = player;
 		this.middleMan = middleMan;
 	}

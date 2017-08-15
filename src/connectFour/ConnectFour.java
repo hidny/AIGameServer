@@ -1,15 +1,15 @@
 package connectFour;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public class ConnectFour implements severalClientProject.Game {
 	
 	
 	//TODO: allow for the possibility that players leave
-	private MiniServer playersWatchingOrPlaying[];
+	private ProfileInterface playersWatchingOrPlaying[];
 	
-	private MiniServer player1 = null;
-	private MiniServer player2 = null;
+	private ProfileInterface player1 = null;
+	private ProfileInterface player2 = null;
 	
 	private static int UNENTERED_MOVE = -1;
 	
@@ -22,7 +22,7 @@ public class ConnectFour implements severalClientProject.Game {
 	//TODO: figure it out:
 	//private Thread connect4Waiter = null;
 	
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		this.playersWatchingOrPlaying = player;
 		
 		this.getPlayerNamesOfCompetitors(player);
@@ -30,7 +30,7 @@ public class ConnectFour implements severalClientProject.Game {
 	}
 	
 	
-	public void getPlayerNamesOfCompetitors(MiniServer player[]) {
+	public void getPlayerNamesOfCompetitors(ProfileInterface player[]) {
 		for(int i=0; i<player.length; i++) {
 			if(player[i] != null && player1 == null) {
 				player1 = player[i];
@@ -76,7 +76,7 @@ public class ConnectFour implements severalClientProject.Game {
 	}
 	
 	
-	public ConnectFourPosition playTurn(MiniServer player, ConnectFourPosition pos) {
+	public ConnectFourPosition playTurn(ProfileInterface player, ConnectFourPosition pos) {
 		pos.printPos();
 		String message = "\n";
 		message += player.getClientName() + ": which column?" + "\n";
@@ -128,7 +128,7 @@ public class ConnectFour implements severalClientProject.Game {
 	
 	
 	//TODO: create a lock for this method.
-	public synchronized void submitClientQuery(MiniServer player, String query) {
+	public synchronized void submitClientQuery(ProfileInterface player, String query) {
 		int move = UNENTERED_MOVE;
 		if(query.toLowerCase().startsWith("/move")) {
 			try {

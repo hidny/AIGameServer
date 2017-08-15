@@ -9,7 +9,7 @@ import random.*;
 import random.card.Deck;
 import random.card.RandomDeck;
 import random.card.RiggedDeck;
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public class HeadsUpMain {
 
@@ -205,7 +205,7 @@ public class HeadsUpMain {
 	public static HoldemPlayerDecider[] setupDefaultClientPlayers(int numPlayers, HoldemServerMiddleMan middleMan) {
 		HoldemPlayerDecider player[] = new HoldemPlayerDecider[numPlayers];
 		
-		MiniServer playerClient[] = middleMan.getClientPlayers();
+		ProfileInterface playerClient[] = middleMan.getClientPlayers();
 		
 		int playersAdded = 0;
 		

@@ -18,7 +18,7 @@ public class Server {
 	
 	
 	//TODO: sort these so we could do a binary search: (or hash map?)
-	private static ArrayList<MiniServer> clientConnection = new ArrayList<MiniServer>();
+	private static ArrayList<Profile> clientProfiles = new ArrayList<Profile>();
 	private static ArrayList<GameRoom> gameRoom = new ArrayList<GameRoom>();
 	
 	
@@ -35,10 +35,10 @@ public class Server {
 
         while(listeningSocket){
             Socket clientSocket = serverSocket.accept();
-            clientConnection.add(new MiniServer(clientSocket));
-            clientConnection.get(clientConnection.size() - 1).start();
             
-            updateCountNumPeopleOnline();
+            MiniServer newConnection = new MiniServer(clientSocket);
+            
+            newConnection.start();
             
         }
         serverSocket.close();       
@@ -47,7 +47,7 @@ public class Server {
     
     
   //returns the gameRoom the client wants to create or an error message.
-   public static synchronized Object createGame(String gameName, String roomName, String password, MiniServer host, String gameArgs[]) {
+   public static synchronized Object createGame(String gameName, String roomName, String password, ProfileInterface host, String gameArgs[]) {
     	Object ret = "ERROR: ret shouldn\'t became something.";
     	
     	removeOldGames();
@@ -72,7 +72,7 @@ public class Server {
     }
     
     //returns the gameRoom the client wants to join or an error message.
-    public static synchronized Object joinGame(String roomName, String password, MiniServer client) {
+    public static synchronized Object joinGame(String roomName, String password, ProfileInterface client) {
     	removeOldGames();
     	
     	boolean foundGame = false;
@@ -118,13 +118,15 @@ public class Server {
     //counting number of people online BNET style!
     //TODO: change to poker style where your state is still there after you disconnect.
     //TODO: Don't recalculate every time, just refer to the string that has the latest update
+    //TODO: reintroduce intentional disc.
     private static synchronized void updateCountNumPeopleOnline() {
-    	for(int i=0; i<clientConnection.size(); i++) {
-        	if(clientConnection.get(i).isAlive() == false) {
-        		clientConnection.remove(i);
+    	/*for(int i=0; i<clientProfiles.size(); i++) {
+        	if(clientProfiles.get(i).isIntentionallyDisconnected() == true) {
+        		clientProfiles.remove(i);
         	}
-        }
-        System.out.println("Number of clients logged in: " + clientConnection.size());
+        }*/
+        
+        System.out.println("Number of clients logged in: " + clientProfiles.size());
     }
     
     //TODO: Don't recalculate every time, just refer to the string that has the latest update    
@@ -159,9 +161,9 @@ public class Server {
     	playersOusideMessage = "";
     	
     	playersOusideMessage += "players in channel:" + "\n";
-    	for(int i=0; i<clientConnection.size(); i++) {
-    		if(clientConnection.get(i).isInGame() == false) {
-    			playersOusideMessage += clientConnection.get(i).getClientName() + "\n";
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		if(clientProfiles.get(i).isInGame() == false) {
+    			playersOusideMessage += clientProfiles.get(i).getClientName() + "\n";
     		}
     	}
     	
@@ -176,10 +178,10 @@ public class Server {
     
     public static synchronized String givePlayerMessage(String sender, String receiver, String message) {
     	String ret ="";
-    	for(int i=0; i<clientConnection.size(); i++) {
-    		if(clientConnection.get(i).getClientName().toLowerCase().equals(receiver.toLowerCase())) {
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		if(clientProfiles.get(i).getClientName().toLowerCase().equals(receiver.toLowerCase())) {
     			try {
-    				clientConnection.get(i).sendMessageFromOtherClientToClient(sender, message);
+    				clientProfiles.get(i).sendMessageFromOtherClientToClient(sender, message);
     				ret =  sender + " whispers to " + receiver + ": " + message;
     			} catch(IOException e) {
     				ret = receiver + " is no longer online.";
@@ -195,16 +197,16 @@ public class Server {
     	return ret;
     }
     
-   public static synchronized String sendInvite(MiniServer sender, String receiver, GameRoom room) {
+   public static synchronized String sendInvite(Profile sender, String receiver, GameRoom room) {
     	String ret = "";
-    	MiniServer receiverConnection;
+    	Profile receiverConnection;
     	if(room == null) {
     		ret = "Congratulations. You somehow invited someone while outside the game.\n";
     		ret += "I was hoping this was logically impossible.";
     	} else {
     		Object temp = getUser(receiver);
-    		if(temp instanceof MiniServer) {
-    			receiverConnection = (MiniServer)temp;
+    		if(temp instanceof Profile) {
+    			receiverConnection = (Profile)temp;
     			ret = receiverConnection.sendInvite(sender, room);
     		} else {
     			ret = (String) temp;
@@ -216,9 +218,9 @@ public class Server {
     
 	public static synchronized Object getUser(String username) {
     	username = username.toLowerCase();
-    	for(int i=0; i<clientConnection.size(); i++) {
-    		if(clientConnection.get(i).getClientName().toLowerCase().equals(username)) {
-    			return clientConnection.get(i);
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		if(clientProfiles.get(i).getClientName().toLowerCase().equals(username)) {
+    			return clientProfiles.get(i);
     			
     		}
     	}
@@ -226,16 +228,12 @@ public class Server {
     	return "couldn\'t find user.";
     }
     
-    public synchronized static void sendChatMessageToChannel(MiniServer client, String message) {
+    public static synchronized  void sendChatMessageToChannel(ProfileInterface client, String message) {
     	//OPTIONAL: create send message(listofclients) functions. (Make the order of what's displayed on the screen consistant between clients...)
     	
-    	for(int i=0; i<clientConnection.size(); i++) {
-    		if(clientConnection.get(i).isInGame() == false) {
-    			try {
-    				clientConnection.get(i).sendMessageToClient(client.getClientName() + ": " + message);
-    			} catch(IOException e) {
-    				e.printStackTrace();
-    			}
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		if(clientProfiles.get(i).isInGame() == false) {
+    			clientProfiles.get(i).sendMessageToClient(client.getClientName() + ": " + message);
     		}
     	}
     }
@@ -247,4 +245,66 @@ public class Server {
     	return reply;
     }
    
+    
+    public static boolean isClientNameTaken(String clientName) {
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		System.out.println("TEST: " + clientProfiles.get(i).getClientName() + " vs " + clientName);
+			
+    		if(clientProfiles.get(i).getClientName().toLowerCase().trim().equals(clientName.toLowerCase().trim())) {
+        		System.out.println("TEST INSIDE: " + clientProfiles.get(i).getClientName() + " vs " + clientName);
+    			return true;
+    		}
+    	}
+    	
+    	return false;
+    }
+    
+    public static Profile createNewProfile(MiniServer connection, String clientName) {
+    	clientName = clientName.trim();
+    	System.out.println("TEST: Adding new profile:");
+    	Profile newProfile = new Profile(connection, clientName);
+    	clientProfiles.add(newProfile);
+
+        updateCountNumPeopleOnline();
+        
+        return newProfile;
+    	
+    }
+    
+    public static boolean isClientNameWaitingForConnection(String clientName) {
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		if(clientProfiles.get(i).getClientName().toLowerCase().trim().equals(clientName.toLowerCase().trim())) {
+    			if(clientProfiles.get(i).isMiniServerConnectionOpen()) {
+    				return false;
+    			} else {
+    				return true;
+    			}
+    		}
+    	}
+    	return true;
+    }
+    
+    public static Profile reconnectToProfile(MiniServer newConnection, String clientName) {
+    	Profile currentProfile = null;
+    	for(int i=0; i<clientProfiles.size(); i++) {
+    		if(clientProfiles.get(i).getClientName().toLowerCase().trim().equals(clientName.toLowerCase().trim())) {
+    			currentProfile = clientProfiles.get(i).setNewConnection(newConnection);
+    		}
+    	}
+    	return currentProfile;
+    }
+    /*
+    clientConnection.add(SOMETHING);
+    clientConnection.get(clientConnection.size() - 1).start();
+    
+    updateCountNumPeopleOnline();
+    */
+    
+	/*
+    if(Server.isClientNameTaken() == false) {
+		this.clientProfile = Server.createNewProfile(clientName);
+	} else if(Server.isClientNameWaitingForConnection() == true {
+		this.clientProfile = Server.reconnectToProfile(clientName);
+		*/
+		
 }

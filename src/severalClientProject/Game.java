@@ -1,7 +1,7 @@
 package severalClientProject;
 
 public interface Game {
-	public void startGameForClients(MiniServer player[]);
+	public void startGameForClients(ProfileInterface player[]);
 	
-	public void submitClientQuery(MiniServer player, String query);
+	public void submitClientQuery(ProfileInterface player, String query);
 }

@@ -1,13 +1,13 @@
 package rockPaperScissors;
 
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public class RockPaperScissors  implements severalClientProject.Game {
-	private MiniServer playersWatchingOrPlaying[];
+	private ProfileInterface playersWatchingOrPlaying[];
 	
-	private MiniServer player1 = null;
-	private MiniServer player2 = null;
+	private ProfileInterface player1 = null;
+	private ProfileInterface player2 = null;
 	
 	private static String UNENTERED_MOVE = "";
 	
@@ -22,7 +22,7 @@ public class RockPaperScissors  implements severalClientProject.Game {
 	
 	private gameUtils.GameReplayPrinter recorder;
 	
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		this.playersWatchingOrPlaying = player;
 		this.getPlayerNamesOfCompetitors(player);
 		this.playGame();
@@ -31,7 +31,7 @@ public class RockPaperScissors  implements severalClientProject.Game {
 	
 	
 	//Copied from connectFour:
-	public void getPlayerNamesOfCompetitors(MiniServer player[]) {
+	public void getPlayerNamesOfCompetitors(ProfileInterface player[]) {
 		for(int i=0; i<player.length; i++) {
 			if(player[i] != null && player1 == null) {
 				player1 = player[i];
@@ -122,7 +122,7 @@ public class RockPaperScissors  implements severalClientProject.Game {
 	}
 	
 	
-	public synchronized void submitClientQuery(MiniServer player, String query) {
+	public synchronized void submitClientQuery(ProfileInterface player, String query) {
 		String move = UNENTERED_MOVE;
 		if(query.toLowerCase().startsWith("/move")) {
 			try {
@@ -174,7 +174,7 @@ public class RockPaperScissors  implements severalClientProject.Game {
 	}
 	
 	//TODO: move this to Server class.
-	public static void sendMessageToGroup(MiniServer players[], String message) {
+	public static void sendMessageToGroup(ProfileInterface players[], String message) {
 		try {
 			for(int i=0; i<players.length; i++) {
 				if(players[i] != null) {
@@ -187,7 +187,7 @@ public class RockPaperScissors  implements severalClientProject.Game {
 	}
 	
 	//TODO: just get rid of this middle-man class.
-	public static void sendMessageToPlayer(MiniServer player, String message) {
+	public static void sendMessageToPlayer(ProfileInterface player, String message) {
 		try {
 			player.sendMessageToClient("From Rock Paper Scissors: " + message);
 		} catch(Exception e) {

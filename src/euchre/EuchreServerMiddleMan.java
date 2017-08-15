@@ -1,7 +1,7 @@
 package euchre;
 
 import gameUtils.GameReplayPrinter;
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 import gameUtils.ServerGameMiddleMan;
 
 public class EuchreServerMiddleMan extends ServerGameMiddleMan {
@@ -15,8 +15,7 @@ public class EuchreServerMiddleMan extends ServerGameMiddleMan {
 	
 	private int numberOfPlayers = 0;
 	
-	
-	public void startGameForClients(MiniServer player[], String variation) {
+	public void startGameForClients(ProfileInterface player[], String variation) {
 		
 		EuchreVariation euchreVariation = new EuchreVariation(variation);
 		
@@ -79,7 +78,7 @@ public class EuchreServerMiddleMan extends ServerGameMiddleMan {
 	
 	
 	//pre: it's a move and the client is recognizable.
-	public void submitClientQuery(MiniServer player, String query) {
+	public void submitClientQuery(ProfileInterface player, String query) {
 		String move = UNENTERED_MOVE;
 		boolean clientRecognized = false;
 		

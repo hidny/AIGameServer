@@ -1,16 +1,16 @@
 package chess;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 //TODO:
 public class ChessServerMiddleMan implements severalClientProject.Game {
 
-	private MiniServer playersWatchingOrPlaying[];
+	private ProfileInterface playersWatchingOrPlaying[];
 	
 	public static String UNENTERED_MOVE = "";
 	
-	private MiniServer player1 = null;
-	private MiniServer player2 = null;
+	private ProfileInterface player1 = null;
+	private ProfileInterface player2 = null;
 	
 	
 	public String player1CurrentMove = UNENTERED_MOVE;
@@ -18,7 +18,7 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 	
 	
 	//TODO
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		this.playersWatchingOrPlaying = player;
 		
 		this.getPlayerNamesOfCompetitors(player);
@@ -36,7 +36,7 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 	}
 	
 	//TODO: put in util function
-	public void getPlayerNamesOfCompetitors(MiniServer player[]) {
+	public void getPlayerNamesOfCompetitors(ProfileInterface player[]) {
 		for(int i=0; i<player.length; i++) {
 			if(player[i] != null && player1 == null) {
 				player1 = player[i];
@@ -51,7 +51,7 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 	}
 	
 	//TODO: put in util function interface
-	public void submitClientQuery(MiniServer player, String query) {
+	public void submitClientQuery(ProfileInterface player, String query) {
 		String move = UNENTERED_MOVE;
 		if(query.toLowerCase().startsWith("/move") && (player == player1 || player == player2) ) {
 			try {
@@ -86,7 +86,7 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 		}
 	}
 	
-	public String getNextMove(MiniServer player) {
+	public String getNextMove(ProfileInterface player) {
 		if(player == player1) {
 			return player1CurrentMove;
 			
@@ -99,7 +99,7 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 		}
 	}
 	
-	public void setMoveTaken(MiniServer player) {
+	public void setMoveTaken(ProfileInterface player) {
 		if(player == player1) {
 			player1CurrentMove = UNENTERED_MOVE;
 			
@@ -125,7 +125,7 @@ public class ChessServerMiddleMan implements severalClientProject.Game {
 	}
 	
 	//TODO: put in util function interface
-	public void sendMessageToPlayer(MiniServer player, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String message) {
 		try {
 			player.sendMessageToClient("From chess: " + message);
 		} catch(Exception e) {

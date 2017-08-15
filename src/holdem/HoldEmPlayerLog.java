@@ -2,7 +2,7 @@ package holdem;
 
 import random.*;
 import random.card.DeckFunctions;
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 //This class holds the official data about an AI in texas hold'em.
 //This class is here so I don't have to make sure that the AI isn't cheating.
@@ -13,7 +13,7 @@ public class HoldEmPlayerLog {
 		public static int NULL = -1;
 	
 		private HoldemServerMiddleMan middleMan;
-		private MiniServer client;
+		private ProfileInterface client;
 		
 		private String name;
 	
@@ -39,7 +39,7 @@ public class HoldEmPlayerLog {
 		
 		private boolean revealCards;
 		
-		public HoldEmPlayerLog(String name, int AmountOfChips, HoldemServerMiddleMan middleMan, MiniServer client) {
+		public HoldEmPlayerLog(String name, int AmountOfChips, HoldemServerMiddleMan middleMan, ProfileInterface client) {
 			this.name = name;
 			this.AmountOfChips = AmountOfChips;
 			this.firstCard = NULL;
@@ -50,7 +50,7 @@ public class HoldEmPlayerLog {
 		}
 		
 		//Returns the client this PlayerLog represents.
-		public MiniServer getClient() {
+		public ProfileInterface getClient() {
 			return this.client;
 		}
 		

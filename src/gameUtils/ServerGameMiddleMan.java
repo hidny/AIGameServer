@@ -1,11 +1,11 @@
 package gameUtils;
 import java.io.PrintWriter;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 
-	protected MiniServer clientPlayersPlaying[];
+	protected ProfileInterface clientPlayersPlaying[];
 	protected PrintWriter commandFile = null;
 	protected PrintWriter outputFile = null;
 	
@@ -28,11 +28,11 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 	
 
 	//TO BE overridden.
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		startGameForClients(player, "");
 	}
 	
-	public void startGameForClients(MiniServer player[], String variation) {
+	public void startGameForClients(ProfileInterface player[], String variation) {
 		for(int i=0; i<player.length; i++) {
 			if(player[i] != null) {
 				try {
@@ -54,7 +54,7 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 	}
 	
 	
-	public boolean isInList(MiniServer player) {
+	public boolean isInList(ProfileInterface player) {
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
 				if(clientPlayersPlaying[i] != null && clientPlayersPlaying[i].getClientName().toLowerCase().equals(player.getClientName().toLowerCase())) {
@@ -66,13 +66,13 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 		return false;
 	}
 	
-	public MiniServer[] getClientPlayers() {
+	public ProfileInterface[] getClientPlayers() {
 		return clientPlayersPlaying;
 	}
 	
 	
 	//TO BE overwritten.
-	public void submitClientQuery(MiniServer player, String query) {
+	public void submitClientQuery(ProfileInterface player, String query) {
 		sendMessageToGroup(player.getClientName() + ": " + query, false);
 	}
 	
@@ -109,14 +109,14 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 	}
 	
 	//pre: MiniServer player is NOT NULL
-	public void sendMessageToPlayer(MiniServer player, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String message) {
 		sendMessageToPlayer(player, player.getClientName(), message);
 		
 	}
 	
 	public void sendMessageToPlayer(String name, String message) {
 		//Check if the player is a client:
-		MiniServer playerToSendTo = null;
+		ProfileInterface playerToSendTo = null;
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
 				if(clientPlayersPlaying[i] != null && name.equals(clientPlayersPlaying[i].getClientName())) {
@@ -130,7 +130,7 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 		
 	}
 	
-	public void sendMessageToPlayer(MiniServer player, String name, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String name, String message) {
 		try {
 			if(player != null) {
 				player.sendMessageToClient("From Game(private): " + message);

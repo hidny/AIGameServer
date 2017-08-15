@@ -1,4 +1,4 @@
-package severalClientProject;
+package cmdLineClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -37,9 +37,8 @@ public class ClientListener extends Thread {
     		//Read input and process here
     		inFromServer = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			
-			
+    		LISTEN:
 			while(this.connected) {
-				
 				
 				serverResponse = "";
 				while(this.connected) {
@@ -48,7 +47,11 @@ public class ClientListener extends Thread {
 						break;
 					} else if(currentServerLine.equals(EOC)) {
 						this.connected = false;
-						break;
+						System.out.println("No longer connected");
+						System.out.println("From server: ");
+						System.out.println(EOC);
+						System.out.println("Please any key to exit");
+						break LISTEN;
 					}
 					
 					serverResponse = serverResponse + currentServerLine + '\n';
@@ -61,9 +64,11 @@ public class ClientListener extends Thread {
 				System.out.print("> ");
 			}
 			
+			
 			inFromServer.close();
 			socket.close();
     	} catch (IOException e) {
+    		System.out.println("WHATEVER!");
     		e.printStackTrace();
     	}
     	

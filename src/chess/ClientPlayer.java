@@ -2,15 +2,15 @@ package chess;
 
 import java.util.ArrayList;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 
 public class ClientPlayer implements Player {
 	
-	private MiniServer player;
+	private ProfileInterface player;
 	private ChessServerMiddleMan middleMan;
 	
-	public ClientPlayer(MiniServer player, ChessServerMiddleMan middleMan) {
+	public ClientPlayer(ProfileInterface player, ChessServerMiddleMan middleMan) {
 		this.player = player;
 		this.middleMan = middleMan;
 	}

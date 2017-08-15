@@ -1,6 +1,6 @@
 package connectFour;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public class ConnectFourPosition {
 	
@@ -9,7 +9,7 @@ public class ConnectFourPosition {
 	
 	private short pos[][] = new short[HEIGHT][WIDTH];
 	private boolean isRedTurn = true;
-	private MiniServer playersWatchingOrPlaying[];
+	private ProfileInterface playersWatchingOrPlaying[];
 	
 	
 	public static short EMPTY = 0;
@@ -23,7 +23,7 @@ public class ConnectFourPosition {
 	public static int WINNING_UTILITY = 10000;
 	
 	
-	public ConnectFourPosition(short pos[][], boolean isRedTurn, MiniServer playersWatching[], gameUtils.GameReplayPrinter recorder) {
+	public ConnectFourPosition(short pos[][], boolean isRedTurn, ProfileInterface playersWatching[], gameUtils.GameReplayPrinter recorder) {
 		for(int i=0; i<pos.length; i++) {
 			for(int j=0; j<pos[0].length; j++) {
 				this.pos[i][j] = pos[i][j];
@@ -36,7 +36,7 @@ public class ConnectFourPosition {
 		
 	}
 
-	public ConnectFourPosition(MiniServer playersWatching[], gameUtils.GameReplayPrinter recorder) {
+	public ConnectFourPosition(ProfileInterface playersWatching[], gameUtils.GameReplayPrinter recorder) {
 		for(int i=0; i<HEIGHT; i++) {
 			for(int j=0; j<WIDTH; j++) {
 				pos[i][j] = 0;
@@ -300,7 +300,7 @@ public class ConnectFourPosition {
 	}
 	
 	//TODO: create a connect 4 middle-man class.
-	public static void sendMessageToGroup(MiniServer players[], String message) {
+	public static void sendMessageToGroup(ProfileInterface players[], String message) {
 		try {
 			for(int i=0; i<players.length; i++) {
 				if(players[i] != null) {
@@ -313,7 +313,7 @@ public class ConnectFourPosition {
 	}
 	
 	//TODO: create a connect 4 middle-man class.
-	public static void sendMessageToPlayer(MiniServer player, String message) {
+	public static void sendMessageToPlayer(ProfileInterface player, String message) {
 		try {
 			player.sendMessageToClient("From connect 4: " + message);
 		} catch(Exception e) {

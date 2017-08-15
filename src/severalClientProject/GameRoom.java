@@ -11,11 +11,11 @@ public class GameRoom extends Thread implements Runnable {
 	
 	//TODO: maybe allow for some spots reserved for a specific player?
 	
-	private MiniServer players[];
+	private ProfileInterface players[];
 	private int minPlayers;
 	private int maxPlayers;
 	
-	private MiniServer host;
+	private ProfileInterface host;
 	
 	private boolean openSlot[];
 	
@@ -40,15 +40,15 @@ public class GameRoom extends Thread implements Runnable {
 		return game;
 	}
 
-	public GameRoom(String gameName, String roomName, MiniServer host) {
+	public GameRoom(String gameName, String roomName, ProfileInterface host) {
 		this(gameName, roomName, "", host, new String[0]);
 	}
 	
-	public GameRoom(String gameName, String roomName, MiniServer host, String gameArgs[]) {
+	public GameRoom(String gameName, String roomName, ProfileInterface host, String gameArgs[]) {
 		this(gameName, roomName, "", host, gameArgs);
 	}
 	
-	public GameRoom(String gameName, String roomName, String password, MiniServer host) {
+	public GameRoom(String gameName, String roomName, String password, ProfileInterface host) {
 		this(gameName, roomName, password, host, new String[0]);
 	}
 	
@@ -72,7 +72,7 @@ public class GameRoom extends Thread implements Runnable {
 		return gameOver;
 	}
 	
-	public MiniServer getHost() {
+	public ProfileInterface getHost() {
 		return this.host;
 	}
 	
@@ -90,7 +90,7 @@ public class GameRoom extends Thread implements Runnable {
 	
 	//TODO: game args should specify the details of the game. This is there because there 
 	//are too many variants of how poker gets played out.
-	public GameRoom(String gameName, String roomName, String password, MiniServer host, String gameArgs[]) {
+	public GameRoom(String gameName, String roomName, String password, ProfileInterface host, String gameArgs[]) {
 		this.gameName = gameName;
 		this.roomName = roomName;
 		this.password = password;
@@ -152,8 +152,8 @@ public class GameRoom extends Thread implements Runnable {
 		renewRefreshMessage(host.getClientName());
 	}
 	
-	public void setupBasicRoomVars(MiniServer host) {
-		players = new MiniServer[maxPlayers];
+	public void setupBasicRoomVars(ProfileInterface host) {
+		players = new ProfileInterface[maxPlayers];
 		openSlot = new boolean[maxPlayers];
 		
 		for(int i=0; i<maxPlayers; i++) {
@@ -179,7 +179,7 @@ public class GameRoom extends Thread implements Runnable {
 	
 	
 	
-	public synchronized String join(MiniServer player) {
+	public synchronized String join(ProfileInterface player) {
 		int slot = getNextEmptySlot();
 		if(slot >= 0) {
 			String errorMsg = checkIfPlayerBanned(player.getClientName());
@@ -209,7 +209,7 @@ public class GameRoom extends Thread implements Runnable {
 	}
 	
 	//leave: If host leaves, this just makes the guy under the host the host.
-	public synchronized String leave(MiniServer player) {
+	public synchronized String leave(ProfileInterface player) {
 		for(int i=0; i<players.length; i++) {
 			if(players[i] == player) {
 				players[i] = null;
@@ -238,17 +238,13 @@ public class GameRoom extends Thread implements Runnable {
 	//leave: If host leaves, this just makes the guy under the host the host.
 	public synchronized String kick(String player) {
 		player = player.toLowerCase().trim();
-		MiniServer bannedPlayer = null;
+		ProfileInterface bannedPlayer = null;
 		System.out.println("1. " + player);
 		System.out.println("2. " + host.getClientName().toLowerCase().trim());
 		
 		if(player.equals(host.getClientName().toLowerCase().trim())) {
-			try {
-				host.sendMessageToClient("Don\'t ban yourself.");
-			} catch (IOException e) {
-				System.err.println("Couldn\'t cancel ban of host properly...");
-				e.printStackTrace();
-			}
+			host.sendMessageToClient("Don\'t ban yourself.");
+		
 			return "";
 		}
 		
@@ -256,14 +252,11 @@ public class GameRoom extends Thread implements Runnable {
 			if(players[i] != null && players[i].getClientName().toLowerCase().equals(player)) {
 				bannedPlayer = players[i];
 				players[i] = null;
-				try {
-					bannedPlayer.sendMessageToClient("You have been banned from the game.");
-					bannedPlayer.receiveBan();
-					bannedPlayerList.add(bannedPlayer.getClientName().toLowerCase());
-				} catch (IOException e) {
-					System.err.println("Couldn\'t ban player...");
-					e.printStackTrace();
-				}
+				
+				bannedPlayer.sendMessageToClient("You have been banned from the game.");
+				bannedPlayer.receiveBan();
+				bannedPlayerList.add(bannedPlayer.getClientName().toLowerCase());
+				
 				
 				this.numPlayers--;
 				
@@ -284,7 +277,7 @@ public class GameRoom extends Thread implements Runnable {
 	}
 	
 	//pre: newPos starts at 1 (i.e. 1st slot is slot 1)
-	public synchronized String moveSlot(MiniServer player, int newPos) {
+	public synchronized String moveSlot(ProfileInterface player, int newPos) {
 		int posIndex = newPos - 1;
 		
 		for(int i=0; i<players.length; i++) {
@@ -304,6 +297,25 @@ public class GameRoom extends Thread implements Runnable {
 					}
 				} else {
 					return "WARNING: index of new position is out of bounds. (" + player.getClientName() + " " + newPos + ")";
+				}
+			}
+		}
+		
+		return "WARNING: you aren't in the game anymore!";
+	}
+	
+	public synchronized String swapSlots(ProfileInterface player1, ProfileInterface player2) {
+		ProfileInterface temp;
+		for(int i=0; i<players.length; i++) {
+			if(players[i] != null && players[i].getClientName() == player1.getClientName()) {
+				for(int j=0; j<players.length; j++) {
+					if(players[j] != null && players[j].getClientName() == player2.getClientName()) {
+						temp = players[i];
+						players[i] = players[j];
+						players[j] = temp;
+						renewRefreshMessage();
+						return "";
+					}
 				}
 			}
 		}
@@ -335,7 +347,7 @@ public class GameRoom extends Thread implements Runnable {
 		
 	}
 	
-	public void sendChatMessageToRoom(MiniServer client, String message) {
+	public void sendChatMessageToRoom(ProfileInterface client, String message) {
     	//OPTIONAL: create send message(listofclients) functions. (Make the order of what's displayed on the screen consistant between clients...)
     	sendGameRoomPlayersMessage(client.getClientName(), message);
     }
@@ -354,7 +366,7 @@ public class GameRoom extends Thread implements Runnable {
 	public synchronized void sendGameRoomPlayersMessage(String from, String msg) {
 		sendGameRoomPlayersMessage(from, msg, "");
 	}
-	//TODO: i just set synchronized on this.
+
 	//pre: The below methods are private and are only called within synchronized function:
 	public synchronized void sendGameRoomPlayersMessage(String from, String msg, String playerToNotUpdate) {
 			System.out.println("DEBUG: trying to send msg: " + msg);
@@ -363,17 +375,13 @@ public class GameRoom extends Thread implements Runnable {
 			}
 			
 			for(int i=0; i<players.length; i++) {
-				try {
-					if(players[i] != null && players[i].getClientName().equals(playerToNotUpdate) == false) {
-						System.out.println("player " + (i+1) + " is not null!");
-						System.out.println(players[i].getClientName());
-						players[i].sendMessageToClient(msg);
-						System.out.println("player " + (i+1) + " didn\'t throw an exception!");
-					}
-				} catch (IOException e) {
-					System.err.println("Couldn't send refresh message from game room.");
-					e.printStackTrace();
+				if(players[i] != null && players[i].getClientName().equals(playerToNotUpdate) == false) {
+					System.out.println("player " + (i+1) + " is not null!");
+					System.out.println(players[i].getClientName());
+					players[i].sendMessageToClient(msg);
+					System.out.println("player " + (i+1) + " didn\'t throw an exception!");
 				}
+			
 			}
 			
 	}

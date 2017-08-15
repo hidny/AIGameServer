@@ -2,11 +2,11 @@ package holdem;
 
 import java.io.PrintWriter;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public class HoldemServerMiddleMan implements severalClientProject.Game {
 
-	private MiniServer clientPlayersPlaying[];
+	private ProfileInterface clientPlayersPlaying[];
 	private String playerMoves[];
 	
 	public static String UNENTERED_MOVE = "";
@@ -33,7 +33,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 		return commandFile;
 	}
 	
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		this.clientPlayersPlaying = player;
 		
 	
@@ -78,7 +78,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 		HeadsUpMain.startHeadsUp(("-p " + this.numberOfPlayers + " -recordNext").split(" "), this);
 	}
 	
-	public boolean isInList(MiniServer player) {
+	public boolean isInList(ProfileInterface player) {
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
 				//TODO: check player name in the future:
@@ -91,12 +91,12 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 		return false;
 	}
 	
-	public MiniServer[] getClientPlayers() {
+	public ProfileInterface[] getClientPlayers() {
 		return clientPlayersPlaying;
 	}
 	
 	
-	public void submitClientQuery(MiniServer player, String query) {
+	public void submitClientQuery(ProfileInterface player, String query) {
 		String move = UNENTERED_MOVE;
 		boolean clientRecognized = false;
 		
@@ -128,7 +128,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 		}
 	}
 	
-	public String getNextMove(MiniServer player) {
+	public String getNextMove(ProfileInterface player) {
 		
 		if(this.isInList(player)) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
@@ -144,7 +144,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 	}
 	
 	//This tells the server the game acknowledged the move request and is now waiting for another move.
-	public void setMoveTaken(MiniServer player) {
+	public void setMoveTaken(ProfileInterface player) {
 		
 		boolean clientRecognized = false;
 		
@@ -191,7 +191,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 	}
 	
 	//pre: MiniServer player is NOT NULL
-	public void sendMessageToPlayer(MiniServer player, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String message) {
 		sendMessageToPlayer(player, player.getClientName(), message);
 		
 	}
@@ -202,7 +202,7 @@ public class HoldemServerMiddleMan implements severalClientProject.Game {
 		
 	}
 	
-	public void sendMessageToPlayer(MiniServer player, String name, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String name, String message) {
 		try {
 			if(player != null) {
 				player.sendMessageToClient("From holdem(private): " + message);

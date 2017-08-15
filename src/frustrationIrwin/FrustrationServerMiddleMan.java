@@ -2,7 +2,7 @@ package frustrationIrwin;
 
 import gameUtils.GameReplayPrinter;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 import gameUtils.ServerGameMiddleMan;
 
 public class FrustrationServerMiddleMan extends ServerGameMiddleMan {
@@ -18,7 +18,7 @@ public class FrustrationServerMiddleMan extends ServerGameMiddleMan {
 	private int numberOfPlayers = 0;
 	
 	
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		this.clientPlayersPlaying = player;
 		
 		//Disallow the player array from having nulls in between players:
@@ -65,7 +65,7 @@ public class FrustrationServerMiddleMan extends ServerGameMiddleMan {
 	
 	
 	//pre: it's a move and the client is recognizable.
-	public void submitClientQuery(MiniServer player, String query) {
+	public void submitClientQuery(ProfileInterface player, String query) {
 		String move = UNENTERED_MOVE;
 		boolean clientRecognized = false;
 		

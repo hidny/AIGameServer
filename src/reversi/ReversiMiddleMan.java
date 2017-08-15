@@ -4,11 +4,11 @@ import gameUtils.GameReplayPrinter;
 
 import java.io.PrintWriter;
 
-import severalClientProject.MiniServer;
+import severalClientProject.ProfileInterface;
 
 public class ReversiMiddleMan implements severalClientProject.Game {
 
-	private MiniServer clientPlayersPlaying[];
+	private ProfileInterface clientPlayersPlaying[];
 	private ClientPlayerDecider clientPlayer[];
 	
 	int NUM_PLAYERS_IN_REVERSI = 2;
@@ -37,7 +37,7 @@ public class ReversiMiddleMan implements severalClientProject.Game {
 		return commandFile;
 	}
 	
-	public void startGameForClients(MiniServer player[]) {
+	public void startGameForClients(ProfileInterface player[]) {
 		this.clientPlayersPlaying = player;
 	
 		//Disallow the player array from having nulls in between players:
@@ -100,7 +100,7 @@ public class ReversiMiddleMan implements severalClientProject.Game {
 	}
 	
 	
-	public boolean isInList(MiniServer player) {
+	public boolean isInList(ProfileInterface player) {
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
 				if(clientPlayersPlaying[i].getClientName().equals(player.getClientName())) {
@@ -112,12 +112,12 @@ public class ReversiMiddleMan implements severalClientProject.Game {
 		return false;
 	}
 	
-	public MiniServer[] getClientPlayers() {
+	public ProfileInterface[] getClientPlayers() {
 		return clientPlayersPlaying;
 	}
 	
 	
-	public void submitClientQuery(MiniServer player, String query) {
+	public void submitClientQuery(ProfileInterface player, String query) {
 		String move = UNENTERED_MOVE;
 		boolean clientRecognized = false;
 		
@@ -180,14 +180,14 @@ public class ReversiMiddleMan implements severalClientProject.Game {
 	}
 	
 	//pre: MiniServer player is NOT NULL
-	public void sendMessageToPlayer(MiniServer player, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String message) {
 		sendMessageToPlayer(player, player.getClientName(), message);
 		
 	}
 	
 	public void sendMessageToPlayer(String name, String message) {
 		//Check if the player is a client:
-		MiniServer playerToSendTo = null;
+		ProfileInterface playerToSendTo = null;
 		if(clientPlayersPlaying != null) {
 			for(int i=0; i<clientPlayersPlaying.length; i++) {
 				if(name.equals(clientPlayersPlaying[i].getClientName())) {
@@ -201,7 +201,7 @@ public class ReversiMiddleMan implements severalClientProject.Game {
 		
 	}
 	
-	public void sendMessageToPlayer(MiniServer player, String name, String message) {
+	public void sendMessageToPlayer(ProfileInterface player, String name, String message) {
 		try {
 			if(player != null) {
 				player.sendMessageToClient("From Reversi(private): " + message);

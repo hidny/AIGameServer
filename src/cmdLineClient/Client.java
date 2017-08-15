@@ -1,4 +1,4 @@
-package severalClientProject;
+package cmdLineClient;
 
 import java.io.*;
 import java.net.*;
@@ -78,3 +78,5 @@ class Client {
     
     
 }
+
+//http://127.0.0.1:8081/WebClient/Richard/join/hello/world
