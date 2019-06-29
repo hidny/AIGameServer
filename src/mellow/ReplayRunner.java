@@ -17,8 +17,7 @@ public class ReplayRunner {
 
     	String playerNames[] = new String[4];
     	
-		
-		File dir = new File(Position.GAME_NAME + "Commands");
+		File dir = new File( "C:\\Users\\Public\\Documents\\GameServerReplays\\" + Position.GAME_NAME + "Commands");
 		
 		String firstDealer;
 		int indexDealer;
@@ -31,14 +30,33 @@ public class ReplayRunner {
 			   num = gameUtils.gameFunctionUtils.getFileNum(child);
 		    	
 			   try {
-				   inputfilename = Position.GAME_NAME + "Commands\\" + Position.GAME_NAME + "Commands" + num + ".txt";
+				   inputfilename =  "C:\\Users\\Public\\Documents\\GameServerReplays\\" + Position.GAME_NAME + "Commands\\" + Position.GAME_NAME + "Commands" + num + ".txt";
 		    		input = new Scanner(new File(inputfilename));
 		    		System.out.println("Playing: " + inputfilename);
 		    		
-		    		MellowServerMiddleMan middleMan = new MellowServerMiddleMan();
+		    		
+		    		MellowServerMiddleMan middleMan = new MellowServerMiddleMan(null);
 		    		
 			    	middleMan.setOutputFileWriter( GameReplayPrinter.getNewReplayOuput(Position.GAME_NAME, num) );
 		    		
+			    	//lazy code handling for args at the beginning of the command file
+			    	//TODO: if used in another game, put this args logic in a util function:
+			    	String gameArgs = input.nextLine();
+			    	
+			    	int redStartScore = 0;
+			    	int blueStartScore = 0;
+			    	//TODO: make game args a constant
+			    	if(gameArgs.toLowerCase().contains("arg")) {
+			    		//TODO: do something
+			    		redStartScore = Integer.parseInt(gameArgs.split(" ")[2]);
+			    		blueStartScore = Integer.parseInt(gameArgs.split(" ")[3]);
+			    		
+			    	} else {
+			    		//Forget it: there's no game args...
+			    		input = new Scanner(new File(inputfilename));
+			    	}
+			    	
+			    	
 			    	playerNames[0] = input.next();
 			    	String check = input.next();
 			    	if(check.equals("&") == false) {
@@ -91,7 +109,7 @@ public class ReplayRunner {
 			    		indexDealer = -1;
 			    	}
 			    	
-		    		Position.startMellow(middleMan, red, blue, indexDealer, new random.card.RiggedDeck(input));
+		    		Position.startMellow(middleMan, red, blue, new random.card.RiggedDeck(input), redStartScore, blueStartScore, indexDealer);
 		    		
 		    		System.out.println("Finished playing: " + inputfilename);
 		    		

@@ -182,14 +182,6 @@ public class Position {
 	}
 	
 
-	public int getRoundScoreRed() {
-		return 0;
-	}
-	
-	public int getRoundScoreBlue() {
-		return 0;
-	}
-	
 	public boolean isGameOver() {
 		if(this.redScore >= GOAL_SCORE || this.blueScore >= GOAL_SCORE) {
 			return true;

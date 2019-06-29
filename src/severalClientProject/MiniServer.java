@@ -57,9 +57,9 @@ public class MiniServer extends Thread{
 			
 			while(isConnectionStillOpen() == true) {
 				
-				System.out.println("ETST Before read!");
+				System.out.println("TEST Before read in miniserver!");
 				clientSentence = inFromClient.readLine();
-				System.out.println("TEST After read!");
+				System.out.println("TEST After read in miniserver!");
 				
 				if(clientSentence != null) {
 					submitClientQuery(clientSentence);
@@ -111,39 +111,7 @@ public class MiniServer extends Thread{
     	}
     }
     
-    //TODO: make sure the name isn't already taken somehow... 
-    //A very important function, that renames my friend's names to their 'real' name. :P
-    private static String beAJerkToFriends(String name) {
-    	name = name.trim();
-    	
-    	if(name.toLowerCase().startsWith("dick")) {
-    		name = "Richard";
-    	} else if(name.toLowerCase().startsWith("mar")) {
-    		name = "Daisy";
-    	} else if(name.toLowerCase().startsWith("des")) {
-    		name = "Daisy";
-    	} else if(name.toLowerCase().startsWith("doris")) {
-    		name = "Mom";
-    	} else if(name.toLowerCase().startsWith("phil")) {
-    		name = "Dad";
-    	} else if(name.toLowerCase().startsWith("mel")) {
-    		name = "Melissa(heart)";
-    	} else if(name.toLowerCase().startsWith("ben")) {
-    		name = "Franklin";
-    	} else if(name.equals("")) {
-    		name = "YOUR_NAME_HERE";
-    	} else if(name.toLowerCase().contains("open")) {
-    		name = "TEN_YEAR_OLD_BOY";
-    	} else if(name.toLowerCase().contains("closed")) {
-    		name = "SOME_NOBODY";
-    	} else if(name.toLowerCase().contains("game created")) {
-    		name = "gamer";
-    	} else if(name.toLowerCase().contains("chess")) {
-    		name = "teamawesome";
-    	}
-    	
-    	return name;
-    }
+   
     
 
     public boolean isConnectionStillOpen() {
@@ -153,7 +121,7 @@ public class MiniServer extends Thread{
     private void submitClientQuery(String query) {
     	synchronized(lockSubmitQueryFromClientMiniServ) {
 	    	if(clientProfile == null) {
-	    		String clientName = beAJerkToFriends(query);
+	    		String clientName = query.trim();
 	    		
 	    		if(Server.isClientNameTaken(clientName) == false) {
 	    			System.out.println("TEST: Creating new profile: ");

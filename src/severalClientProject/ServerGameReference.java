@@ -12,9 +12,6 @@ public class ServerGameReference {
 	public static String FRUSTRATION = "frustration";
 	public static String EUCHRE = "euchre";
 	
-	public static severalClientProject.Game createGame(String gameName) {
-		return createGame(gameName, null);
-	}
 			
 	public static severalClientProject.Game createGame(String gameName, String args[]) {
 		if(gameName.toLowerCase().equals(HOLD_EM)) {
@@ -27,7 +24,7 @@ public class ServerGameReference {
 			return new chess.ChessServerMiddleMan();
 		} else if(gameName.toLowerCase().equals(MELLOW)) {
 			//Or make extra slots to play with the ordering.
-			return new mellow.MellowServerMiddleMan();
+			return new mellow.MellowServerMiddleMan(args);
 		} else if(gameName.toLowerCase().equals(EUCHRE)) {
 			//Or make extra slots to play with the ordering.
 			return new euchre.EuchreServerMiddleMan();

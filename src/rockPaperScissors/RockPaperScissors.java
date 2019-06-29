@@ -115,7 +115,7 @@ public class RockPaperScissors  implements severalClientProject.Game {
 		} else {
 
 			sendMessageToGroup(playersWatchingOrPlaying, player2.getClientName() + " wins the game!");
-			this.recordOutput(player1.getClientName() + " wins the game!");
+			this.recordOutput(player2.getClientName() + " wins the game!");
 		}
 		
 		this.recorder.close();

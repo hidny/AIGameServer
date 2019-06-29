@@ -16,6 +16,12 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 	
 	private int numberOfPlayers = 0;
 	
+	private String gameArgs[] = null;
+	
+	//TODO: use game Args
+	public MellowServerMiddleMan(String gameArgs[]) {
+		this.gameArgs = gameArgs;
+	}
 	
 	public void startGameForClients(ProfileInterface player[]) {
 		this.clientPlayersPlaying = player;
@@ -45,9 +51,6 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 				this.clientPlayer[i] = new ClientPlayerDecider( player[i].getClientName() );
 			}
 			
-			//TODO: create output files here!
-			//TODO: create cmd output file here!
-			
 			this.playGame(this.clientPlayer);
 			
 			if(this.commandFile != null) {
@@ -72,11 +75,25 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 		
 		int num = GameReplayPrinter.getTestCaseNumber(Position.GAME_NAME);
 		
-		//TODO: check if replay runner!
 		this.setCommandFileWriter( GameReplayPrinter.getNewCommandWriter(Position.GAME_NAME, num) );
 		this.setOutputFileWriter( GameReplayPrinter.getNewOuput(Position.GAME_NAME, num) );
 		
-		Position.startMellow(this, red, blue);
+		if(gameArgs != null) {
+			//First 2 args will be the initial score
+			//Third arg is the dealer index
+			
+			//start with intial score:
+			if(gameArgs.length < 3) {
+				Position.startMellow(this, red, blue, Integer.parseInt(gameArgs[0]), Integer.parseInt(gameArgs[1]), Position.RANDOM_DEALER_POSITION);
+				
+			} else {
+				Position.startMellow(this, red, blue, Integer.parseInt(gameArgs[0]), Integer.parseInt(gameArgs[1]), Integer.parseInt(gameArgs[2]));
+				
+			}
+		} else {
+			Position.startMellow(this, red, blue);
+			
+		}
 	}
 	
 	

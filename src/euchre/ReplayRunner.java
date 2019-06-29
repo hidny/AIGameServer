@@ -18,7 +18,7 @@ public class ReplayRunner {
     	String playerNames[] = new String[4];
     	
 		
-		File dir = new File(Position.GAME_NAME + "Commands");
+		File dir = new File( "C:\\Users\\Public\\Documents\\GameServerReplays\\" + Position.GAME_NAME + "Commands");
 		
 		String firstDealer;
 		int indexDealer;
@@ -31,7 +31,9 @@ public class ReplayRunner {
 			   num = gameUtils.gameFunctionUtils.getFileNum(child);
 		    	
 			   try {
-				    inputfilename = Position.GAME_NAME + "Commands\\" + Position.GAME_NAME + "Commands" + num + ".txt";
+				   
+				   //TODO: Make path a constanst or config ("C:\\Users\\Public\\Documents\\GameServerReplays\\")
+				    inputfilename = "C:\\Users\\Public\\Documents\\GameServerReplays\\" + Position.GAME_NAME + "Commands\\" + Position.GAME_NAME + "Commands" + num + ".txt";
 		    		input = new Scanner(new File(inputfilename));
 		    		System.out.println("Playing: " + inputfilename);
 		    		

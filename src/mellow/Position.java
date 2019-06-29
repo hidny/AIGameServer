@@ -10,14 +10,14 @@ public class Position {
 	
 	public static String GAME_NAME = "mellow";
 	
-	private int redScore;
-	private int blueScore;
+	private int redScore = 0;
+	private int blueScore = 0;
 	private random.card.Deck currentDeck;
 	
 	public static int GOAL_SCORE = 1000;
 	public static int OLD_YELLAR_SCORE = -500;
 	
-	public static int UNKNOWN = -3;
+	public static int RANDOM_DEALER_POSITION = -3;
 	
 	public static String TRUMP = "S";
 	
@@ -25,7 +25,7 @@ public class Position {
 	public static void main(String args[]) {
 		System.out.println("Let's play mellow!");
 		
-		MellowServerMiddleMan middleMan = new MellowServerMiddleMan();
+		MellowServerMiddleMan middleMan = new MellowServerMiddleMan(null);
 		
 		
 		PlayerDecider red[] = new PlayerDecider[2];
@@ -40,16 +40,26 @@ public class Position {
 	}
 	
 	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[]) {
-		startMellow(middleMan, red, blue, UNKNOWN, null);
+			startMellow(middleMan, red, blue, null, 0, 0, RANDOM_DEALER_POSITION);
+	}
+
+	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int redStartScore, int blueStartScore, int dealerIndex) {
+		startMellow(middleMan, red, blue, null, redStartScore, blueStartScore, dealerIndex);
 	}
 	
 	//When you need it.
-	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], int dealerIndex, random.card.Deck givenDeck) {
+	public static void startMellow(MellowServerMiddleMan middleMan, PlayerDecider red[], PlayerDecider blue[], random.card.Deck givenDeck, int redStartScore, int blueStartScore, int dealerIndex) {
 		
-		Position pos = new Position();
+		Position pos = new Position(redStartScore, blueStartScore);
 		
 		middleMan.recordCommand(red[0].getName() + " & " + red[1].getName() + " vs " + blue[0].getName() + " & " + blue[1].getName()  + "\n");
+		
 		middleMan.sendMessageToGroup("Starting Mellow! " + red[0].getName() + " & " + red[1].getName() + " vs " + blue[0].getName() + " & " + blue[1].getName());
+		if(redStartScore != 0 || blueStartScore != 0) {
+			middleMan.sendMessageToGroup(red[0].getName() + " & " + red[1].getName() + " start with " + redStartScore + " points.");
+			middleMan.sendMessageToGroup(blue[0].getName() + " & " + blue[1].getName() + " start with " + blueStartScore + " points.");
+		}
+		
 		
 		int result = pos.playGame(red, blue, middleMan, dealerIndex, givenDeck);
 		
@@ -63,8 +73,12 @@ public class Position {
 		}
 	}
 	
+	public Position(int redStartScore, int blueStartScore) {
+		this.redScore = redStartScore;
+		this.blueScore = blueStartScore;
+	}
 	public int playGame(PlayerDecider redDecider[], PlayerDecider blueDecider[],  MellowServerMiddleMan middleMan) {
-		return playGame(redDecider, blueDecider, middleMan, UNKNOWN, null);
+		return playGame(redDecider, blueDecider, middleMan, RANDOM_DEALER_POSITION, null);
 	}
 	
 	//returns false otherwise.
@@ -81,7 +95,7 @@ public class Position {
 		playerModel[2] = new PlayerModel(playerDeciders[2].getName(), middleMan);
 		playerModel[3] = new PlayerModel(playerDeciders[3].getName(), middleMan);
 		
-		if(dealerIndex == UNKNOWN) {
+		if(dealerIndex == RANDOM_DEALER_POSITION) {
 			dealerIndex = getIndexFirstDealer();
 		}
 		
@@ -97,7 +111,7 @@ public class Position {
 			currentDeck = givenDeck;
 		}
 		
-		int scoresObtained[];
+		int scoresDelta[];
 		
 		boolean firstHand  = true;
 		
@@ -125,12 +139,12 @@ public class Position {
 			
 			playRound(dealerIndex, playerModel, playerDeciders, middleMan);
 			
-			scoresObtained = updateScore(playerModel);
+			scoresDelta = updateScore(playerModel);
 			
-			redScore += scoresObtained[0];
-			blueScore+= scoresObtained[1];
+			redScore += scoresDelta[0];
+			blueScore+= scoresDelta[1];
 			
-			printUpdate(redScore, blueScore, scoresObtained, middleMan);
+			printUpdate(redScore, blueScore, scoresDelta, middleMan);
 			
 			dealerIndex++;
 			dealerIndex = dealerIndex%4;
@@ -157,14 +171,6 @@ public class Position {
 		}
 	}
 
-	public int getRoundScoreRed() {
-		return 0;
-	}
-	
-	public int getRoundScoreBlue() {
-		return 0;
-	}
-	
 	public static String printGameScore() {
 		return "TODO: print it in mom notation.";
 	}
@@ -388,13 +394,13 @@ public class Position {
 	}
 	
 	public int[] updateScore(PlayerModel playerModel[]) {
-		int redScore = getTeamPointsObtained(playerModel[0], playerModel[2]);
-		int blueScore = getTeamPointsObtained(playerModel[1], playerModel[3]);
+		int redScoreDelta = getTeamPointsObtained(playerModel[0], playerModel[2]);
+		int blueScoreDelta = getTeamPointsObtained(playerModel[1], playerModel[3]);
 		
-		return new int[] {redScore,blueScore};
+		return new int[] {redScoreDelta,blueScoreDelta};
 	}
 	
-	public int getTeamPointsObtained(PlayerModel player, PlayerModel partner) {
+	private int getTeamPointsObtained(PlayerModel player, PlayerModel partner) {
 		int combinedBid = player.getNumBid() + partner.getNumBid();
 		int combinedTricks = player.getNumTricks() + partner.getNumTricks();
 		boolean BurntMellow1 = player.isBurntMellow();

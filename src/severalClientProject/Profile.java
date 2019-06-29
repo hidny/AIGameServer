@@ -27,6 +27,10 @@ public class Profile implements ProfileInterface {
     	this.clientName = clientName;
     }
     
+    
+    //https://stackoverflow.com/questions/367706/how-do-i-parse-command-line-arguments-in-java
+    
+    
     //TODO: maybe you should defend against spam by setting this to synchronized...
     // but then there's a risk of dead lock.... :(
     //I don't know
@@ -92,10 +96,9 @@ public class Profile implements ProfileInterface {
 				//TODO: put below in it's own function!
 				if(args.length > 2 ) {
 					roomName = args[2];
-					if(args.length > 3 ) {
+					if(args.length > 3  && args[3].equals("-args") == false) {
     					password = args[3];
     				}
-					
 					
 					temp = Server.createGame(ServerGameReference.RPS, roomName, password, this, null);
 					
@@ -146,8 +149,26 @@ public class Profile implements ProfileInterface {
     					password = args[3];
     				}
 					
+
+					//TODO: maybe use real command line options later:
+					//https://stackoverflow.com/questions/367706/how-do-i-parse-command-line-arguments-in-java
+						
+					//TODO: generalize and make args a constant
 					
-					temp = Server.createGame(ServerGameReference.MELLOW, roomName, password, this, null);
+					System.out.println("TEST" + args.length);
+					for(int i=0; i<args.length; i++) {
+						System.out.println(args[i]);
+					}
+					
+					String gameArgs[] = null;
+					if(args.length > 4) {
+						gameArgs = new String[args.length - 4];
+						for(int i=0; i<gameArgs.length; i++) {
+							gameArgs[i] = args[i+4];
+						}
+					}
+					
+					temp = Server.createGame(ServerGameReference.MELLOW, roomName, password, this, gameArgs);
 					
 					if(temp instanceof GameRoom) {
 						this.currentGameRoom  = (GameRoom)temp;
@@ -425,10 +446,7 @@ public class Profile implements ProfileInterface {
     // For now, I'm lazy. ;)
     public void submitClientQuery(String query) {
     	synchronized(lockSubmitQueryFromClient) {
-			//if the query is a command, take away the capitals.
-			if(query.trim().startsWith("/")) {
-				cleanCommandQuery(query);
-			}
+			
 	    	
 			System.out.println("Query from " + this.clientName + ": " + query);
 			
@@ -451,16 +469,6 @@ public class Profile implements ProfileInterface {
 	    }
     }
     
-    private static String cleanCommandQuery(String query) {
-    	String cleanQuery = query.toLowerCase().trim();
-		cleanQuery = getRidOfExtraSpaces(cleanQuery);
-		System.out.println("clean Query: " + cleanQuery);
-		
-		//TODO: query = keepMessageAreaUnClean(query, cleanQuery);
-		
-		return query;
-    }
-    
     //TODO: This function allows users to type with multiple space and rolling caps.
     public static String keepMessageAreaUnClean(String query, String cleanQuery) {
     	String args[] = cleanQuery.split(" ");
@@ -478,7 +486,7 @@ public class Profile implements ProfileInterface {
     //post: cleans the input of a / command by making the space between the arguments seperated by only 1 space.
     //ex: /create  holdem	   hello     wolrd
     //becomes: /create holdem hello world
-    private static String getRidOfExtraSpaces(String query) {
+    /*private static String getRidOfExtraSpaces(String query) {
     	query = query.replace('\t', ' ');
     	
     	int prevlength;
@@ -491,7 +499,7 @@ public class Profile implements ProfileInterface {
     	query = query.trim();
     	
     	return query;
-    }
+    }*/
     
     //pre: query is lowercase and trimmed
     private void submitClientQueryFromChannels(String query) {

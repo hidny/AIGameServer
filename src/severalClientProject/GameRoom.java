@@ -8,6 +8,7 @@ public class GameRoom extends Thread implements Runnable {
 	private String gameName;
 	private String roomName;
 	private String password;
+	private String gameArgs2[] = null;
 	
 	//TODO: maybe allow for some spots reserved for a specific player?
 	
@@ -39,20 +40,7 @@ public class GameRoom extends Thread implements Runnable {
 	public severalClientProject.Game getGame() {
 		return game;
 	}
-
-	public GameRoom(String gameName, String roomName, ProfileInterface host) {
-		this(gameName, roomName, "", host, new String[0]);
-	}
 	
-	public GameRoom(String gameName, String roomName, ProfileInterface host, String gameArgs[]) {
-		this(gameName, roomName, "", host, gameArgs);
-	}
-	
-	public GameRoom(String gameName, String roomName, String password, ProfileInterface host) {
-		this(gameName, roomName, password, host, new String[0]);
-	}
-	
-
 	public String getStateFromInsideRoom() {
 		return refreshMessage;
 	}
@@ -94,6 +82,7 @@ public class GameRoom extends Thread implements Runnable {
 		this.gameName = gameName;
 		this.roomName = roomName;
 		this.password = password;
+		this.gameArgs2 = gameArgs;
 		
 		 //TODO: create a file that lists all the game names and handles this function:
 		//***********************************************
@@ -442,7 +431,7 @@ public class GameRoom extends Thread implements Runnable {
 			
 			System.out.println("Starting " + gameName + "!");
 			
-			this.game = ServerGameReference.createGame(gameName);
+			this.game = ServerGameReference.createGame(gameName, gameArgs2);
 			this.game.startGameForClients(players);
 			
 			//At this point, we've reached the end of the game:
