@@ -96,7 +96,7 @@ public class Profile implements ProfileInterface {
 				//TODO: put below in it's own function!
 				if(args.length > 2 ) {
 					roomName = args[2];
-					if(args.length > 3  && args[3].equals("-args") == false) {
+					if(args.length > 3 ) {
     					password = args[3];
     				}
 					
