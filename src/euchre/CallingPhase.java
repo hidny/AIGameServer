@@ -151,7 +151,7 @@ public class CallingPhase {
 			
 			int card = player[dealerIndex].getCard(playerModel[dealerIndex].getHand(), null, euchreCall, dealerIndex, dealerIndex);
 			playerModel[dealerIndex].takeCard(card);
-			playerModel[dealerIndex].give(random.card.DeckFunctions.getCard(trumpCard));
+			playerModel[dealerIndex].give(random.card.DeckFunctions.getCardNumber(trumpCard));
 			middleMan.recordCommand(random.card.DeckFunctions.getCardString(card) + "\n");
 			
 

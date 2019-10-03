@@ -41,7 +41,7 @@ public class DeckFunctions {
 		}
 	}
 
-	public static int getCard(String card) {
+	public static int getCardNumber(String card) {
 		int ret=0;
 		if(card.length() < 2) {
 			return -1;

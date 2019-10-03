@@ -287,6 +287,13 @@ public class Position {
 				if( playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false ||
 				isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand(), euchreCall.getTrump())) {
 					
+
+					if(playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false) {
+						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to play a card that\'s not in her hand.", false);
+					} else {
+						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
+					}
+					
 					//autoinsert card:
 					for(int k=0; k<playerModel[actionIndex].getHand().length && isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand(), euchreCall.getTrump()); k++) {
 						prevPlay[actionIndex] = playerModel[actionIndex].getHand()[k];
@@ -298,11 +305,6 @@ public class Position {
 						System.exit(1);
 					}
 					
-					if(playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false) {
-						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to play a card that\'s not in her hand.", false);
-					} else {
-						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
-					}
 				}
 				
 				middleMan.recordCommand(random.card.DeckFunctions.getCardString(prevPlay[actionIndex]));

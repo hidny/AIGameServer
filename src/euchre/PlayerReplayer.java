@@ -32,16 +32,16 @@ public class PlayerReplayer implements PlayerDecider {
 	public int getCard(int playerCards[], int currentCardsInFight[], EuchreCall euchreCall, int dealerIndex, int currentPlayerIndex) {
 		String ret = "";
 		if(in.hasNext()) {
-			while(in.hasNext() && random.card.DeckFunctions.getCard(ret) < 0) {
+			while(in.hasNext() && random.card.DeckFunctions.getCardNumber(ret) < 0) {
 				ret = in.next();
 			}
 		}
 		
-		if(ret == null || random.card.DeckFunctions.getCard(ret) < 0) {
+		if(ret == null || random.card.DeckFunctions.getCardNumber(ret) < 0) {
 			throw new RuntimeException("Game stopped suddenly in playing cards phase.");
 		}
 		
-		return random.card.DeckFunctions.getCard(ret);
+		return random.card.DeckFunctions.getCardNumber(ret);
 		
 	}
 	

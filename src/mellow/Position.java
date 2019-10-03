@@ -246,26 +246,21 @@ public class Position {
 		middleMan.sendMessageToGroup("Dealer Index: " + dealerIndex);
 		middleMan.sendMessageToGroup("Dealer: " + playerModel[dealerIndex].getPlayerName());
 		
-		String hand = "";
 		for(int i=0; i<CARDS_PER_HAND; i++) {
 			
-			//TESTING:
-			//System.out.println("Current hands:");
+			//Show players their current hand:
 			for(int j=0; j<4; j++) {
 				prevPlay[j] = PlayerModel.NOT_A_CARD;
 				int currentHandToPrint[] = playerModel[j].getHand();
 				
-				//System.out.print(playerModel[j].getPlayerName() + ": ");
+				String hand = "";
+				
 				for(int k=0; k<currentHandToPrint.length; k++) {
-					//System.out.print(deck.DeckFunctions.getCardString(currentHandToPrint[k]) + " ");
 					hand += random.card.DeckFunctions.getCardString(currentHandToPrint[k]) + " ";
 				}
 
 				middleMan.sendMessageToPlayer(playerModel[j].getPlayerName(), hand);
-				hand = "";
-				//System.out.println();
 			}
-			//END TESTING
 			
 			middleMan.sendMessageToGroup("Initial Action index: " + initialActionIndex);
 			for(int j=0; j<4; j++) {
@@ -286,6 +281,13 @@ public class Position {
 				if( playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false ||
 						isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()) ) {
 					
+
+					if(playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false) {
+						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to play a card that\'s not in her hand.", false);
+					} else {
+						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
+					}
+					
 					//autoinsert card:
 					for(int k=0; k<playerModel[actionIndex].getHand().length && isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()); k++) {
 						prevPlay[actionIndex] = playerModel[actionIndex].getHand()[k];
@@ -297,11 +299,6 @@ public class Position {
 						System.exit(1);
 					}
 					
-					if(playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false) {
-						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to play a card that\'s not in her hand.", false);
-					} else {
-						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
-					}
 					
 				}
 				

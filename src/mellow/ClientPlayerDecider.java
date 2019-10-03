@@ -69,6 +69,8 @@ public class ClientPlayerDecider implements PlayerDecider {
 			}
 		}
 		currentMove = UNENTERED_MOVE;
+
+		//Just a 1st card in hand if it's not even in the hand:
 		return playerCards[0];
 	}
 	

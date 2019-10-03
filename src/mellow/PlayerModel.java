@@ -59,7 +59,7 @@ public class PlayerModel {
 	}
 	
 	public boolean hasCard(String card) {
-		return this.hasCard(random.card.DeckFunctions.getCard(card));
+		return this.hasCard(random.card.DeckFunctions.getCardNumber(card));
 	}
 	public boolean hasCard(int card) {
 		for(int i=0; i<this.currentNumCards; i++) {

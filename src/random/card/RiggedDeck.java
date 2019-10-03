@@ -60,7 +60,7 @@ public class RiggedDeck implements random.card.Deck {
 		}
 		
 		for(int i=startPos; i<deckFromFile.length; i++) {
-			deck[i] = DeckFunctions.getCard(deckFromFile[i]);
+			deck[i] = DeckFunctions.getCardNumber(deckFromFile[i]);
 		}
 		//reset top of deck:
 		currentCardIndex = startPos;

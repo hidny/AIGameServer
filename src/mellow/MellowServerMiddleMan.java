@@ -104,8 +104,11 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 		
 		if(query.toLowerCase().startsWith("/move") && isInList(player) ) {
 			try {
-				move = query.split(" ")[1];
+				move = query.split(" ")[1].trim();
 				
+				if(move.equals("")) {
+					move = UNENTERED_MOVE;
+				}
 			} catch (Exception e) {
 				move = UNENTERED_MOVE;
 			}
