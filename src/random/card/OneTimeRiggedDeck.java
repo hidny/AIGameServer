@@ -16,9 +16,12 @@ public class OneTimeRiggedDeck implements Deck {
 		 public static final int  CARDS_PER_SUIT = 13;
 		 
 		 public static final int STANDARD_DECK_SIZE = 52;
+		 public static final int CARD_ASCII_LENGTH = 2;
 		
 		 private PrintWriter record;
 		
+		 private String gameArgs[];
+		 
 		 private boolean isFirstHand;
 		//cards are labelled from 1 to 52:
 		
@@ -31,7 +34,8 @@ public class OneTimeRiggedDeck implements Deck {
 				}
 			}
 			this.record = record;
-			
+
+			this.gameArgs = gameArgs;
 			this.isFirstHand = true;
 			
 		}
@@ -77,7 +81,7 @@ public class OneTimeRiggedDeck implements Deck {
 		public void shuffle() {
 			if(isFirstHand) {
 				
-				//TODO: rig here
+				rigDeck(gameArgs);
 				
 				isFirstHand = false;
 			} else {
@@ -89,6 +93,63 @@ public class OneTimeRiggedDeck implements Deck {
 			shuffle(currentCardIndex);
 		}
 		
+		//First test: (empty password...)
+		// /create mellow mellowpy  0 0 0 -fulldeck 3D TD 5D 7C 7S 6S 5C JS 5H JC 8S 2S 8D QH JD KD 8H TS TC TH 7D 2C AC 4C 6D QS QC AS 2H KC AD 9D 6H JH 9C 3S 3C KS QD 5S AH 4H 9S 4D 8C 9H 3H KH 7H 6C 2D 4S 
+		// /start
+		// It worked the first time OMG!
+		
+		public void rigDeck(String gameArgs[]) {
+			for(int i=0; i<gameArgs.length; i++) {
+				if(gameArgs[i].toLowerCase().contains("fulldeck")) {
+					rigFullDeck(gameArgs, i);
+
+				} else if(gameArgs[i].toLowerCase().contains("hand")) {
+					//TODO
+					System.out.println("ERROR: this feature isn't ready yet.");
+				}
+			}
+		}
+		
+		public void rigFullDeck(String gameArgs[], int indexStart) {
+			if(gameArgs.length <= indexStart) {
+				System.out.println("ERROR: no card deck arg in OneTimeRiggedDeck");
+				return;
+			}
+			//[3D TD 5D 7C 7S 6S 5C JS 5H JC 8S 2S 8D QH JD KD 8H TS TC TH 7D 2C AC 4C 6D QS QC AS 2H KC AD 9D 6H JH 9C 3S 3C KS QD 5S AH 4H 9S 4D 8C 9H 3H KH 7H 6C 2D 4S]
+			
+			String deckPart = "";
+			for(int i=indexStart+1; i<gameArgs.length; i++) {
+				deckPart += gameArgs[i] + " ";
+			}
+			
+			//System.out.println(deckPart);
+			deckPart = deckPart.replaceAll("[^0-9a-zA-Z]", "");
+			
+			//System.out.println(deckPart);
+			
+			if(deckPart.length() != CARD_ASCII_LENGTH*STANDARD_DECK_SIZE) {
+				System.out.println("ERROR: didn't get the right number of cards to rig (got deckPart.length() cards)");
+				return;
+			}
+			
+			if(deck.length != STANDARD_DECK_SIZE) {
+				System.out.println("ERROR: Deck length unexpected in OneTimeRiggedDeck");
+				return;
+			}
+			
+			for(int i=0; i<deck.length; i++ ) {
+				String card = deckPart.substring(2*i, 2*i+2).toUpperCase();
+				
+				if(DeckFunctions.getCardNumber(card) == -1) {
+					System.out.println("ERROR: Unknown card: " + card);
+					System.out.println("Deck: " + deck);
+				}
+				deck[i] = DeckFunctions.getCardNumber(card);
+			}
+			
+			
+		}
+		//deck[i] = DeckFunctions.getCardNumber(deckFromFile[i]);
 		
 		
 		public int getNextCard() {
