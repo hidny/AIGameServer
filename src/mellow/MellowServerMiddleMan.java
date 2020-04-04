@@ -4,6 +4,7 @@ import gameUtils.GameReplayPrinter;
 
 import severalClientProject.ProfileInterface;
 import gameUtils.ServerGameMiddleMan;
+import random.card.Deck;
 
 public class MellowServerMiddleMan extends ServerGameMiddleMan {
 	
@@ -86,8 +87,25 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 			if(gameArgs.length < 3) {
 				Position.startMellow(this, red, blue, Integer.parseInt(gameArgs[0]), Integer.parseInt(gameArgs[1]), Position.RANDOM_DEALER_POSITION);
 				
-			} else {
+			//start with a set dealer position:
+			} else if(gameArgs.length < 4) {
 				Position.startMellow(this, red, blue, Integer.parseInt(gameArgs[0]), Integer.parseInt(gameArgs[1]), Integer.parseInt(gameArgs[2]));
+				
+			//start with a rigged deck:
+			} else {
+				
+				Deck firstDeckRigged = new random.card.OneTimeRiggedDeck(this.getCommandFile(), gameArgs);
+
+				//Method 1: (Actual deck)
+				//-rigFirstDeck [3D TD 5D 7C 7S 6S 5C JS 5H JC 8S 2S 8D QH JD KD 8H TS TC TH 7D 2C AC 4C 6D QS QC AS 2H KC AD 9D 6H JH 9C 3S 3C KS QD 5S AH 4H 9S 4D 8C 9H 3H KH 7H 6C 2D 4S] 
+
+				//or Method 2: give cards to players
+				//-rigFirstDeck [AS KS QS JS] [AD 2D 4D]
+				
+				
+													//Deck to rig
+				Position.startMellow(this, red, blue, firstDeckRigged, Integer.parseInt(gameArgs[0]), Integer.parseInt(gameArgs[1]), Integer.parseInt(gameArgs[2]));
+				
 				
 			}
 		} else {
