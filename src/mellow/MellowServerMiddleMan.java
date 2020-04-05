@@ -100,8 +100,7 @@ public class MellowServerMiddleMan extends ServerGameMiddleMan {
 				//-rigFirstDeck [3D TD 5D 7C 7S 6S 5C JS 5H JC 8S 2S 8D QH JD KD 8H TS TC TH 7D 2C AC 4C 6D QS QC AS 2H KC AD 9D 6H JH 9C 3S 3C KS QD 5S AH 4H 9S 4D 8C 9H 3H KH 7H 6C 2D 4S] 
 
 				//or Method 2: give cards to players
-				//-hands
-				//-rigFirstDeck [AS KS QS JS] [AD 2D 4D]
+				// sample: /create mellow mellowpy  0 0 0 -handrig [AS ADKSQSJSKD2C][][3C][2D3D,4D]
 								//Deck to rig
 				Position.startMellow(this, red, blue, firstDeckRigged, Integer.parseInt(gameArgs[0]), Integer.parseInt(gameArgs[1]), Integer.parseInt(gameArgs[2]));
 

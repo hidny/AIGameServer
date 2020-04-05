@@ -2,6 +2,7 @@ package random.card;
 
 
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 
 
@@ -11,7 +12,9 @@ public class OneTimeRiggedDeck implements Deck {
 		 private int deck[];
 		//this variable holds which card is currently on the top on the deck:
 		 private int currentCardIndex = 0;
-			
+
+		 
+		 
 		 public static final int  NUM_SUITS = 4;
 		 public static final int  CARDS_PER_SUIT = 13;
 		 
@@ -93,19 +96,32 @@ public class OneTimeRiggedDeck implements Deck {
 			shuffle(currentCardIndex);
 		}
 		
-		//First test: (empty password...)
-		// /create mellow mellowpy  0 0 0 -fulldeck 3D TD 5D 7C 7S 6S 5C JS 5H JC 8S 2S 8D QH JD KD 8H TS TC TH 7D 2C AC 4C 6D QS QC AS 2H KC AD 9D 6H JH 9C 3S 3C KS QD 5S AH 4H 9S 4D 8C 9H 3H KH 7H 6C 2D 4S 
-		// /start
-		// It worked the first time OMG!
+	//First test: (empty password...)
+	// -start server
+	// -Start client.java
 		
+	// /create mellow mellowpy  0 0 0 -fulldeck 3D TD 5D 7C 7S 6S 5C JS 5H JC 8S 2S 8D QH JD KD 8H TS TC TH 7D 2C AC 4C 6D QS QC AS 2H KC AD 9D 6H JH 9C 3S 3C KS QD 5S AH 4H 9S 4D 8C 9H 3H KH 7H 6C 2D 4S 
+	// /start
+	// It worked the first time OMG!
+		
+	// Second test: (empty password...)
+	// /create mellow mellowpy  0 0 0 -handrig [AS ADKSQSJSKD2C][][3C][2D3D,4D]
+	// /start
+	// Results: Player left of dealer got 1st list, player on right of dealer got 3C, and dealer gave themselves 2D, 3D and 4D
+		
+	// Third test: (empty password...)
+	// /create mellow mellowpy  0 0 0 -handrig [AS ADKSQSJSKD2C][4C][3C]
+	// /start
+	// Results: Player left of dealer got 1st list, and player on right of dealer got 3C
+
 		public void rigDeck(String gameArgs[]) {
 			for(int i=0; i<gameArgs.length; i++) {
-				if(gameArgs[i].toLowerCase().contains("fulldeck")) {
+				if(gameArgs[i].toLowerCase().contains("-fulldeck")) {
 					rigFullDeck(gameArgs, i);
 
-				} else if(gameArgs[i].toLowerCase().contains("hand")) {
-					//TODO
-					System.out.println("ERROR: this feature isn't ready yet.");
+				} else if(gameArgs[i].toLowerCase().contains("-hand")) {
+					rigHands(gameArgs, i);
+					
 				}
 			}
 		}
@@ -149,8 +165,108 @@ public class OneTimeRiggedDeck implements Deck {
 			
 			
 		}
-		//deck[i] = DeckFunctions.getCardNumber(deckFromFile[i]);
 		
+		public void rigHands(String gameArgs[], int indexStart) {
+			if(gameArgs.length <= indexStart) {
+				System.out.println("ERROR: no card deck arg in OneTimeRiggedDeck");
+				return;
+			}
+			//[AS KS QS AC ] [] [AH][2C2S2DTD]
+			
+			//TODO: add a -numPlayers argument, so this function doesn't just have to assume it's 4 players getting cards in future
+			String handsToParse = "";
+			for(int i=indexStart+1; i<gameArgs.length; i++) {
+				handsToParse += gameArgs[i] + " ";
+			}
+			
+			//System.out.println(deckPart);
+			handsToParse = handsToParse.replaceAll("[^0-9a-zA-Z\\[\\]]", "");
+			
+			boolean cardsUsed[] = new boolean[STANDARD_DECK_SIZE];
+			for(int i=0; i<cardsUsed.length; i++) {
+				cardsUsed[i] = false;
+			}
+			
+
+			int ASSUMED_NUM_PLAYERS = 4;
+			
+			
+			int handIndex = 0;
+			ArrayList<Integer>[] cardsSetToHand = new ArrayList[ASSUMED_NUM_PLAYERS];
+	        
+			while(handsToParse.contains("[")) {
+				if(handsToParse.contains("]") == false) {
+					System.out.println("Error: no closing bracket");
+					System.exit(1);
+				}
+				
+				cardsSetToHand[handIndex] = new ArrayList<Integer>(); 
+				
+				String hand = handsToParse.substring(handsToParse.indexOf('[') + 1, handsToParse.indexOf(']'));
+				
+				handsToParse = handsToParse.substring(handsToParse.indexOf(']'));
+				if(handsToParse.contains("[")) {
+					handsToParse = handsToParse.substring(handsToParse.indexOf('['));
+				}
+				
+				
+				hand = hand.replaceAll("[^0-9a-zA-Z]", "");
+				
+				for(int i=0; i<hand.length() / CARD_ASCII_LENGTH; i++) {
+					String card = hand.substring(CARD_ASCII_LENGTH * i, CARD_ASCII_LENGTH * (i+1)).toUpperCase();
+					
+					if(DeckFunctions.getCardNumber(card) == -1) {
+						System.out.println("ERROR: Unknown card in rigHands: " + card);
+						System.exit(1);
+					}
+					
+					int tmpCard = DeckFunctions.getCardNumber(card);
+					
+					if(cardsUsed[tmpCard - 1] == true) {
+						System.out.println("ERROR: card is already used. (in rigHands) (" + card + ")");
+						System.exit(1);
+					}
+					cardsUsed[tmpCard - 1] = true;
+					cardsSetToHand[handIndex].add(tmpCard);
+					
+				}
+				
+				handIndex++;
+			}
+			
+			//Shuffle cards, then rearrange them according to how it was customized...
+			//This is not the optimal way doing it, but I'm lazy... :P
+			shuffle(0);
+			
+			for(handIndex=0; handIndex<ASSUMED_NUM_PLAYERS; handIndex++) {
+				
+				//if this wasn't declared, skip to the next one:
+				if(cardsSetToHand[handIndex] == null) {
+					continue;
+				}
+				
+				for(int j=0; j<cardsSetToHand[handIndex].size(); j++) {
+					int cardToSwap = cardsSetToHand[handIndex].get(j);
+					int indexCardShouldGo = ASSUMED_NUM_PLAYERS*j + handIndex;
+					
+					int curLocationCard = -1;
+					for(int k=0; k<deck.length; k++) {
+						if(deck[k] == cardToSwap) {
+							curLocationCard = k;
+							break;
+						}
+					}
+					if(curLocationCard == -1) {
+						System.out.println("ERROR: could not find card! (" + cardToSwap + ") or " + DeckFunctions.getCardString(cardToSwap));
+					}
+					
+					swap(curLocationCard, indexCardShouldGo );
+					
+				}
+			}
+			
+			
+		}
 		
 		public int getNextCard() {
 			assert(currentCardIndex < deck.length);
@@ -174,7 +290,7 @@ public class OneTimeRiggedDeck implements Deck {
 			}
 		}
 		
-		//TESTING:
+		//TESTING: (Copied from random deck)
 		//***************************
 		//***************************
 		//***************************
