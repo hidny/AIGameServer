@@ -426,7 +426,7 @@ public class Position {
 		
 		if(BurntMellow2) {
 			score -= 100;
-		} else if(BurntMellow2 && partner.isMellow()) {
+		} else if(BurntMellow2 == false && partner.isMellow()) {
 			score += 100;
 		}
 		
