@@ -264,7 +264,7 @@ public class Server {
     	System.out.println("TEST: Adding new profile:");
     	Profile newProfile = new Profile(connection, clientName);
     	clientProfiles.add(newProfile);
-
+    	
         updateCountNumPeopleOnline();
         
         return newProfile;
@@ -289,22 +289,10 @@ public class Server {
     	for(int i=0; i<clientProfiles.size(); i++) {
     		if(clientProfiles.get(i).getClientName().toLowerCase().trim().equals(clientName.toLowerCase().trim())) {
     			currentProfile = clientProfiles.get(i).setNewConnection(newConnection);
+    			clientProfiles.get(i).leaveGameAfterDisconnectOrReconnect();
     		}
     	}
     	return currentProfile;
     }
-    /*
-    clientConnection.add(SOMETHING);
-    clientConnection.get(clientConnection.size() - 1).start();
     
-    updateCountNumPeopleOnline();
-    */
-    
-	/*
-    if(Server.isClientNameTaken() == false) {
-		this.clientProfile = Server.createNewProfile(clientName);
-	} else if(Server.isClientNameWaitingForConnection() == true {
-		this.clientProfile = Server.reconnectToProfile(clientName);
-		*/
-		
 }

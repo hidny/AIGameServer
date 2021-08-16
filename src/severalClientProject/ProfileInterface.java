@@ -13,4 +13,6 @@ public interface ProfileInterface {
 	public void receiveBan();
 	
 	public void forcePlayerOutOfGameRoom();
+	
+	public void leaveGameAfterDisconnectOrReconnect();
 }

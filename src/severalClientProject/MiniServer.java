@@ -90,6 +90,8 @@ public class MiniServer extends Thread {
     		e.printStackTrace();
     	}
     	
+    	clientProfile.leaveGameAfterDisconnectOrReconnect();
+    	
     	isConnected = false;
     	
     }

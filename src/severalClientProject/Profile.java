@@ -316,6 +316,20 @@ public class Profile implements ProfileInterface {
     		sendImmediateResponseToClient("ERROR: you have already left the game.");
     	}
     }
+     
+     //Keep it simple by leaving a game after reconnecting:
+     public void leaveGameAfterDisconnectOrReconnect() {
+     	if(isInGame()) {
+    		String msg = currentGameRoom.leave(this);
+    		currentGameRoom = null;
+    		if(msg.equals("") == false) {
+    			sendImmediateResponseToClient(msg);
+    		} else {
+    			sendImmediateResponseToClient(Server.getRefreshMessageFromChannel());
+    		}
+     		
+     	}
+     }
     
     //after a game is finished, the game room get destroyed:
     public void forcePlayerOutOfGameRoom() {
