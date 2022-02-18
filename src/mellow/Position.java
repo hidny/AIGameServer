@@ -236,7 +236,7 @@ public class Position {
 	public void playRound(int dealerIndex, PlayerModel playerModel[], PlayerDecider playerDecider[], MellowServerMiddleMan middleMan) {
 		int CARDS_PER_HAND = random.card.RandomDeck.STANDARD_DECK_SIZE / 4;
 		
-		int prevPlay[] = new int[4];
+		int currentPlay[] = new int[4];
 		
 		int initialActionIndex = (dealerIndex + 1) % 4;
 		int actionIndex;
@@ -250,7 +250,7 @@ public class Position {
 			
 			//Show players their current hand:
 			for(int j=0; j<4; j++) {
-				prevPlay[j] = PlayerModel.NOT_A_CARD;
+				currentPlay[j] = PlayerModel.NOT_A_CARD;
 				int currentHandToPrint[] = playerModel[j].getHand();
 				
 				String hand = "";
@@ -264,7 +264,7 @@ public class Position {
 			
 			middleMan.sendMessageToGroup("Initial Action index: " + initialActionIndex);
 			for(int j=0; j<4; j++) {
-				prevPlay[j] = PlayerModel.NOT_A_CARD;
+				currentPlay[j] = PlayerModel.NOT_A_CARD;
 			}
 			
 			for(int j=0; j<4; j++) {
@@ -274,26 +274,32 @@ public class Position {
 				
 				middleMan.sendMessageToPlayer(playerDecider[actionIndex].getName(), "Play a card!");
 				
-				prevPlay[actionIndex] = playerDecider[actionIndex].getCard(playerModel[actionIndex].getHand(), prevPlay, actionIndex);
+				currentPlay[actionIndex] = playerDecider[actionIndex].getCard(playerModel[actionIndex].getHand(), currentPlay, actionIndex);
 				
 				middleMan.sendMessageToPlayer(playerDecider[actionIndex].getName(), "Thank you!");
 				
-				if( playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false ||
-						isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()) ) {
+				if( playerModel[actionIndex].hasCard(currentPlay[actionIndex]) ==false ||
+						isReneging(initialActionIndex, actionIndex, currentPlay, playerModel[actionIndex].getHand()) ) {
 					
 
-					if(playerModel[actionIndex].hasCard(prevPlay[actionIndex]) ==false) {
+					if(playerModel[actionIndex].hasCard(currentPlay[actionIndex]) ==false) {
 						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to play a card that\'s not in her hand.", false);
 					} else {
 						middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " tried to renege.", false);
 					}
 					
 					//autoinsert card:
-					for(int k=0; k<playerModel[actionIndex].getHand().length && isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand()); k++) {
-						prevPlay[actionIndex] = playerModel[actionIndex].getHand()[k];
+					for(int k=0; k<playerModel[actionIndex].getHand().length; k++) {
+						
+						currentPlay[actionIndex] = playerModel[actionIndex].getHand()[k];
+						
+
+						if( ! isReneging(initialActionIndex, actionIndex, currentPlay, playerModel[actionIndex].getHand()) ) {
+							break;
+						}
 					}
 					
-					if(isReneging(initialActionIndex, actionIndex, prevPlay, playerModel[actionIndex].getHand())) {
+					if(isReneging(initialActionIndex, actionIndex, currentPlay, playerModel[actionIndex].getHand())) {
 						middleMan.sendMessageToGroup("ERROR: Couldn\'t find a valid card to play!!!");
 						System.out.println("ERROR: Couldn\'t find a valid card to play!!!");
 						System.exit(1);
@@ -302,20 +308,20 @@ public class Position {
 					
 				}
 				
-				middleMan.recordCommand(random.card.DeckFunctions.getCardString(prevPlay[actionIndex]));
+				middleMan.recordCommand(random.card.DeckFunctions.getCardString(currentPlay[actionIndex]));
 				
-				middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " playing: " + random.card.DeckFunctions.getCardString(prevPlay[actionIndex]));
+				middleMan.sendMessageToGroup(playerModel[actionIndex].getPlayerName() + " playing: " + random.card.DeckFunctions.getCardString(currentPlay[actionIndex]));
 				
 				if(j+1 < 4) { 
 					middleMan.recordCommand(" - ");
 				}
 				
-				playerModel[actionIndex].takeCard(prevPlay[actionIndex]);
+				playerModel[actionIndex].takeCard(currentPlay[actionIndex]);
 				
 			}
 			
 			
-			indexWinner = fight(initialActionIndex, prevPlay);
+			indexWinner = fight(initialActionIndex, currentPlay);
 			middleMan.sendMessageToGroup("Fight Winner: " + playerModel[indexWinner].getPlayerName());
 			middleMan.recordCommand("\n");
 			
