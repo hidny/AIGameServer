@@ -90,13 +90,8 @@ public abstract class ServerGameMiddleMan implements severalClientProject.Game {
 	public void sendMessageToGroup(String message, boolean record) {
 		
 		try {
-			if(clientPlayersPlaying != null) {
-				for(int i=0; i<clientPlayersPlaying.length; i++) {
-					if(clientPlayersPlaying[i] != null) {
-						clientPlayersPlaying[i].sendMessageToClient("From Game(public): " + message);
-						
-					}
-				}
+			if(clientPlayersPlaying != null && clientPlayersPlaying.length > 0) {
+				clientPlayersPlaying[0].sendMessageToAllClientsInGame("From Game(public): " + message, clientPlayersPlaying);
 			}
 			
 			if(outputFile != null && record) {

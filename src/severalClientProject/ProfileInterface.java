@@ -9,6 +9,7 @@ public interface ProfileInterface {
 	//handle exceptions created by MiniServer inside profile.
 	public void sendMessageToClient(String message);
 	
+	public void sendMessageToAllClientsInGame(String message, ProfileInterface clientPlayersPlaying[]);
 	
 	public void receiveBan();
 	

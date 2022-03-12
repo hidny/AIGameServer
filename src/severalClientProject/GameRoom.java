@@ -34,6 +34,9 @@ public class GameRoom extends Thread implements Runnable {
 	private int numPlayers;
 	
 	severalClientProject.Game game = null;
+	
+	//Lock to send message to clients in game at the same time:
+	public Object lockSendMessageToClientsInGame = new Object();
 
 	public static int NUM_SECONDS_COUNTDOWN = 5;
 	

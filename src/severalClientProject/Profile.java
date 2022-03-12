@@ -2,6 +2,7 @@ package severalClientProject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Profile implements ProfileInterface {
 
@@ -20,7 +21,7 @@ public class Profile implements ProfileInterface {
 
 
     private Object lockSubmitQueryFromClient = new Object();
-    private Object lockSendMessageToClient = new Object();
+   // private Object lockSendMessageToClient = new Object();
 	
     public Profile(MiniServer connection, String clientName) {
     	this.connection = connection;
@@ -767,16 +768,48 @@ public class Profile implements ProfileInterface {
     	return connection.isConnectionStillOpen();
     }
     
+    private ReentrantLock lockSendMessageToClient = new ReentrantLock();
+    //lockSendMessageToClient
+    
     //I might want to synchronize these functions... but I have to be careful about deadlocks...
     ArrayList <String>msgSendBuffer = new ArrayList<String>();
     public void sendMessageToClient(String message)  {
-    	synchronized(lockSendMessageToClient) {
-	    	try {
-	    		this.connection.sendMessageToClient(message);
-			} catch (IOException e) {
-				msgSendBuffer.add(message);
-			}
+    	lockSendMessageToClient.lock();
+    	try {
+    		this.connection.sendMessageToClient(message);
+    	} catch (IOException e) {
+			msgSendBuffer.add(message);
+		} finally {
+			lockSendMessageToClient.unlock();
+		}
+    }
+    
+    public void sendMessageToAllClientsInGame(String message, ProfileInterface clientPlayersPlaying[]) {
+    	
+    	if(currentGameRoom == null || clientPlayersPlaying == null) {
+    		System.out.println("ERROR in sendMessageToAllClientsInGame");
     	}
+    	
+    	synchronized(currentGameRoom.lockSendMessageToClientsInGame) {
+    		
+    		for(int i=0; i<clientPlayersPlaying.length; i++) {
+    			((Profile)clientPlayersPlaying[i]).lockSendMessageToClient.lock();
+    		}
+    		
+    		for(int i=0; i<clientPlayersPlaying.length; i++) {
+	    		try {
+	    			((Profile)clientPlayersPlaying[i]).connection.sendMessageToClient(message);
+
+	    		} catch (IOException e) {
+	    			((Profile)clientPlayersPlaying[i]).msgSendBuffer.add(message);
+
+	    		} finally {
+		    		((Profile)clientPlayersPlaying[i]).lockSendMessageToClient.unlock();
+				}
+    		}
+
+    	}
+    	
     }
     
     //pre: current connection is broken

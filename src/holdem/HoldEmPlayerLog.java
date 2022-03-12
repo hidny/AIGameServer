@@ -1,6 +1,5 @@
 package holdem;
 
-import random.*;
 import random.card.DeckFunctions;
 import severalClientProject.ProfileInterface;
 

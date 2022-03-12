@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-import random.*;
 import random.card.Deck;
 import random.card.RandomDeck;
 import random.card.RiggedDeck;
